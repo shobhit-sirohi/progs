@@ -1,35 +1,37 @@
 import { motion } from "framer-motion";
-
+import  mandala1  from "../assets/images/mandala1.png";
+import  mandala2  from "../assets/images/mandala1.png";
+import  mandala3  from "../assets/images/mandala1.png";
 export default function Chair() {
   return (
     <section className="items-center justify-center px-4 text-white bg-black md:min-h-fit md:px-14 lg:px-24">
-      <div className="relative w-full h-[500px] overflow-hidden">
+      <div className="relative w-full overflow-hidden h-[45rem]">
         {/* Center Girl's Image */}
         <img
           src="./src/assets/images/sitting-on-chair.png"
           alt="Girl Drawing"
-          className="absolute z-10 w-48 transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 md:w-64"
+          className="absolute z-10 transform -translate-x-1/2 -translate-y-1/2 w-lg top-1/2 left-1/2 "
         />
 
         {/* Floating Mandalas */}
         <img
-          src="./src/assets/images/mandala1.png"
+          src={mandala1}
           alt="Mandala"
-          className="absolute z-20 w-24 h-24 top-4 left-4 md:w-32 md:h-32"
+          className="absolute z-20 h-[15rem] top-[20rem] left-[3rem] md:w-[15rem] md:h-[15rem]"
         />
         <img
-          src="./src/assets/images/mandala1.png"
+          src={mandala2}
           alt="Mandala"
-          className="absolute z-20 w-24 h-24 top-4 right-4 md:w-32 md:h-32"
+          className="absolute z-20 w-24 h-24 top-4 right-[12rem] md:w-[17rem] md:h-[17rem]"
         />
         <img
-          src="./src/assets/images/mandala1.png"
+          src={mandala3}
           alt="Mandala"
-          className="absolute z-20 w-20 h-20 bottom-4 right-8 md:w-28 md:h-28"
+          className="absolute z-20 w-20 h-20 bottom-[8rem] right-[8rem] md:w-[10rem] md:h-[10rem]"
         />
 
         {/* Floating Text */}
-        <div className="absolute z-20 text-center text-white transform -translate-x-1/2 top-10 left-1/2">
+        <div className="absolute z-20 text-center text-white transform -translate-x-1/2 top-10 left-[15rem]">
           <p className="max-w-md text-lg italic md:text-xl">
             <span className="text-pink-400">I don't</span>{" "}
             do this all the time, but{" "}
