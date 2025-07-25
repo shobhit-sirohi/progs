@@ -13,17 +13,17 @@ export default function Chair() {
 
         {/* Floating Mandalas */}
         <img
-          src="mandala1.png"
+          src="./src/assets/images/mandala1.png"
           alt="Mandala"
           className="absolute z-20 w-24 h-24 top-4 left-4 md:w-32 md:h-32"
         />
         <img
-          src="mandala2.png"
+          src="./src/assets/images/mandala1.png"
           alt="Mandala"
           className="absolute z-20 w-24 h-24 top-4 right-4 md:w-32 md:h-32"
         />
         <img
-          src="mandala3.png"
+          src="./src/assets/images/mandala1.png"
           alt="Mandala"
           className="absolute z-20 w-20 h-20 bottom-4 right-8 md:w-28 md:h-28"
         />
