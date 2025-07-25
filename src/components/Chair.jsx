@@ -1,14 +1,16 @@
 import { motion } from "framer-motion";
 import  mandala1  from "../assets/images/mandala1.png";
 import  mandala2  from "../assets/images/mandala1.png";
-import  mandala3  from "../assets/images/mandala1.png";
+import mandala3 from "../assets/images/mandala1.png";
+import chair from "../assets/images/sitting-on-chair.png";
+
 export default function Chair() {
   return (
     <section className="items-center justify-center px-4 text-white bg-black md:min-h-fit md:px-14 lg:px-24">
       <div className="relative w-full overflow-hidden h-[45rem]">
         {/* Center Girl's Image */}
         <img
-          src="./src/assets/images/sitting-on-chair.png"
+          src={chair}
           alt="Girl Drawing"
           className="absolute z-10 transform -translate-x-1/2 -translate-y-1/2 w-lg top-1/2 left-1/2 "
         />

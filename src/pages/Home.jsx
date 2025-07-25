@@ -4,6 +4,9 @@ import Chair from "../components/Chair";
 import stars from "../assets/images/stars.svg";
 import disk from "../assets/images/rotating-circle.svg";
 import arrow from "../assets/images/arrow.svg";
+import hero from "../assets/images/hero.png";
+import footer from "../assets/images/footer-image.png";
+import gmail from "../assets/images/gmail.png";
 
 const Home = () => {
   return (
@@ -56,7 +59,7 @@ const Home = () => {
             <div className="pt-6 md:pt-0">
               <img
                 className="md:w-full lg:pr-10 md:order-0"
-                src="./src/assets/images/hero.png"
+                src={hero}
                 alt="Pragati Vishwakarma Illustration Designer"
               />
             </div>
@@ -77,35 +80,23 @@ const Home = () => {
               Let's Chat.
             </h2>
             <div className="flex gap-2">
-              <img
-                src="./src/assets/images/gmail.png"
-                alt="gmail icon"
-              />
-              <img
-                src="./src/assets/images/gmail.png"
-                alt="gmail icon"
-              />
-              <img
-                src="./src/assets/images/gmail.png"
-                alt="gmail icon"
-              />
-              <img
-                src="./src/assets/images/gmail.png"
-                alt="gmail icon"
-              />
+              <img src={gmail} alt="gmail icon" />
+              <img src={gmail} alt="gmail icon" />
+              <img src={gmail} alt="gmail icon" />
+              <img src={gmail} alt="gmail icon" />
             </div>
           </div>
           <div className="flex items-center justify-center col-span-12 bg-gray-300 h-fit md:col-span-2">
             <img
               className="hidden md:flex "
-              src="./src/assets/images/rotating-circle.svg"
+              src={disk}
               alt="pragati vishkwakarma resume"
             />
           </div>
           <div className="flex items-center justify-center h-auto col-span-12 bg-gray-200 md:col-span-5">
             <img
               className="hidden md:flex "
-              src="./src/assets/images/footer-image.png"
+              src={footer}
               alt="pragati vishkwakarma illustration"
             />
           </div>

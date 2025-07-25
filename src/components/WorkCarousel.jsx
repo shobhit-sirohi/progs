@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 import useEmblaCarousel from "embla-carousel-react";
 import { useCallback, useEffect, useState } from "react";
 import "../App.css";
+import project1 from "../assets/images/project1.png";
 
 const WorkCarousel = () => {
   const [emblaRef, emblaApi] = useEmblaCarousel({
@@ -35,7 +36,7 @@ const WorkCarousel = () => {
       title: "Name of the Project",
       description:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit dolor sit amet",
-      image: "./src/assets/images/project1.png",
+      image: { project1 },
       link: "#",
     },
     {
@@ -43,7 +44,7 @@ const WorkCarousel = () => {
       title: "Name of the Project",
       description:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit dolor sit amet",
-      image: "./src/assets/images/project1.png",
+      image: { project1 },
       link: "#",
     },
     {
@@ -51,7 +52,7 @@ const WorkCarousel = () => {
       title: "Name of the Project",
       description:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit dolor sit amet",
-      image: "./src/assets/images/project1.png",
+      image: { project1 },
       link: "#",
     },
     {
@@ -59,7 +60,7 @@ const WorkCarousel = () => {
       title: "Name of the Project",
       description:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit dolor sit amet",
-      image: "./src/assets/images/project1.png",
+      image: { project1 },
       link: "#",
     },
     {
@@ -67,7 +68,7 @@ const WorkCarousel = () => {
       title: "Name of the Project",
       description:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit dolor sit amet",
-      image: "./src/assets/images/project1.png",
+      image: { project1 },
       link: "#",
     },
     {
@@ -75,7 +76,7 @@ const WorkCarousel = () => {
       title: "Name of the Project",
       description:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit dolor sit amet",
-      image: "./src/assets/images/project1.png",
+      image: { project1 },
       link: "#",
     },
   ];
