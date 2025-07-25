@@ -3,6 +3,8 @@ import useEmblaCarousel from "embla-carousel-react";
 import { useCallback, useEffect, useState } from "react";
 import "../App.css";
 import project1 from "../assets/images/project1.png";
+import star from "../assets/images/star-explore.svg";
+import arrow from "../assets/images/arrow.svg";
 
 const WorkCarousel = () => {
   const [emblaRef, emblaApi] = useEmblaCarousel({
@@ -36,7 +38,7 @@ const WorkCarousel = () => {
       title: "Name of the Project",
       description:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit dolor sit amet",
-      image: { project1 },
+      image: project1,
       link: "#",
     },
     {
@@ -44,7 +46,7 @@ const WorkCarousel = () => {
       title: "Name of the Project",
       description:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit dolor sit amet",
-      image: { project1 },
+      image: project1,
       link: "#",
     },
     {
@@ -52,7 +54,7 @@ const WorkCarousel = () => {
       title: "Name of the Project",
       description:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit dolor sit amet",
-      image: { project1 },
+      image: project1,
       link: "#",
     },
     {
@@ -87,18 +89,11 @@ const WorkCarousel = () => {
         <span className="text-[#F6F5F3] text-2xl font-bold md:text-5xl">
           Look
         </span>
-        <img
-          className=""
-          src="./src/assets/images/star-explore.svg"
-          alt=""
-        />
+        <img className="" src={star} alt="" />
         <span className="text-[#F6F5F3] text-2xl font-bold md:text-5xl">
           Click
         </span>
-        <img
-          src="./src/assets/images/star-explore.svg"
-          alt=""
-        />{" "}
+        <img src={star} alt="" />
         <span className="text-[#F6F5F3] text-2xl font-bold md:text-5xl">
           Explore
         </span>
@@ -127,7 +122,7 @@ const WorkCarousel = () => {
                     />
                     <p className="text-[#B794FF] flex gap-1 mt-2 md:mt-3 lg:mt-4 text-sm md:text-base">
                       <img
-                        src="./src/assets/images/purple-star.svg"
+                        src={star}
                         alt=""
                         className="w-4 md:w-5"
                       />
@@ -148,7 +143,7 @@ const WorkCarousel = () => {
                       </span>
                       <img
                         className="w-4 md:w-6 lg:w-8"
-                        src="./src/assets/images/arrow.svg"
+                        src={arrow}
                         alt="arrow vector for button"
                       />
                     </a>
