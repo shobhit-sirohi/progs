@@ -1,6 +1,9 @@
 import WorkCarousel from "../components/WorkCarousel";
 import ReviewCarousel from "../components/ReviewCarousel";
 import Chair from "../components/Chair";
+import stars from "../assets/images/stars.svg";
+import disk from "../assets/images/rotating-circle.svg";
+import arrow from "../assets/images/arrow.svg";
 
 const Home = () => {
   return (
@@ -8,11 +11,7 @@ const Home = () => {
       <section className="items-center justify-center px-4 text-white bg-black md:min-h-fit md:px-14 lg:px-24">
         <div className="w-full text-center ">
           <div className="flex items-center justify-center w-full pt-10">
-            <img
-              className="w-14"
-              src="./src/assets/images/stars.svg"
-              alt=""
-            />
+            <img className="w-14" src={stars} alt="" />
             <h1 className="text-3xl font-bold lg:text-8xl">
               Hi, I'm&nbsp;
               <span className="text-[#F95FE7]">
@@ -21,8 +20,8 @@ const Home = () => {
               !
             </h1>
             <img
-              className="hidden md:flex "
-              src="./src/assets/images/rotating-circle.svg"
+              className="hidden md:flex"
+              src={disk}
               alt="pragati vishkwakarma resume"
             />
           </div>
@@ -49,7 +48,7 @@ const Home = () => {
                 <span>See Work</span>
                 <img
                   className="w-6 md:w-8"
-                  src="./src/assets/images/arrow.svg"
+                  src={arrow}
                   alt="arrow vector for button"
                 />
               </a>
