@@ -5,6 +5,8 @@ import {
 } from "react-router-dom";
 import Home from "./pages/Home";
 import Navbar from "./components/Navbar";
+// eslint-disable-next-line
+import Project1 from "./pages/projects/Project1";
 
 const NotFound = () => (
   <div className="flex flex-col items-center justify-center min-h-screen">
@@ -17,9 +19,15 @@ function App() {
   return (
     <BrowserRouter>
       <div>
+        <Navbar />
         <main>
-          <Navbar />
-          <Home />
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route
+              path="/projects/project1"
+              element={<Project1 />}
+            />
+          </Routes>
         </main>
       </div>
     </BrowserRouter>

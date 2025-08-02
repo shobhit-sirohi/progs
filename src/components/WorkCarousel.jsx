@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 import useEmblaCarousel from "embla-carousel-react";
 import { useCallback, useEffect, useState } from "react";
 import "../App.css";
@@ -39,7 +40,7 @@ const WorkCarousel = () => {
       description:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit dolor sit amet",
       image: project1,
-      link: "#",
+      link: "/projects/project1",
     },
     {
       id: 2,
