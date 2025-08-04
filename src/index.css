@@ -1,3 +1,32 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.frosted-card {
+  position: relative;
+  border-radius: 40px;
+  overflow: hidden;
+  padding: 30px;
+  color: white;
+  background: linear-gradient(180deg, rgba(231, 64, 235, 0.15), rgba(59, 25, 156, 0.15));
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+.frosted-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 1px;
+  background: linear-gradient(180deg, #E740EB, #3B199C);
+  border-radius: 40px;
+  z-index: -1;
+  mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  mask-composite: exclude;
+  -webkit-mask-composite: destination-out;
+}

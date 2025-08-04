@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 import useEmblaCarousel from "embla-carousel-react";
 import { useCallback, useEffect, useState } from "react";
 import "../App.css";
+import star from "../assets/images/star-explore.svg";
 
 const ReviewCarousel = () => {
   const [emblaRef, emblaApi] = useEmblaCarousel({
@@ -65,9 +66,15 @@ const ReviewCarousel = () => {
 
   return (
     <div className="flex flex-col items-center gap-4 px-4 md:px-14 lg:px-24">
-      <h2 className="pt-10 pb-4 text-2xl font-bold text-[#F6F5F3] md:text-5xl md:pb-14">
-        Not Just My Words Proof I'm Not Making This Up
-      </h2>
+      <h2 className="flex items-center pt-10 pb-4 md:pb-14">
+              <span className="text-[#F6F5F3] text-2xl font-bold md:text-5xl">
+                Not Just My Words
+              </span>
+              <img className="w-16" src={star} alt="star icon" />
+              <span className="text-[#F6F5F3] text-2xl font-bold md:text-5xl">
+                Proof I'm Not Making This Up
+              </span>
+            </h2>
       <div
         className="relative w-full overflow-hidden"
         ref={emblaRef}
@@ -79,7 +86,7 @@ const ReviewCarousel = () => {
               whileHover={{ scale: 1.01 }}
               className="flex-[0_0_calc(100%-16px)] md:flex-[0_0_calc(50%-32px)] lg:flex-[0_0_calc(33.33%-40px)]"
             >
-              <div className="w-full p-4 rounded-lg shadow-md backdrop-blur-lg bg-[linear-gradient(112.17deg,rgba(231,64,235,0.1)_7.16%,rgba(59,25,156,0.1)_98.02%)]">
+              <div className="frosted-card">
                 <span className="relative z-10">
                   Case Study
                 </span>

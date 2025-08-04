@@ -4,8 +4,11 @@ import useEmblaCarousel from "embla-carousel-react";
 import { useCallback, useEffect, useState } from "react";
 import "../App.css";
 import project1 from "../assets/images/project1.png";
+import project2 from "../assets/images/project2.png";
+import project3 from "../assets/images/project3.png";
 import star from "../assets/images/star-explore.svg";
 import arrow from "../assets/images/arrow.svg";
+import gradient1 from "../assets/images/gradient1.png";
 
 const WorkCarousel = () => {
   const [emblaRef, emblaApi] = useEmblaCarousel({
@@ -47,7 +50,7 @@ const WorkCarousel = () => {
       title: "Name of the Project",
       description:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit dolor sit amet",
-      image: project1,
+      image: project2,
       link: "#",
     },
     {
@@ -55,46 +58,29 @@ const WorkCarousel = () => {
       title: "Name of the Project",
       description:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit dolor sit amet",
-      image: project1,
+      image: project3,
       link: "#",
-    },
-    {
-      id: 4,
-      title: "Name of the Project",
-      description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit dolor sit amet",
-      image: { project1 },
-      link: "#",
-    },
-    {
-      id: 5,
-      title: "Name of the Project",
-      description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit dolor sit amet",
-      image: { project1 },
-      link: "#",
-    },
-    {
-      id: 6,
-      title: "Name of the Project",
-      description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit dolor sit amet",
-      image: { project1 },
-      link: "#",
-    },
+    }
   ];
 
   return (
-    <div className="flex flex-col items-center gap-4 px-4 md:px-14 lg:px-24">
-      <h2 className="flex pt-10 pb-4 md:pb-14">
+    <div className="relative min-h-screen overflow-hidden">
+      <img
+    src={gradient1}
+    alt="Left gradient"
+    className="absolute top-0 left-0 w-auto h-full max-w-none "
+      />
+      {/* z-[-1] opacity-40 */}
+    <div className="relative z-10 flex flex-col items-center gap-4 px-4 al md:px-14 lg:px-24">
+      <h2 className="flex items-center pt-10 pb-4 md:pb-14">
         <span className="text-[#F6F5F3] text-2xl font-bold md:text-5xl">
           Look
         </span>
-        <img className="" src={star} alt="" />
+        <img className="w-16" src={star} alt="star icon" />
         <span className="text-[#F6F5F3] text-2xl font-bold md:text-5xl">
           Click
         </span>
-        <img src={star} alt="" />
+        <img className="w-16" src={star} alt="star icon" />
         <span className="text-[#F6F5F3] text-2xl font-bold md:text-5xl">
           Explore
         </span>
@@ -114,8 +100,9 @@ const WorkCarousel = () => {
                 href={project.link}
                 className="block w-full h-full"
               >
-                <div className="w-full p-1 bg-gradient-to-r from-[#E740EB] to-[#3B199C] rounded-xl md:rounded-2xl lg:rounded-3xl ">
-                  <div className="w-full p-4 bg-[linear-gradient(112.17deg,rgba(231,64,235,0.15)_7.16%,rgba(59,25,156,0.15)_98.02%)] md:p-6 lg:p-8 rounded-xl md:rounded-2xl lg:rounded-3xl ">
+                {/* <div className="w-full p-1 rounded-xl md:rounded-2xl lg:rounded-3xl ">
+                  <div className="w-full p-4 backdrop-blur-[15px] bg-[linear-gradient(180deg,rgba(231,64,235,0.15)_0%,rgba(59,25,156,0.15)_100%)] md:p-6 lg:p-8 rounded-xl md:rounded-2xl lg:rounded-3xl "> */}
+                    <div className="frosted-card">
                     <img
                       className="object-cover w-full rounded-xl md:rounded-2xl lg:rounded-3xl"
                       src={project.image}
@@ -140,7 +127,7 @@ const WorkCarousel = () => {
                       href="#"
                     >
                       <span className="text-white">
-                        See Work
+                        {project.button}
                       </span>
                       <img
                         className="w-4 md:w-6 lg:w-8"
@@ -148,7 +135,6 @@ const WorkCarousel = () => {
                         alt="arrow vector for button"
                       />
                     </a>
-                  </div>
                 </div>
               </a>
             </motion.div>
@@ -169,7 +155,8 @@ const WorkCarousel = () => {
           />
         ))}
       </div>
-    </div>
+      </div>
+      </div>
   );
 };
 
