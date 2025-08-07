@@ -2,7 +2,7 @@ import WorkCarousel from "../components/WorkCarousel";
 import ReviewCarousel from "../components/ReviewCarousel";
 import Chair from "../components/Chair";
 import stars from "../assets/images/stars.svg";
-import disk from "../assets/images/rotating-circle.svg";
+import disk from "../assets/images/rotating-circle.png";
 import arrow from "../assets/images/arrow.svg";
 import hero from "../assets/images/hero.png";
 import footer from "../assets/images/footer-image.png";
@@ -23,7 +23,7 @@ const Home = () => {
               !
             </h1>
             <img
-              className="hidden md:flex"
+              className="hidden md:flex animate-spin-slow"
               src={disk}
               alt="pragati vishkwakarma resume"
             />
@@ -67,7 +67,7 @@ const Home = () => {
         </div>
       </section>
       <section className="bg-black">
-        <WorkCarousel />
+        <WorkCarousel id="work" />
         <Chair />
         <ReviewCarousel />
       </section>
