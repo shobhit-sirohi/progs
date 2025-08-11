@@ -7,31 +7,62 @@ import arrow from "../assets/images/arrow.svg";
 import hero from "../assets/images/hero.png";
 import footer from "../assets/images/footer-image.png";
 import gmail from "../assets/images/gmail.png";
+import { motion } from "framer-motion";
+import { useState, useEffect } from "react";
+
+const changingWords = ["products.", "pixels.", "people."];
 
 const Home = () => {
+  const [index, setIndex] = useState(0);
+
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setIndex((prev) => (prev + 1) % changingWords.length);
+    }, 2000); // Change every 2 seconds
+    return () => clearInterval(timer);
+  }, []);
+
+  // Split the current word into letters
+  const letters = changingWords[index].split("");
+
   return (
     <div>
       <section className="items-center justify-center px-4 text-white bg-black md:min-h-fit md:px-14 lg:px-24">
         <div className="w-full text-center ">
-          <div className="flex items-center justify-center w-full pt-10">
+          <div className="relative flex items-center justify-center w-full pt-10">
             <img className="mr-4 lg:w-24 w-14" src={stars} alt="purple stars sticker" />
-            <h1 className="text-3xl font-bold lg:text-8xl">
+            <h1 className="relative text-3xl font-bold lg:text-[80px]">
               Hi, I'm&nbsp;
               <span className="text-[#F95FE7]">
                 Pragati&nbsp;
               </span>
-              !
-            </h1>
-            <img
-              className="hidden md:flex animate-spin-slow"
+              <span className="relative inline-block">!</span>
+              <motion.img
+                className="absolute hidden pointer-events-none md:flex w-26 lg:w-[150px] "
+                style={{left:"96%", top: "5%", transform:"translate(-50%, -50%)", zIndex: 10}}
               src={disk}
-              alt="pragati vishkwakarma resume"
+                alt="pragati vishkwakarma resume"
+                animate={{ rotate: 360 }}
+                transition={{repeat: Infinity, duration: 20, ease: "linear"}}
             />
+            </h1>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2">
             <div className="flex flex-col items-center justify-center md:items-start md:order-1">
-              <h2 className="pt-10 pb-4 text-2xl font-bold md:text-5xl md:pb-14">
-                I see patterns. In products.
+              <h2 className="flex gap-2 pt-10 pb-4 text-2xl font-bold md:text-5xl md:pb-14">
+                I see patterns. In
+                <span className="flex ">
+                  {letters.map((char, i) => (
+                    <motion.span
+                      key={char + i + index}
+                      initial={{ opacity: 0, x: -30 }}
+                      animate={{ opacity: 1, x: 0 }}
+                      transition={{ duration: 0.4, delay: i * 0.10 }}
+                    >
+                      {char}
+                    </motion.span>
+                  ))}
+                </span>
               </h2>
               <p className="pb-4 text-center md:text-start md:text-xl md:pb-7">
                 I don’t just design screens — I throw
@@ -46,7 +77,7 @@ const Home = () => {
               </span>
               <a
                 className="flex max-w-fit py-2 px-4 gap-2 md:text-xl rounded-full bg-[#F95FE7] md:mb-8"
-                href="#"
+                href="#work"
               >
                 <span>See Work</span>
                 <img
@@ -66,8 +97,8 @@ const Home = () => {
           </div>
         </div>
       </section>
-      <section className="bg-black">
-        <WorkCarousel id="work" />
+      <section className="bg-black" id="work" >
+        <WorkCarousel />
         <Chair />
         <ReviewCarousel />
       </section>

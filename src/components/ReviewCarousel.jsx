@@ -3,6 +3,8 @@ import useEmblaCarousel from "embla-carousel-react";
 import { useCallback, useEffect, useState } from "react";
 import "../App.css";
 import star from "../assets/images/star-explore.svg";
+import shobhit from "../assets/images/star-explore.svg";
+
 
 const ReviewCarousel = () => {
   const [emblaRef, emblaApi] = useEmblaCarousel({
@@ -34,33 +36,45 @@ const ReviewCarousel = () => {
   const reviews = [
     {
       id: 1,
-      text: "Great work!",
-      author: "Client 1",
+      text: "Pragati’s a design wizard, an even better human, and a natural leader who lifts everyone around her — absolute vibe to work with.",
+      author: "Shobhit Sirohi",
+      image: shobhit,
+      designation: "Front-End Dev",
     },
     {
       id: 2,
-      text: "Great work!",
-      author: "Client 2",
+      text: "Working with Pragati is easily the most fun and productive experience I’ve had! She’s always on top of things, isn’t afraid to express her ideas on how to improve designs, and has a keen eye for details at every step of the way. She’s chirpy, professional, and a go-getter. Can’t wait for the next collab!",
+      author: "Abhishek K Patil",
+       image: shobhit,
+      designation: "Product Marketing Lead",
     },
     {
       id: 3,
       text: "Great work!",
       author: "Client 3",
+       image: shobhit,
+      designation: "Front-End Dev",
     },
     {
       id: 4,
       text: "Great work!",
       author: "Client 4",
+       image: shobhit,
+      designation: "Front-End Dev",
     },
     {
       id: 5,
       text: "Great work!",
       author: "Client 5",
+       image: shobhit,
+      designation: "Front-End Dev",
     },
     {
       id: 6,
       text: "Great work!",
       author: "Client 6",
+       image: shobhit,
+      designation: "Front-End Dev",
     },
   ];
 
@@ -87,15 +101,20 @@ const ReviewCarousel = () => {
               className="flex-[0_0_calc(100%-16px)] md:flex-[0_0_calc(50%-32px)] lg:flex-[0_0_calc(33.33%-40px)]"
             >
               <div className="frosted-card">
-                <span className="relative z-10">
-                  Case Study
-                </span>
-                <p className="relative z-10 mb-2 text-gray-300">
-                  "{review.text}"
+                <p className="relative z-10 mb-2 text-base text-gray-300">
+                  {review.text}
                 </p>
-                <p className="relative z-10 font-bold text-white">
-                  - {review.author}
+                <div className="flex items-center justify-start gap-2"> 
+                <img src={review.image} alt=""/>
+                <div>
+                <p className="relative z-10 text-base font-bold text-white">
+                  {review.author}
                 </p>
+                <span>
+                  {review.designation}
+                    </span>
+                    </div>
+                  </div>
               </div>
             </motion.div>
           ))}

@@ -41,8 +41,9 @@ const WorkCarousel = () => {
       id: 1,
       title: "Name of the Project",
       description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit dolor sit amet",
+        "Pragati’s a design wizard and an even better human. Absolute vibe to work with and a natural leader who makes the whole team better.",
       image: project1,
+      button: "See Work",
       link: "/projects/project1",
     },
     {
@@ -51,6 +52,7 @@ const WorkCarousel = () => {
       description:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit dolor sit amet",
       image: project2,
+      button: "See Work",
       link: "#",
     },
     {
@@ -59,6 +61,7 @@ const WorkCarousel = () => {
       description:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit dolor sit amet",
       image: project3,
+      button: "See Work",
       link: "#",
     }
   ];
@@ -141,7 +144,6 @@ const WorkCarousel = () => {
           ))}
         </div>
       </div>
-
       <div className="flex gap-2 mt-4">
         {work.map((_, index) => (
           <button
