@@ -9,6 +9,8 @@ import project3 from "../assets/images/project3.png";
 import star from "../assets/images/star-explore.svg";
 import arrow from "../assets/images/arrow.svg";
 import gradient1 from "../assets/images/gradient1.png";
+import gradient2 from "../assets/images/gradient-top-1.png";
+import gradient3 from "../assets/images/gradient-top-2.png";
 
 const WorkCarousel = () => {
   const [emblaRef, emblaApi] = useEmblaCarousel({
@@ -39,39 +41,62 @@ const WorkCarousel = () => {
   const work = [
     {
       id: 1,
-      title: "Name of the Project",
+      title: "HDFC Bank Mobile App",
       description:
-        "Pragati’s a design wizard and an even better human. Absolute vibe to work with and a natural leader who makes the whole team better.",
+        "Reimagining the HDFC mobile app for clarity, speed and everyday usability.",
       image: project1,
-      button: "See Work",
+      button: "Read Case Study",
       link: "/projects/project1",
     },
     {
       id: 2,
-      title: "Name of the Project",
+      title: "My Portfolio Project",
       description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit dolor sit amet",
+        "Translating who I am into pixels and pages.",
       image: project2,
-      button: "See Work",
+      button: "View Project",
       link: "#",
     },
     {
       id: 3,
-      title: "Name of the Project",
+      title: "Food Concierge App (TBD)",
       description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit dolor sit amet",
+        "A food concierge app for personalized, mood-based dining experiences.",
       image: project3,
-      button: "See Work",
+      button: "Coming Soon",
+      link: "#",
+    },
+    {
+      id: 3,
+      title: "My Artworks",
+      description:
+        "Where I create for no reason but joy.",
+      image: project3,
+      button: "View Gallery",
       link: "#",
     }
   ];
 
   return (
     <div className="relative min-h-screen overflow-hidden">
+      {/* Left gradient */}
       <img
-    src={gradient1}
-    alt="Left gradient"
-    className="absolute top-0 left-0 w-auto h-full max-w-none "
+        src={gradient1}
+        alt="Left gradient"
+        className="absolute top-0 left-0 w-auto h-full max-w-none"
+      />
+      {/* Top gradients, half out */}
+      <img
+        src={gradient2}
+        alt="Top gradient 1"
+        className="absolute left-0 w-full max-w-none"
+        style={{ top: "-650px", zIndex: 1, left: "-100px" }}
+      />
+      <img
+        src={gradient3}
+        alt="Top gradient 2"
+        className="absolute left-0 w-full max-w-none"
+        style={{ top: "-680px", zIndex: 2, left: "300px" }}
       />
       {/* z-[-1] opacity-40 */}
     <div className="relative z-10 flex flex-col items-center gap-4 px-4 al md:px-14 lg:px-24">
@@ -92,52 +117,46 @@ const WorkCarousel = () => {
         className="relative w-full overflow-hidden"
         ref={emblaRef}
       >
-        <div className="flex gap-4 mt-2 mb-2 md:gap-8 lg:gap-14">
+        <div className="flex items-stretch gap-4 mt-2 mb-2 md:gap-8 lg:gap-14">
           {work.map((project) => (
             <motion.div
               key={project.id}
               whileHover={{ scale: 1.01 }}
-              className="flex-[0_0_calc(100%-16px)] md:flex-[0_0_calc(50%-32px)] lg:flex-[0_0_calc(33.33%-40px)]"
+              className="flex-[0_0_calc(100%-16px)] md:flex-[0_0_calc(50%-32px)] lg:flex-[0_0_calc(33.33%-40px)] flex"
             >
               <a
                 href={project.link}
                 className="block w-full h-full"
               >
-                {/* <div className="w-full p-1 rounded-xl md:rounded-2xl lg:rounded-3xl ">
-                  <div className="w-full p-4 backdrop-blur-[15px] bg-[linear-gradient(180deg,rgba(231,64,235,0.15)_0%,rgba(59,25,156,0.15)_100%)] md:p-6 lg:p-8 rounded-xl md:rounded-2xl lg:rounded-3xl "> */}
-                    <div className="frosted-card">
-                    <img
-                      className="object-cover w-full rounded-xl md:rounded-2xl lg:rounded-3xl"
-                      src={project.image}
-                      alt={project.title}
-                    />
-                    <p className="text-[#B794FF] flex gap-1 mt-2 md:mt-3 lg:mt-4 text-sm md:text-base">
-                      <img
-                        src={star}
-                        alt=""
-                        className="w-4 md:w-5"
-                      />
-                      Case Study
-                    </p>
-                    <h3 className="mt-2 text-xl font-bold text-white md:mt-3 lg:mt-4 md:text-2xl">
-                      {project.title}
-                    </h3>
-                    <p className="mt-2 text-sm text-white md:mt-3 md:text-base">
-                      {project.description}
-                    </p>
+                <div className="flex flex-col h-full frosted-card">
+                  <img
+                    className="object-cover w-full rounded-xl md:rounded-2xl lg:rounded-3xl"
+                    src={project.image}
+                    alt={project.title}
+                  />
+                  <p className="text-[#B794FF] flex gap-1 mt-2 md:mt-3 lg:mt-4 text-sm md:text-base">
+                    <img src={star} alt="" className="w-4 md:w-5" />
+                    Case Study
+                  </p>
+                  <h3 className="mt-2 text-xl font-bold text-white md:mt-3 lg:mt-4 md:text-2xl">
+                    {project.title}
+                  </h3>
+                  <p className="mt-2 text-sm text-white md:mt-3 md:text-base">
+                    {project.description}
+                  </p>
+                  <div className="pt-2 mt-auto">
                     <a
-                      className="flex max-w-fit items-center py-1.5 md:py-2 px-3 md:px-4 gap-2 text-sm md:text-base lg:text-xl mt-4 md:mt-5 rounded-full bg-[#F95FE7]"
+                      className="flex max-w-fit items-center py-1.5 md:py-2 px-3 md:px-4 gap-2 text-sm md:text-base lg:text-xl rounded-full bg-[#F95FE7]"
                       href="#"
                     >
-                      <span className="text-white">
-                        {project.button}
-                      </span>
+                      <span className="text-white">{project.button}</span>
                       <img
                         className="w-4 md:w-6 lg:w-8"
                         src={arrow}
                         alt="arrow vector for button"
                       />
                     </a>
+                  </div>
                 </div>
               </a>
             </motion.div>

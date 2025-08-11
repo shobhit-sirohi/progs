@@ -2,8 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-
-
 .frosted-card {
   position: relative;
   border-radius: 40px;

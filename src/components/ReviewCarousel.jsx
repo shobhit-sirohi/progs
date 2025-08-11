@@ -3,7 +3,7 @@ import useEmblaCarousel from "embla-carousel-react";
 import { useCallback, useEffect, useState } from "react";
 import "../App.css";
 import star from "../assets/images/star-explore.svg";
-import shobhit from "../assets/images/star-explore.svg";
+import sushri from "../assets/images/sushri.png";
 
 
 const ReviewCarousel = () => {
@@ -38,43 +38,36 @@ const ReviewCarousel = () => {
       id: 1,
       text: "Pragati’s a design wizard, an even better human, and a natural leader who lifts everyone around her — absolute vibe to work with.",
       author: "Shobhit Sirohi",
-      image: shobhit,
+      image: sushri,
       designation: "Front-End Dev",
     },
     {
       id: 2,
       text: "Working with Pragati is easily the most fun and productive experience I’ve had! She’s always on top of things, isn’t afraid to express her ideas on how to improve designs, and has a keen eye for details at every step of the way. She’s chirpy, professional, and a go-getter. Can’t wait for the next collab!",
       author: "Abhishek K Patil",
-       image: shobhit,
+       image: sushri,
       designation: "Product Marketing Lead",
     },
     {
       id: 3,
-      text: "Great work!",
-      author: "Client 3",
-       image: shobhit,
-      designation: "Front-End Dev",
+      text: "Pragati supported us in designing a comprehensive report, delivering everything on time and with great attention to detail. She handled multiple iterations with patience and efficiency. She’s an absolute pleasure to work with!",
+      author: "Sushri Padhi",
+       image: sushri,
+      designation: "Associate",
     },
     {
       id: 4,
-      text: "Great work!",
-      author: "Client 4",
-       image: shobhit,
-      designation: "Front-End Dev",
+      text: "Pragati made my job easier. She’s proactive, dependable, and knows how to manage feedback without getting overwhelmed. What I appreciated the most was her calm approach in the face of tight deadlines, where she stayed focused and delivered great work.",
+      author: "Gowtham Sai",
+       image: sushri,
+      designation: "Motion Graphic Designer",
     },
     {
       id: 5,
-      text: "Great work!",
-      author: "Client 5",
-       image: shobhit,
-      designation: "Front-End Dev",
-    },
-    {
-      id: 6,
-      text: "Great work!",
-      author: "Client 6",
-       image: shobhit,
-      designation: "Front-End Dev",
+      text: "It was a great experience working with Pragati. She quickly understood all the concepts and requirements, delivering exactly what we needed. Fun to work with and a great asset to any team, I’d recommend her to anyone looking for a designer.",
+      author: "Aditya Kumar",
+       image: sushri,
+      designation: "Co Founder, Inhouse Digtal",
     },
   ];
 
@@ -93,28 +86,28 @@ const ReviewCarousel = () => {
         className="relative w-full overflow-hidden"
         ref={emblaRef}
       >
-        <div className="flex gap-8 mt-2 mb-2">
+        <div className="flex items-stretch gap-8 mt-2 mb-2">
           {reviews.map((review) => (
             <motion.div
               key={review.id}
               whileHover={{ scale: 1.01 }}
-              className="flex-[0_0_calc(100%-16px)] md:flex-[0_0_calc(50%-32px)] lg:flex-[0_0_calc(33.33%-40px)]"
+              className="flex-[0_0_calc(100%-16px)] md:flex-[0_0_calc(50%-32px)] lg:flex-[0_0_calc(33.33%-40px)] flex"
             >
-              <div className="frosted-card">
+              <div className="flex flex-col h-full frosted-card">
                 <p className="relative z-10 mb-2 text-base text-gray-300">
                   {review.text}
                 </p>
-                <div className="flex items-center justify-start gap-2"> 
-                <img src={review.image} alt=""/>
-                <div>
-                <p className="relative z-10 text-base font-bold text-white">
-                  {review.author}
-                </p>
-                <span>
-                  {review.designation}
+                <div className="flex items-center justify-start gap-4 mt-auto"> 
+                  <img src={review.image} alt=""/>
+                  <div>
+                    <p className="relative z-10 text-base font-bold text-white">
+                      {review.author}
+                    </p>
+                    <span className="text-[#F95FE7]">
+                      {review.designation}
                     </span>
-                    </div>
                   </div>
+                </div>
               </div>
             </motion.div>
           ))}

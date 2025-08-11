@@ -7,6 +7,10 @@ import arrow from "../assets/images/arrow.svg";
 import hero from "../assets/images/hero.png";
 import footer from "../assets/images/footer-image.png";
 import gmail from "../assets/images/gmail.png";
+import instagram from "../assets/images/instagram.png";
+import behance from "../assets/images/behance.png";
+import linkedin from "../assets/images/linkedin.png";
+import chatSticker from "../assets/images/testimonial-sticker.svg";
 import { motion } from "framer-motion";
 import { useState, useEffect } from "react";
 
@@ -27,9 +31,9 @@ const Home = () => {
 
   return (
     <div>
-      <section className="items-center justify-center px-4 text-white bg-black md:min-h-fit md:px-14 lg:px-24">
+      <section className="items-center justify-center px-4 text-white bg-black xl:min-h-fit 2xl:min-h-screen md:px-14 lg:px-24">
         <div className="w-full text-center ">
-          <div className="relative flex items-center justify-center w-full pt-10">
+          <div className="relative flex items-center justify-center w-full pt-20">
             <img className="mr-4 lg:w-24 w-14" src={stars} alt="purple stars sticker" />
             <h1 className="relative text-3xl font-bold lg:text-[80px]">
               Hi, I'm&nbsp;
@@ -49,7 +53,7 @@ const Home = () => {
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2">
             <div className="flex flex-col items-center justify-center md:items-start md:order-1">
-              <h2 className="flex gap-2 pt-10 pb-4 text-2xl font-bold md:text-5xl md:pb-14">
+              <h2 className="flex gap-2 pt-10 pb-2 text-2xl font-bold md:text-5xl md:pb-10">
                 I see patterns. In
                 <span className="flex ">
                   {letters.map((char, i) => (
@@ -64,16 +68,11 @@ const Home = () => {
                   ))}
                 </span>
               </h2>
-              <p className="pb-4 text-center md:text-start md:text-xl md:pb-7">
-                I don’t just design screens — I throw
-                colors, patterns, and a bit of chaos at them
-                until they smile back :) UX is my
-                playground, organizing is my superpower, and
-                fun? That’s non-negotiable.
+              <p className="pb-4 text-center lg:pr-20 md:text-start md:text-xl md:pb-7">
+                I do more than just design screens. I throw colors, textures, and a little chaos at them until they smile back. :) UX is my playground, and organizing is my superpower. And when it comes to having fun? That's non-negotiable.
               </p>
               <span className="text-base md:text-xl italic text-[#D9C7FF] font-semibold pb-4 md:pb-14">
-                Let’s make work that feels as good as a
-                fresh box of crayons.
+                Let's create something that feels as fresh as a new box of crayons.
               </span>
               <a
                 className="flex max-w-fit py-2 px-4 gap-2 md:text-xl rounded-full bg-[#F95FE7] md:mb-8"
@@ -109,27 +108,46 @@ const Home = () => {
           <div className="flex flex-col items-center justify-center col-span-5 row-start-1 row-end-2 ">
             <h2 className="text-3xl font-bold text-white md:text-6xl">Let's&nbsp;
               <span className="text-[#F95FE7]">
-                Chat
+                Chat.
               </span>
               </h2>
-            <div className="flex gap-2">
+          </div>
+          <div className="flex items-start justify-center col-span-5 row-start-2 row-end-3 gap-2">
               <img src={gmail} alt="gmail icon" />
-              <img src={gmail} alt="gmail icon" />
-              <img src={gmail} alt="gmail icon" />
-              <img src={gmail} alt="gmail icon" />
+              <img src={linkedin} alt="linkedin icon" />
+              <img src={behance} alt="behance icon" />
+              <img src={instagram} alt="instagram icon" />
             </div>
-          </div>
           {/* Disk - Row 1, col 6-7 */}
-          <div className="flex items-center justify-center col-span-2 row-start-1 row-end-2">
-            <img className="hidden md:flex" src={disk} alt="pragati vishkwakarma resume" />
-          </div>
+          <div className="relative flex items-center justify-center col-span-2 row-start-1 row-end-3">
+  <motion.img
+    className="hidden md:flex w-26 lg:w-[150px]"
+    src={disk}
+    alt="pragati vishkwakarma resume"
+    animate={{ rotate: 360 }}
+    transition={{ repeat: Infinity, duration: 20, ease: "linear" }}
+    style={{ zIndex: 10 }}
+  />
+  <img
+    className="hidden md:flex w-40 lg:w-[150px] rotate-[-12deg]"
+    src={chatSticker}
+    alt="lets chat sticker by pragati"
+    style={{
+      position: "absolute",
+      left: 0,
+      bottom: 0,
+      zIndex: 11,
+      transform: "rotate(-12deg) translateY(10%) translateY(-10%)"
+    }}
+  />
+</div>
           {/* Footer Image - spans all 3 rows, col 8-12 */}
           <div className="flex items-center justify-center col-span-5 row-start-1 row-end-4 ">
             <img className="hidden md:flex" src={footer} alt="pragati vishkwakarma illustration" />
           </div>
           {/* "7" - Row 3, col 1-7 */}
           <div className="flex items-center justify-center h-24 col-span-7 row-start-3 row-end-4 text-sm ">
-            <p className="text-[#FFFFFF80]">© 2025 Pragati. All rights reserved. Please don’t copy, steal, or “get inspired” a little too hard — I see you. Every pixel, brushstroke, and late-night idea here was made with too much coffee, too little sleep, and a whole lot of love. Respect the craft, share the vibes, and remember: creative karma is real. Deployed with 🩶 by <a className="hover:underline" href="https://shobhit.dev/" target="_blank">Shobhit</a>.</p>
+            <p className="text-[#FFFFFF80]">© 2025 Pragati. All rights reserved. Please don’t copy, steal, or “get inspired” a little too hard — I see you. Every pixel, brushstroke, and late-night idea here was made with too much coffee, too little sleep, and a whole lot of love. Respect the craft, share the vibes, and remember: creative karma is real. Shipped by <a className="hover:underline" href="https://shobhit.dev/" target="_blank">Shobhit.</a></p>
           </div>
         </div>
       </section>

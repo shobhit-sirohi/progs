@@ -16,21 +16,27 @@ export default function Chair() {
         />
 
         {/* Floating Mandalas */}
-        <img
-          src={mandala1}
-          alt="Mandala"
-          className="absolute z-20 h-[15rem] top-[20rem] left-[3rem] md:w-[15rem] md:h-[15rem]"
-        />
-        <img
-          src={mandala2}
-          alt="Mandala"
-          className="absolute z-20 w-24 h-24 top-4 right-[12rem] md:w-[17rem] md:h-[17rem]"
-        />
-        <img
-          src={mandala3}
-          alt="Mandala"
-          className="absolute z-20 w-20 h-20 bottom-[8rem] right-[8rem] md:w-[10rem] md:h-[10rem]"
-        />
+        <div className="absolute z-20 top-[20rem] left-[3rem] md:w-[15rem] md:h-[15rem] frosted-mandala flex items-center justify-center overflow-hidden">
+          <img
+            src={mandala1}
+            alt="Mandala"
+            className="w-[80%] h-[80%] object-contain"
+          />
+        </div>
+        <div className="absolute z-20 top-4 right-[12rem] md:w-[17rem] md:h-[17rem] frosted-mandala flex items-center justify-center overflow-hidden">
+          <img
+            src={mandala2}
+            alt="Mandala"
+            className="w-[80%] h-[80%] object-contain"
+          />
+        </div>
+        <div className="absolute z-20 bottom-[8rem] right-[8rem] md:w-[10rem] md:h-[10rem] frosted-mandala flex items-center justify-center overflow-hidden">
+          <img
+            src={mandala3}
+            alt="Mandala"
+            className="w-[80%] h-[80%] object-contain"
+          />
+        </div>
 
         {/* Floating Text */}
         <div className="absolute z-20 text-center text-white transform -translate-x-1/2 top-10 left-[15rem]">
