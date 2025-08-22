@@ -54,7 +54,7 @@ const Home = () => {
           <div className="grid grid-cols-1 md:grid-cols-2">
             <div className="flex flex-col items-center justify-center md:items-start md:order-1">
               <h2 className="flex gap-2 pt-10 pb-2 text-2xl font-bold md:text-5xl md:pb-10">
-                I see patterns. In
+                I see patterns: In
                 <span className="flex ">
                   {letters.map((char, i) => (
                     <motion.span
@@ -68,8 +68,11 @@ const Home = () => {
                   ))}
                 </span>
               </h2>
+              <p className="text-center lg:pr-20 md:text-start md:text-xl">
+                I do more than just design screens. I throw colors, textures, and a little chaos at them until they smile back. :)
+              </p>
               <p className="pb-4 text-center lg:pr-20 md:text-start md:text-xl md:pb-7">
-                I do more than just design screens. I throw colors, textures, and a little chaos at them until they smile back. :) UX is my playground, and organizing is my superpower. And when it comes to having fun? That's non-negotiable.
+                 UX is my playground, and organizing is my superpower. And when it comes to having fun? That's non-negotiable.
               </p>
               <span className="text-base md:text-xl italic text-[#D9C7FF] font-semibold pb-4 md:pb-14">
                 Let's create something that feels as fresh as a new box of crayons.
@@ -105,21 +108,21 @@ const Home = () => {
         {/* footer starts here */}
         <div className="grid grid-cols-12 grid-rows-3 gap-4 p-4 pb-0">
           {/* Let's Chat - Row 1, col 1-5 */}
-          <div className="flex flex-col items-center justify-center col-span-5 row-start-1 row-end-2 ">
+          <div className="flex flex-col justify-end col-span-5 row-start-1 row-end-2 ">
             <h2 className="text-3xl font-bold text-white md:text-6xl">Let's&nbsp;
               <span className="text-[#F95FE7]">
                 Chat.
               </span>
               </h2>
           </div>
-          <div className="flex items-start justify-center col-span-5 row-start-2 row-end-3 gap-2">
-              <img src={gmail} alt="gmail icon" />
-              <img src={linkedin} alt="linkedin icon" />
-              <img src={behance} alt="behance icon" />
-              <img src={instagram} alt="instagram icon" />
+          <div className="flex items-start col-span-5 row-start-2 row-end-3 gap-2">
+              <a href="mailto:pragativishwakarma.work@gmail.com"><img src={gmail} alt="gmail icon" /></a>
+              <a href="https://www.linkedin.com/in/pragati-vishwakarma-886372194/" target="_blank"><img src={linkedin} alt="linkedin icon" /></a>
+              <a href="#"><img src={behance} alt="behance icon" /></a>
+              <a href="https://www.instagram.com/pragati.irl/" target="_blank"><img src={instagram} alt="instagram icon" /></a>
             </div>
           {/* Disk - Row 1, col 6-7 */}
-          <div className="relative flex items-center justify-center col-span-2 row-start-1 row-end-3">
+          <div className="relative flex items-start col-span-2 row-start-1 row-end-3 mt-8 m">
   <motion.img
     className="hidden md:flex w-26 lg:w-[150px]"
     src={disk}
@@ -134,8 +137,8 @@ const Home = () => {
     alt="lets chat sticker by pragati"
     style={{
       position: "absolute",
-      left: 0,
-      bottom: 0,
+      left: -85,
+      bottom: 84,
       zIndex: 11,
       transform: "rotate(-12deg) translateY(10%) translateY(-10%)"
     }}

@@ -6,11 +6,13 @@ import "../App.css";
 import project1 from "../assets/images/project1.png";
 import project2 from "../assets/images/project2.png";
 import project3 from "../assets/images/project3.png";
-import star from "../assets/images/star-explore.svg";
+import project4 from "../assets/images/project4.png";
+import star from "../assets/images/Polygon10.png";
 import arrow from "../assets/images/arrow.svg";
 import gradient1 from "../assets/images/gradient1.png";
 import gradient2 from "../assets/images/gradient-top-1.png";
 import gradient3 from "../assets/images/gradient-top-2.png";
+import polygon from "../assets/images/polygon.svg";
 
 const WorkCarousel = () => {
   const [emblaRef, emblaApi] = useEmblaCarousel({
@@ -19,7 +21,7 @@ const WorkCarousel = () => {
     dragFree: false,
     skipSnaps: false,
     slidesToScroll: 1,
-    containScroll: "keepSnaps",
+    //containScroll: "keepSnaps",
     draggable: true,
     wheelEnabled: true,
   });
@@ -28,9 +30,16 @@ const WorkCarousel = () => {
 
   useEffect(() => {
     if (!emblaApi) return;
-    emblaApi.on("select", () => {
-      setSelectedIndex(emblaApi.selectedScrollSnap());
-    });
+
+    const onSelect = () => setSelectedIndex(emblaApi.selectedScrollSnap());
+    emblaApi.on("select", onSelect);
+
+    // Set initial index on mount
+    setSelectedIndex(emblaApi.selectedScrollSnap());
+
+    return () => {
+      emblaApi.off("select", onSelect);
+    };
   }, [emblaApi]);
 
   const scrollTo = useCallback(
@@ -71,7 +80,7 @@ const WorkCarousel = () => {
       title: "My Artworks",
       description:
         "Where I create for no reason but joy.",
-      image: project3,
+      image: project4,
       button: "View Gallery",
       link: "#",
     }
@@ -117,7 +126,7 @@ const WorkCarousel = () => {
         className="relative w-full overflow-hidden"
         ref={emblaRef}
       >
-        <div className="flex items-stretch gap-4 mt-2 mb-2 md:gap-8 lg:gap-14">
+        <div className="flex items-stretch gap-2 mt-2 mb-2 md:gap-6 lg:gap-10">
           {work.map((project) => (
             <motion.div
               key={project.id}
@@ -128,7 +137,7 @@ const WorkCarousel = () => {
                 href={project.link}
                 className="block w-full h-full"
               >
-                <div className="flex flex-col h-full frosted-card">
+                <div className="flex flex-col h-full mx-2 frosted-card">
                   <img
                     className="object-cover w-full rounded-xl md:rounded-2xl lg:rounded-3xl"
                     src={project.image}
@@ -162,6 +171,15 @@ const WorkCarousel = () => {
             </motion.div>
           ))}
         </div>
+        {/* Arrow button at right */}
+        <button
+          className="absolute right-0 z-20 p-1 -translate-y-1/2 top-1/2"
+          onClick={() => emblaApi && emblaApi.scrollNext()}
+          aria-label="Next work"
+          type="button"
+        >
+          <img src={polygon} alt="Next" className="w-6 h-6" />
+        </button>
       </div>
       <div className="flex gap-2 mt-4">
         {work.map((_, index) => (

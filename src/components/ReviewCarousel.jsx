@@ -2,9 +2,11 @@ import { motion } from "framer-motion";
 import useEmblaCarousel from "embla-carousel-react";
 import { useCallback, useEffect, useState } from "react";
 import "../App.css";
-import star from "../assets/images/star-explore.svg";
+import star from "../assets/images/Polygon10.png";
 import sushri from "../assets/images/sushri.png";
-
+import polygon from "../assets/images/polygon.svg";
+import blackGradient from "../assets/images/black-gradient.png";
+import blueGradient from "../assets/images/bottom-blue-gradient.png";
 
 const ReviewCarousel = () => {
   const [emblaRef, emblaApi] = useEmblaCarousel({
@@ -13,7 +15,7 @@ const ReviewCarousel = () => {
     dragFree: false,
     skipSnaps: false,
     slidesToScroll: 1,
-    containScroll: "keepSnaps",
+    //containScroll: "keepSnaps",
     draggable: true, // Enable mouse/touch dragging
     wheelEnabled: true,
   });
@@ -32,6 +34,11 @@ const ReviewCarousel = () => {
     (index) => emblaApi && emblaApi.scrollTo(index),
     [emblaApi]
   );
+
+  const scrollNext = useCallback(() => {
+    if (!emblaApi) return;
+    emblaApi.scrollNext();
+  }, [emblaApi]);
 
   const reviews = [
     {
@@ -72,7 +79,7 @@ const ReviewCarousel = () => {
   ];
 
   return (
-    <div className="flex flex-col items-center gap-4 px-4 md:px-14 lg:px-24">
+    <div className="relative flex flex-col items-center gap-4 px-4 pb-10 overflow-hidden md:px-14 lg:px-24">
       <h2 className="flex items-center pt-10 pb-4 md:pb-14">
               <span className="text-[#F6F5F3] text-2xl font-bold md:text-5xl">
                 Not Just My Words
@@ -93,7 +100,7 @@ const ReviewCarousel = () => {
               whileHover={{ scale: 1.01 }}
               className="flex-[0_0_calc(100%-16px)] md:flex-[0_0_calc(50%-32px)] lg:flex-[0_0_calc(33.33%-40px)] flex"
             >
-              <div className="flex flex-col h-full frosted-card">
+              <div className="flex flex-col h-full mx-2 frosted-card">
                 <p className="relative z-10 mb-2 text-base text-gray-300">
                   {review.text}
                 </p>
@@ -112,6 +119,22 @@ const ReviewCarousel = () => {
             </motion.div>
           ))}
         </div>
+        {/* Black gradient on the right */}
+        <img
+          src={blackGradient}
+          alt=""
+          className="absolute top-0 right-0 hidden w-auto h-full pointer-events-none select-none md:flex"
+          style={{ zIndex: 10 }}
+        />
+        {/* Arrow button at right */}
+        <button
+          className="absolute z-20 p-2 -translate-y-1/2 rounded-full shadow-lg top-1/2 right-2"
+          onClick={scrollNext}
+          aria-label="Next review"
+          type="button"
+        >
+          <img src={polygon} alt="Next" className="w-6 h-6" />
+        </button>
       </div>
 
       <div className="flex gap-2 mt-4">
@@ -127,6 +150,13 @@ const ReviewCarousel = () => {
           />
         ))}
       </div>
+      {/* Bottom blue gradient */}
+      <img
+        src={blueGradient}
+        alt=""
+        className="absolute lg:bottom-[-750px] left-0 w-full pointer-events-none select-none"
+        style={{ zIndex: 0 }}
+      />
     </div>
   );
 };
