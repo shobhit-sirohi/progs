@@ -18,7 +18,7 @@ const Navbar = () => {
           Work
         </a>
         <a
-          href="/talk"
+          href="#talk"
           className="text-[#F6F5F3] text-md md:text-lg transition-colors hover:text-[#d1d0cd]"
         >
           Let's Talk

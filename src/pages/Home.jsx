@@ -95,7 +95,7 @@ const Home = () => {
                 Let's create something that feels as fresh as a new box of crayons.
               </span>
               <a
-                className="font-convergence flex max-w-fit py-2 px-4 gap-2 md:text-xl rounded-full bg-[#F95FE7] md:mb-8"
+                className="font-convergence flex max-w-fit py-2 px-4 gap-2 md:text-xl rounded-full bg-[#F95FE7] hover:bg-[#b544a7] md:mb-8"
                 href="#work"
               >
                 <span>See Work</span>
@@ -121,7 +121,7 @@ const Home = () => {
         <Chair />
         <ReviewCarousel />
       </section>
-      <section className="items-center justify-center px-4 pt-4 bg-black md:min-h-fit md:px-14 lg:px-24">
+      <section id="talk" className="items-center justify-center px-4 pt-4 bg-black md:min-h-fit md:px-14 lg:px-24">
         {/* footer starts here */}
         <div className="grid grid-cols-12 grid-rows-3 gap-4 p-4 pb-0">
           {/* Let's Chat - Row 1, col 1-5 */}
@@ -153,9 +153,30 @@ const Home = () => {
     animate={{ rotate: 360 }}
     transition={{ repeat: Infinity, duration: 20, ease: "linear" }}
     style={{ zIndex: 10 }}
-  /></a>
+              /></a>
+            <a 
+  href={`https://mail.google.com/mail/?view=cm&fs=1&to=pragativishwakarma.work@gmail.com&su=Let's%20Chat%20with%20Pragati&body=${encodeURIComponent(`
+    <div style="font-family: Arial, sans-serif; max-width: 600px;">
+      <div style="background-color: #2D2D2D; padding: 20px; border-radius: 15px 15px 0 0;">
+        <h2 style="color: #F95FE7; margin: 0; font-size: 24px;">Hey Pragati!</h2>
+      </div>
+      <div style="background-color: #3D3D3D; padding: 20px; border-radius: 0 0 15px 15px;">
+        <p style="color: #ffffff; font-size: 16px;">Here are my two cents:</p>
+        <p style="color: #D9C7FF; font-style: italic; padding: 15px; background-color: #2D2D2D; border-radius: 10px; border-left: 4px solid #F95FE7;">
+          [Your message here]
+        </p>
+        <p style="color: #ffffff; font-size: 14px; margin-top: 20px;">Looking forward to connecting!</p>
+        <hr style="border: 1px solid #4D4D4D; margin: 20px 0;">
+        <p style="color: #AAAAAA; font-size: 12px;">Sent from your portfolio chat sticker ✨</p>
+      </div>
+    </div>
+  `)}`}
+  title="Start a chat with Pragati"
+  target="_blank"
+  rel="noopener noreferrer"
+>
   <img
-    className="hidden md:flex w-40 lg:w-[170px] rotate-[-12deg]"
+    className="hidden md:flex w-40 lg:w-[170px] chat-sticker"
     src={chatSticker}
     alt="lets chat sticker by pragati"
     style={{
@@ -163,9 +184,14 @@ const Home = () => {
       left: -112,
       bottom: 77,
       zIndex: 11,
-      transform: "rotate(-12deg) translateY(10%) translateY(-10%)"
+      transform: "rotate(-12deg) translateY(10%) translateY(-10%)",
+      cursor: "pointer",
+      transition: "transform 0.3s ease"
     }}
+    onMouseOver={(e) => e.currentTarget.style.transform = "rotate(-15deg) translateY(5%) scale(1.05)"}
+    onMouseOut={(e) => e.currentTarget.style.transform = "rotate(-12deg) translateY(10%) translateY(-10%)"}
   />
+</a>
 </div>
           {/* Footer Image - spans all 3 rows, col 8-12 */}
           <div className="flex items-center justify-center col-span-5 row-start-1 row-end-4 ">

@@ -19,9 +19,12 @@ const ReviewCarousel = () => {
     dragFree: false,
     skipSnaps: false,
     slidesToScroll: 1,
-    //containScroll: "keepSnaps",
+    containScroll: false, // Remove containScroll restriction
     draggable: true, // Enable mouse/touch dragging
     wheelEnabled: true,
+    speed: 8, // Add smooth transition speed (lower = slower)
+    startIndex: 0, // Explicitly set start index
+    watchDrag: true // React to drag events for smoother animation
   });
 
   const [selectedIndex, setSelectedIndex] = useState(0);
