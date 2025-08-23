@@ -11,23 +11,43 @@ import instagram from "../assets/images/instagram.png";
 import behance from "../assets/images/behance.png";
 import linkedin from "../assets/images/linkedin.png";
 import chatSticker from "../assets/images/testimonial-sticker.svg";
-import { motion } from "framer-motion";
+import { motion, AnimatePresence } from "framer-motion";
 import { useState, useEffect } from "react";
 
 const changingWords = ["products.", "pixels.", "people."];
 
 const Home = () => {
   const [index, setIndex] = useState(0);
-
+  const [isDeleting, setIsDeleting] = useState(false);
+  const [text, setText] = useState('');
+  
   useEffect(() => {
-    const timer = setInterval(() => {
-      setIndex((prev) => (prev + 1) % changingWords.length);
-    }, 2000); // Change every 2 seconds
-    return () => clearInterval(timer);
-  }, []);
+    const word = changingWords[index];
+    const typingSpeed = 100; // Speed of typing/deleting (in ms)
 
-  // Split the current word into letters
-  const letters = changingWords[index].split("");
+    const type = () => {
+      if (!isDeleting) {
+        // Typing
+        if (text.length < word.length) {
+          setText(word.slice(0, text.length + 1));
+        } else {
+          // Start deleting after a pause
+          setTimeout(() => setIsDeleting(true), 700);
+        }
+      } else {
+        // Deleting
+        if (text.length > 0) {
+          setText(word.slice(0, text.length - 1));
+        } else {
+          setIsDeleting(false);
+          setIndex((prev) => (prev + 1) % changingWords.length);
+        }
+      }
+    };
+
+    const timer = setTimeout(type, typingSpeed);
+    return () => clearTimeout(timer);
+  }, [text, isDeleting, index]);
 
   return (
     <div>
@@ -35,7 +55,7 @@ const Home = () => {
         <div className="w-full text-center ">
           <div className="relative flex items-center justify-center w-full pt-20">
             <img className="mr-4 lg:w-24 w-14" src={stars} alt="purple stars sticker" />
-            <h1 className="relative text-3xl font-bold lg:text-[80px]">
+            <h1 className="relative text-3xl font-bold lg:text-[80px] font-hiragino">
               Hi, I'm&nbsp;
               <span className="text-[#F95FE7]">
                 Pragati&nbsp;
@@ -53,19 +73,10 @@ const Home = () => {
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2">
             <div className="flex flex-col items-center justify-center md:items-start md:order-1">
-              <h2 className="flex gap-2 pt-10 pb-2 text-2xl font-bold md:text-5xl md:pb-10">
+              <h2 className="flex gap-2 pt-10 pb-2 text-2xl font-bold font-hiragino md:text-[40px] md:pb-10">
                 I see patterns: In
-                <span className="flex ">
-                  {letters.map((char, i) => (
-                    <motion.span
-                      key={char + i + index}
-                      initial={{ opacity: 0, x: -30 }}
-                      animate={{ opacity: 1, x: 0 }}
-                      transition={{ duration: 0.4, delay: i * 0.10 }}
-                    >
-                      {char}
-                    </motion.span>
-                  ))}
+                <span className="flex">
+                  {text}
                 </span>
               </h2>
               <p className="text-center lg:pr-20 md:text-start md:text-xl">
