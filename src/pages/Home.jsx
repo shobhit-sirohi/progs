@@ -7,7 +7,7 @@ import arrow from "../assets/images/arrow.svg";
 import hero from "../assets/images/hero.png";
 import footer from "../assets/images/footer-image.png";
 import gmail from "../assets/images/gmail 2.png";
-import instagram from "../assets/images/instagram 1.png";
+import instagram from "../assets/images/Instagram 1.png";
 import behance from "../assets/images/Behance 1.png";
 import linkedin from "../assets/images/Linkedin 1.png";
 import chatSticker from "../assets/images/testimonial-sticker.svg";
