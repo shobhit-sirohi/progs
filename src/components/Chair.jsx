@@ -3,7 +3,7 @@ import  mandala1  from "../assets/images/mandala1.png";
 import  mandala2  from "../assets/images/mandala1.png";
 import mandala3 from "../assets/images/mandala1.png";
 import chair from "../assets/images/sitting-on-chair.png";
-import chairText from "../assets/images/chair-text.svg"; // Import the SVG
+import chairText from "../assets/images/Chair-text.svg"; // Import the SVG
 
 export default function Chair() {
   return (
