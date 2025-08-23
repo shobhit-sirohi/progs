@@ -6,7 +6,6 @@ export default {
       fontFamily: {
         'inter': ['Inter', 'sans-serif'],
         'hiragino': ['Hiragino Kaku Gothic Std', 'sans-serif'],
-        'proxima': ['Proxima Nova', 'sans-serif'],
         'convergence': ['Convergence', 'sans-serif'],
       },
     },

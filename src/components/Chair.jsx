@@ -3,6 +3,7 @@ import  mandala1  from "../assets/images/mandala1.png";
 import  mandala2  from "../assets/images/mandala1.png";
 import mandala3 from "../assets/images/mandala1.png";
 import chair from "../assets/images/sitting-on-chair.png";
+import chairText from "../assets/images/chair-text.svg"; // Import the SVG
 
 export default function Chair() {
   return (
@@ -39,7 +40,7 @@ export default function Chair() {
         </div>
 
         {/* Floating Text */}
-        <div className="absolute z-20 text-center text-white transform -translate-x-1/2 top-10 left-[15rem]">
+        {/* <div className="absolute z-20 text-center text-white transform -translate-x-1/2 top-10 left-[15rem]">
           <p className="max-w-md text-lg italic md:text-xl">
             <span className="text-pink-400">I don't</span>{" "}
             do this all the time, but{" "}
@@ -50,7 +51,13 @@ export default function Chair() {
             </span>{" "}
             just for me.
           </p>
-        </div>
+        </div> */}
+        {/* Floating Text SVG */}
+        <img
+          src={chairText}
+          alt="I don't do this all the time, but when I do, it's a quiet space just for me."
+          className="absolute z-20 max-w-md w-[250px] md:w-[350px] top-10 left-[15rem] transform -translate-x-1/2"
+        />
       </div>
     </section>
   );

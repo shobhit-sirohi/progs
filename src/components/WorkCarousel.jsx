@@ -54,6 +54,7 @@ const WorkCarousel = () => {
       description:
         "Reimagining the HDFC mobile app for clarity, speed and everyday usability.",
       image: project1,
+      tags: ["Case Study","Redesign Project"],
       button: "Read Case Study",
       link: "/projects/project1",
     },
@@ -63,6 +64,7 @@ const WorkCarousel = () => {
       description:
         "Translating who I am into pixels and pages.",
       image: project2,
+      tags: ["Fun Project"],
       button: "View Project",
       link: "#",
     },
@@ -72,15 +74,17 @@ const WorkCarousel = () => {
       description:
         "A food concierge app for personalized, mood-based dining experiences.",
       image: project3,
+      tags: ["Case Study","App Idea"],
       button: "Coming Soon",
       link: "#",
     },
     {
-      id: 3,
+      id: 4,
       title: "My Artworks",
       description:
         "Where I create for no reason but joy.",
       image: project4,
+      tags: ["App Experiments"],
       button: "View Gallery",
       link: "#",
     }
@@ -105,7 +109,7 @@ const WorkCarousel = () => {
         src={gradient3}
         alt="Top gradient 2"
         className="absolute left-0 w-full max-w-none"
-        style={{ top: "-680px", zIndex: 2, left: "300px" }}
+        style={{ top: "-100px", zIndex: 2, left: "300px" }}
       />
       {/* z-[-1] opacity-40 */}
     <div className="relative z-10 flex flex-col items-center gap-4 px-4 al md:px-14 lg:px-24">
@@ -113,11 +117,11 @@ const WorkCarousel = () => {
         <span className="text-[#F6F5F3] text-2xl font-bold md:text-5xl">
           Look
         </span>
-        <img className="w-16" src={star} alt="star icon" />
+        <img className="w-16 mx-[15px]" src={star} alt="star icon" />
         <span className="text-[#F6F5F3] text-2xl font-bold md:text-5xl">
           Click
         </span>
-        <img className="w-16" src={star} alt="star icon" />
+        <img className="w-16 mx-[15px]" src={star} alt="star icon" />
         <span className="text-[#F6F5F3] text-2xl font-bold md:text-5xl">
           Explore
         </span>
@@ -126,48 +130,85 @@ const WorkCarousel = () => {
         className="relative w-full overflow-hidden"
         ref={emblaRef}
       >
-        <div className="flex items-stretch gap-2 mt-2 mb-2 md:gap-6 lg:gap-10">
+        <div className="flex items-stretch gap-2 mt-2 mb-2 md:gap-6 lg:gap-10 font-inter">
           {work.map((project) => (
             <motion.div
               key={project.id}
               whileHover={{ scale: 1.01 }}
               className="flex-[0_0_calc(100%-16px)] md:flex-[0_0_calc(50%-32px)] lg:flex-[0_0_calc(33.33%-40px)] flex"
             >
-              <a
-                href={project.link}
-                className="block w-full h-full"
-              >
-                <div className="flex flex-col h-full mx-2 frosted-card">
-                  <img
-                    className="object-cover w-full rounded-xl md:rounded-2xl lg:rounded-3xl"
-                    src={project.image}
-                    alt={project.title}
-                  />
-                  <p className="text-[#B794FF] flex gap-1 mt-2 md:mt-3 lg:mt-4 text-sm md:text-base">
-                    <img src={star} alt="" className="w-4 md:w-5" />
-                    Case Study
-                  </p>
-                  <h3 className="mt-2 text-xl font-bold text-white md:mt-3 lg:mt-4 md:text-2xl">
-                    {project.title}
-                  </h3>
-                  <p className="mt-2 text-sm text-white md:mt-3 md:text-base">
-                    {project.description}
-                  </p>
-                  <div className="pt-2 mt-auto">
-                    <a
-                      className="flex max-w-fit items-center py-1.5 md:py-2 px-3 md:px-4 gap-2 text-sm md:text-base lg:text-xl rounded-full bg-[#F95FE7]"
-                      href="#"
-                    >
-                      <span className="text-white">{project.button}</span>
-                      <img
-                        className="w-4 md:w-6 lg:w-8"
-                        src={arrow}
-                        alt="arrow vector for button"
-                      />
-                    </a>
+              {project.button === "Coming Soon" ? (
+                // No link wrapper for Coming Soon cards
+                <div className="block w-full h-full">
+                  <div className="flex flex-col h-full mx-2 pointer-events-none frosted-card">
+                    <img
+                      className="object-cover w-full rounded-xl md:rounded-2xl lg:rounded-3xl"
+                      src={project.image}
+                      alt={project.title}
+                    />
+                    <div className="flex flex-wrap gap-2 mt-2 md:mt-3 lg:mt-4">
+                      {project.tags.map((tag, idx) => (
+                        <p key={`${project.id}-tag-${idx}`} className="text-[#B794FF] flex gap-1 text-sm md:text-base">
+                          <img src={star} alt="" className="object-contain w-4 md:w-5" />
+                          {tag}
+                        </p>
+                      ))}
+                    </div>
+                    <h3 className="mt-2 text-xl font-bold text-white md:mt-3 lg:mt-4 md:text-2xl">
+                      {project.title}
+                    </h3>
+                    <p className="mt-2 text-sm text-white md:mt-3 ">
+                      {project.description}
+                    </p>
+                    <div className="pt-6 mt-auto">
+                      <div className="font-convergence max-w-fit py-1.5 md:py-2 px-5 md:px-6 text-sm md:text-base rounded-full border border-[#F95FE7] text-[#F95FE7] bg-[#F95FE733]">
+                        {project.button}
+                      </div>
+                    </div>
                   </div>
                 </div>
-              </a>
+              ) : (
+                // Link wrapper for normal cards
+                <a
+                  href={project.link}
+                  className="block w-full h-full"
+                >
+                  <div className="flex flex-col h-full mx-2 frosted-card">
+                    <img
+                      className="object-cover w-full rounded-xl md:rounded-2xl lg:rounded-3xl"
+                      src={project.image}
+                      alt={project.title}
+                    />
+                    <div className="flex flex-wrap gap-2 mt-2 md:mt-3 lg:mt-4">
+                      {project.tags.map((tag, idx) => (
+                        <p key={`${project.id}-tag-${idx}`} className="text-[#B794FF] flex gap-1 text-sm md:text-base">
+                          <img src={star} alt="" className="object-contain w-4 md:w-5" />
+                          {tag}
+                        </p>
+                      ))}
+                    </div>
+                    <h3 className="mt-2 text-xl font-bold text-white md:mt-3 lg:mt-4 md:text-2xl">
+                      {project.title}
+                    </h3>
+                    <p className="mt-2 text-sm text-white md:mt-3 ">
+                      {project.description}
+                    </p>
+                    <div className="pt-6 mt-auto">
+                      <a
+                        className="font-convergence flex max-w-fit items-center py-1.5 md:py-2 px-3 md:px-4 gap-2 text-sm md:text-base rounded-full bg-[#F95FE7]"
+                        href={project.link}
+                      >
+                        <span className="text-white">{project.button}</span>
+                        <img
+                          className="w-4 md:w-6 lg:w-8"
+                          src={arrow}
+                          alt="arrow vector for button"
+                        />
+                      </a>
+                    </div>
+                  </div>
+                </a>
+              )}
             </motion.div>
           ))}
         </div>
