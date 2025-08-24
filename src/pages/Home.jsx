@@ -1,5 +1,6 @@
 import WorkCarousel from "../components/WorkCarousel";
 import ReviewCarousel from "../components/ReviewCarousel";
+import Navbar from "../components/Navbar";
 import Chair from "../components/Chair";
 import stars from "../assets/images/stars.svg";
 import disk from "../assets/images/rotating-circle.png";
@@ -51,6 +52,7 @@ const Home = () => {
 
   return (
     <div>
+      <Navbar />
       <section className="items-center justify-center px-4 text-white bg-black xl:min-h-fit 2xl:min-h-screen md:px-14 lg:px-24">
         <div className="w-full text-center ">
           <div className="relative flex items-center justify-center w-full pt-20">

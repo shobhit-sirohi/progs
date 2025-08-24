@@ -4,7 +4,6 @@ import {
   Route,
 } from "react-router-dom";
 import Home from "./pages/Home";
-import Navbar from "./components/Navbar";
 // eslint-disable-next-line
 import Project1 from "./pages/projects/Project1";
 
@@ -19,7 +18,6 @@ function App() {
   return (
     <BrowserRouter>
       <div>
-        <Navbar />
         <main>
           <Routes>
             <Route path="/" element={<Home />} />
