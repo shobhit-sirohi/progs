@@ -53,11 +53,11 @@ const Home = () => {
   return (
     <div>
       <Navbar />
-      <section className="items-center justify-center px-4 text-white bg-black xl:min-h-fit 2xl:min-h-screen md:px-14 lg:px-24">
+      <section className="flex items-center justify-between min-h-screen px-4 text-white bg-black md:px-14 lg:px-24" style={{ minHeight: 'calc(100vh - var(--nav-height, 0px))' }}>
         <div className="w-full text-center ">
-          <div className="relative flex items-center justify-center w-full pt-20">
+          <div className="relative flex items-center justify-center w-full pt-8 md:pt-16 xl:pt-20">
             <img className="mr-4 lg:w-24 w-14" src={stars} alt="purple stars sticker" />
-            <h1 className="relative text-3xl font-bold lg:text-[80px] font-hiragino">
+            <h1 className="relative text-3xl md:text-5xl font-bold lg:text-[70px] xl:text-[80px] font-hiragino">
               Hi, I'm&nbsp;
               <span className="text-[#F95FE7]">
                 Pragati&nbsp;
@@ -70,8 +70,8 @@ const Home = () => {
     title="View Pragati's Resume"
   >
               <motion.img
-                className="absolute hidden cursor-pointer md:flex w-26 lg:w-[150px] "
-                style={{left:"96%", top: "5%", transform:"translate(-50%, -50%)", zIndex: 10}}
+                className="absolute hidden cursor-pointer md:flex w-26 md:w-32 xl:w-[150px] "
+                style={{left:"98%", top: "6%", transform:"translate(-50%, -50%)", zIndex: 10}}
               src={disk}
                 alt="pragati vishkwakarma resume"
                 animate={{ rotate: 360 }}

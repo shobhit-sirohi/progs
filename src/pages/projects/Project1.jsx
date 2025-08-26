@@ -1,9 +1,15 @@
 import header from "../../assets/images/Portfolio Header Mockup.png";
+import section2 from "../../assets/images/Laptop-iphone mockup-section-1.png";
+import chatgpt from "../../assets/images/chatgpt-logo.png";
+import moodboard from "../../assets/images/Moodboard.png";
+import long1 from "../../assets/images/Laptop Wireframe.png";
+import long2 from "../../assets/images/Iphone Wireframe.png";
+
 
 const Project1 = () => {
   return (
     <div className="bg-white">
-      <nav className="sticky top-0 z-50 p-4 md:p-6 font-inter
+      <nav className="sticky top-0 z-50 p-4 md:p-6 font-inter text-[#040404]
      md:px-32 bg-[#F0F0F0] shadow-lg">
       <div className="flex items-center space-x-[2rem] md:space-x-[5rem]">
         <a
@@ -26,7 +32,7 @@ const Project1 = () => {
         </a>
       </div>
       </nav>
-      <section className="items-center justify-center px-4 text-060709 bg-[#F8F8F8] xl:min-h-fit md:px-14 lg:px-24">
+      <section className="items-center justify-center pt-12 px-4 text-060709 bg-[#F8F8F8] xl:min-h-fit md:px-14 lg:px-24">
         <div className="grid grid-cols-1 h-fit md:grid-cols-6">
           <div className="flex flex-col col-span-3 gap-6">
             <h1 className="mt-20 text-xl font-bold lg:text-5xl font-hiragino">
@@ -43,8 +49,6 @@ const Project1 = () => {
             <img className="w-[686px]" src={header} alt=""/>
           </div>
         </div> 
-        
-      
       </section>
       <div className="flex items-center space-x-[2rem] md:space-x-[5rem] p-4 md:p-6 font-inter
      md:px-32 bg-[linear-gradient(to_right,rgba(231,64,235,0.15)_0%,rgba(59,25,156,0.15)_100%)] shadow-2xs">
@@ -73,6 +77,96 @@ const Project1 = () => {
           Outcome
         </a>
       </div>
+      <section className="items-center justify-center pt-12 px-4 text-060709 bg-[#F0F0F0] xl:min-h-fit md:px-14 lg:px-24">
+        <div className="grid grid-cols-1 h-fit md:grid-cols-6">
+          <div className="md:col-span-5">
+            <p className="pb-10">I designed and built this personal portfolio website to reflect my colorful personality, showcase my UI/UX capabilities, and make it easy for recruiters and collaborators to get in touch.</p>
+          </div>
+          <div className="flex flex-col col-span-3 gap-6 lg:flex-row ">
+            <div className="col-span-3">
+              <img src={section2} alt=""/>
+            </div>
+          </div>
+          <div className="col-span-3 pl-8 ml-4 border-l-2 border-pink-300 border-solid">
+              <span>Tools used:</span>
+              <h3 className="font-bold">Design</h3>
+              <div className="flex gap-4">
+                <img src={chatgpt} alt=""/>
+                <img src={chatgpt} alt=""/>
+                <img src={chatgpt} alt=""/>
+                <img src={chatgpt} alt=""/>
+            </div>
+            <h3 className="pt-10 font-bold">Development</h3>
+              <div className="flex gap-4">
+                <img src={chatgpt} alt=""/>
+                <img src={chatgpt} alt=""/>
+                <img src={chatgpt} alt=""/>
+                <img src={chatgpt} alt=""/>
+            </div>
+            <div>
+            <span>Duration: <span className="font-bold">XX weeks</span></span>
+          </div>
+          </div>
+          
+        </div>
+      </section>
+      <section className="items-center justify-center pt-12 px-4 text-060709 bg-[#F8F8F8] xl:min-h-fit md:px-14 lg:px-24 pb-10">
+        <div className="grid grid-cols-1 h-fit md:grid-cols-6">
+          <div className="md:col-span-3">
+            <div>
+          <h3>Problem Statement:</h3>
+            <p>Many modern portfolios overwhelm viewers with endless scrolling, flashy animations, and hidden clicks that confuse rather than guide. I set out to create a portfolio that’s clear, intuitive, engaging, and mindful without any complexities.</p>
+            </div>
+            <div className="mt-8">
+          <h3>Goals:</h3>
+              <ol>
+                <li>
+Showcase work & case studies clearly</li>
+<li>Keep navigation simple</li>
+<li>Add quirky, personal touches (stickers, animations, etc.)</li></ol>
+            </div>
+            </div>
+          <div className="pl-10 text-white md:col-span-3">
+            <div className="flex gap-4">
+               <span className="col-span-1 px-6 py-2 bg-[#F1A2FF] rounded-full">Avoid Clutter</span>
+               <span className="col-span-2 px-6 py-2 bg-[#F1A2FF] rounded-full">Adaptable to various screen sizes</span>
+               {/* <span className="col-span-1 p-2 bg-pink-300 rounded-lg">Avoid Clutter</span> */}
+            </div>
+            <div className="flex gap-4 pt-4">
+               <span className="col-span-1 px-6 py-2 bg-[#F1A2FF] rounded-full">Quirky elements to grab attention</span>
+               <span className="col-span-2 px-6 py-2 bg-[#F1A2FF] rounded-full">Clean to read</span>
+               {/* <span className="col-span-1 p-2 bg-pink-300 rounded-lg">Avoid Clutter</span> */}
+            </div>
+            <div className="flex gap-4 pt-4">
+               <span className="col-span-1 px-6 py-2 bg-[#F1A2FF] rounded-full">Easy to navigate</span>
+               <span className="col-span-2 px-6 py-2 bg-[#F1A2FF] rounded-full">Quick to load</span>
+               <span className="col-span-2 px-6 py-2 bg-[#F1A2FF] rounded-full">Organised</span>
+               {/* <span className="col-span-1 p-2 bg-pink-300 rounded-lg">Avoid Clutter</span> */}
+            </div>
+            <div className="flex gap-4 pt-4">
+               <span className="col-span-1 px-6 py-2 bg-[#F1A2FF] rounded-full">Fewer clicks</span>
+               {/* <span className="col-span-1 p-2 bg-pink-300 rounded-lg">Avoid Clutter</span> */}
+            </div>
+          </div>
+        </div>
+      </section>
+      <section className="items-center justify-center pt-12 px-4 text-060709 bg-[#F0F0F0] xl:min-h-fit md:px-14 lg:px-24">
+        <div className="col-span-2 pb-10">
+          <h3>Moodboard</h3>
+          <p>A curated visual direction that sets the tone for my portfolio, all the way from my color choices to the overall vibe.</p>
+          <img src={moodboard} alt=""/>
+        </div>
+        <div className="grid grid-cols-5">
+          <h3 className="col-span-5 font-bold">Wireframe</h3>
+          <p className="col-span-5 mb-10">A structural outline of the portfolio that defines the layout, hierarchy, and navigation flow before developing the website. These wireframes mark the foundation of the final design.</p>
+       <div className="col-span-3 pb-10">
+            <img src={long1} alt="" />
+          </div>
+          <div className="col-span-1 pb-10">
+            <img src={long2} alt="" />
+          </div>
+          </div>
+      </section>
       </div>
   );
 };

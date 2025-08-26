@@ -1,4 +1,17 @@
+import { useEffect } from 'react';
+
 const Navbar = () => {
+  useEffect(() => {
+    const updateNavHeight = () => {
+      const navHeight = document.querySelector('nav').offsetHeight;
+      document.documentElement.style.setProperty('--nav-height', `${navHeight}px`);
+    };
+    
+    updateNavHeight();
+    window.addEventListener('resize', updateNavHeight);
+    return () => window.removeEventListener('resize', updateNavHeight);
+  }, []);
+
   return (
     <nav className="sticky top-0 z-50 p-4 md:p-6 font-inter
      md:px-32 bg-[#151618] shadow-lg">
