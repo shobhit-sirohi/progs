@@ -156,10 +156,10 @@ Showcase work & case studies clearly</li>
           <p>A curated visual direction that sets the tone for my portfolio, all the way from my color choices to the overall vibe.</p>
           <img src={moodboard} alt=""/>
         </div>
-        <div className="grid grid-cols-5">
-          <h3 className="col-span-5 font-bold">Wireframe</h3>
-          <p className="col-span-5 mb-10">A structural outline of the portfolio that defines the layout, hierarchy, and navigation flow before developing the website. These wireframes mark the foundation of the final design.</p>
-       <div className="col-span-3 pb-10">
+        <div className="grid grid-cols-7">
+          <h3 className="col-span-6 font-bold">Wireframe</h3>
+          <p className="col-span-6 mb-10">A structural outline of the portfolio that defines the layout, hierarchy, and navigation flow before developing the website. These wireframes mark the foundation of the final design.</p>
+       <div className="col-span-5 pb-10">
             <img src={long1} alt="" />
           </div>
           <div className="col-span-1 pb-10">
