@@ -2,9 +2,11 @@ import header from "../../assets/images/Portfolio Header Mockup.png";
 import section2 from "../../assets/images/Laptop-iphone mockup-section-1.png";
 import chatgpt from "../../assets/images/chatgpt-logo.png";
 import moodboard from "../../assets/images/Moodboard.png";
+import uielements from "../../assets/images/UI Elements.png";
 import long1 from "../../assets/images/Laptop Wireframe.png";
 import long2 from "../../assets/images/Iphone Wireframe.png";
-
+import arrow from "../../assets/images/arrow.svg";
+import footerimage from "../../assets/images/macbook-footer.png";
 
 const Project1 = () => {
   return (
@@ -150,11 +152,16 @@ Showcase work & case studies clearly</li>
           </div>
         </div>
       </section>
-      <section className="items-center justify-center pt-12 px-4 text-060709 bg-[#F0F0F0] xl:min-h-fit md:px-14 lg:px-24">
+      <section className="items-center justify-center pt-12 px-4 text-[#060709] bg-[#F0F0F0] xl:min-h-fit md:px-14 lg:px-24">
         <div className="col-span-2 pb-10">
           <h3>Moodboard</h3>
           <p>A curated visual direction that sets the tone for my portfolio, all the way from my color choices to the overall vibe.</p>
           <img src={moodboard} alt=""/>
+        </div>
+        <div className="col-span-2 pb-10">
+          <h3>UI elements</h3>
+          <p>Here are the building blocks of the interface, which include all the buttons, stickers, cards, and micro-interactions, that helped me bring the design language to life.</p>
+          <img src={uielements} alt=""/>
         </div>
         <div className="grid grid-cols-7">
           <h3 className="col-span-6 font-bold">Wireframe</h3>
@@ -162,10 +169,22 @@ Showcase work & case studies clearly</li>
        <div className="col-span-5 pb-10">
             <img src={long1} alt="" />
           </div>
-          <div className="col-span-1 pb-10">
+          <div className="col-span-1 pt-8 pb-10">
             <img src={long2} alt="" />
           </div>
           </div>
+      </section>
+      <section className="grid grid-cols-8  bg-[#F0F0F0]" >
+        <div  className="col-span-4 pt-12 pl-4 text-[#060709] xl:min-h-fit md:pl-14 lg:pl-24">
+          <h2>Outcome?</h2>
+          <span>I’d love for you to see for yourself!</span>
+          <a className="font-convergence flex max-w-fit py-2 px-4 gap-2 md:text-xl rounded-full bg-[#F95FE7] hover:bg-[#b544a7] md:mb-8" href="/">
+           <span>Live Site</span>
+            <img className="w-6 md:w-8" src={arrow} alt="arrow vector for button" /></a>
+        </div>
+        <div className="col-span-4">
+          <img src={footerimage} alt="footer laotop image"/>
+        </div>
       </section>
       </div>
   );

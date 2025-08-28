@@ -52,3 +52,7 @@
   mask-composite: exclude;
   -webkit-mask-composite: destination-out;
 }
+#project1-footer {
+  background-image: url("assets/images/project1-footer.png");
+  background-size: 200px;
+}
