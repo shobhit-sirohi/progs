@@ -56,7 +56,7 @@ const WorkCarousel = () => {
       image: project1,
       tags: ["Case Study","Redesign Project"],
       button: "Read Case Study",
-      link: "/projects/project1",
+      link: "/projects/project2",
     },
     {
       id: 2,
@@ -66,7 +66,7 @@ const WorkCarousel = () => {
       image: project2,
       tags: ["Fun Project"],
       button: "View Project",
-      link: "#",
+      link: "/projects/project1",
     },
     {
       id: 3,
@@ -86,12 +86,12 @@ const WorkCarousel = () => {
       image: project4,
       tags: ["App Experiments"],
       button: "View Gallery",
-      link: "#",
+      link: "/projects/project3",
     }
   ];
 
   return (
-    <div className="relative min-h-screen overflow-hidden">
+    <div className="relative overflow-hidden min-h-fit">
       {/* Left gradient */}
       <img
         src={gradient1}
@@ -117,11 +117,11 @@ const WorkCarousel = () => {
         <span className="text-[#F6F5F3] text-2xl font-bold md:text-5xl">
           Look
         </span>
-        <img className="w-16 mx-[15px]" src={star} alt="star icon" />
+        <img className="w-8 lg:w-16 mx-[4px] lg:mx-[15px]" src={star} alt="star icon" />
         <span className="text-[#F6F5F3] text-2xl font-bold md:text-5xl">
           Click
         </span>
-        <img className="w-16 mx-[15px]" src={star} alt="star icon" />
+        <img className="w-8 lg:w-16 mx-[4px] lg:mx-[15px]" src={star} alt="star icon" />
         <span className="text-[#F6F5F3] text-2xl font-bold md:text-5xl">
           Explore
         </span>
@@ -214,7 +214,7 @@ const WorkCarousel = () => {
         </div>
         {/* Arrow button at right */}
         <button
-          className="absolute right-0 z-20 p-1 -translate-y-1/2 top-1/2"
+          className="absolute right-0 z-20 -translate-y-1/2 top-1/2"
           onClick={() => emblaApi && emblaApi.scrollNext()}
           aria-label="Next work"
           type="button"

@@ -53,24 +53,20 @@ const Home = () => {
   return (
     <div>
       <Navbar />
-      <section className="flex items-center justify-between min-h-screen px-4 text-white bg-black md:px-14 lg:px-24" style={{ minHeight: 'calc(100vh - var(--nav-height, 0px))' }}>
+      <section className="flex items-center justify-between px-4 text-white bg-black min-h-lg-screen md:px-14 lg:px-24" >
+        {/* style={{ minHeight: 'calc(100vh - var(--nav-height, 0px))' }} */}
         <div className="w-full text-center ">
           <div className="relative flex items-center justify-center w-full pt-8 md:pt-16 xl:pt-20">
-            <img className="mr-4 lg:w-24 w-14" src={stars} alt="purple stars sticker" />
-            <h1 className="relative text-3xl md:text-5xl font-bold lg:text-[70px] xl:text-[80px] font-hiragino">
+            <img className="hidden mr-4 md-flex lg:w-24 w-14" src={stars} alt="purple stars sticker" />
+            <h1 className="relative text-3xl md:text-5xl font-bold lg:text-[65px] xl:text-[80px] font-hiragino">
               Hi, I'm&nbsp;
               <span className="text-[#F95FE7]">
                 Pragati&nbsp;
               </span>
               <span className="relative inline-block">!</span>
-              <a 
-    href="/Pragati-CreativeDesigner-Resume.pdf" 
-    target="_blank" 
-    rel="noopener noreferrer"
-    title="View Pragati's Resume"
-  >
+              <a href="/Pragati-CreativeDesigner-Resume.pdf" target="_blank" rel="noopener noreferrer" title="View Pragati's Resume">
               <motion.img
-                className="absolute hidden cursor-pointer md:flex w-26 md:w-32 xl:w-[150px] "
+                  className="absolute cursor-pointer w-24 lg:w-[150px] "
                 style={{left:"98%", top: "6%", transform:"translate(-50%, -50%)", zIndex: 10}}
               src={disk}
                 alt="pragati vishkwakarma resume"
@@ -81,23 +77,23 @@ const Home = () => {
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2">
             <div className="flex flex-col items-center justify-center md:items-start md:order-1">
-              <h2 className="flex gap-2 pt-10 pb-2 text-2xl font-bold font-hiragino md:text-[40px] md:pb-10">
-                I see patterns: In
-                <span className="flex">
-                  {text}
+              <h2 className="pt-14 pb-2 text-2xl font-bold font-hiragino lg:text-[40px] lg:pb-10 flex flex-col 2xl:flex-row md:gap-2">
+                I see patterns:
+                <span className="inline-block md:flex">
+                  In {text}
                 </span>
               </h2>
-              <p className="text-center font-inter lg:pr-20 md:text-start md:text-[20px]">
+              <p className="text-center font-inter text-[1rem] lg:pr-20 md:text-start lg:text-[20px]">
                 I do more than just design screens. I throw colors, textures, and a little chaos at them until they smile back. :)
               </p>
-              <p className="pb-4 text-center font-inter lg:pr-20 md:text-start md:text-xl md:pb-7">
+              <p className="pb-4 text-center font-inter text-[1rem] lg:pr-20 lg:text-[20px] md:text-start md:pb-7">
                  UX is my playground, and organizing is my superpower. And when it comes to having fun? That's non-negotiable.
               </p>
-              <span className="font-inter text-base md:text-[21px] italic text-[#D9C7FF] font-semibold pb-4 md:pb-14">
+              <span className="font-inter text-base md:text-start text-[1rem] lg:text-[21px] italic text-[#D9C7FF] font-semibold pb-4 md:pb-14">
                 Let's create something that feels as fresh as a new box of crayons.
               </span>
               <a
-                className="font-convergence flex max-w-fit py-2 px-4 gap-2 md:text-xl rounded-full bg-[#F95FE7] hover:bg-[#b544a7] md:mb-8"
+                className="font-convergence flex max-w-fit py-2 px-4 gap-2 lg:text-xl rounded-full bg-[#F95FE7] hover:bg-[#b544a7] md:mb-8"
                 href="#work"
               >
                 <span>See Work</span>
@@ -108,7 +104,7 @@ const Home = () => {
                 />
               </a>
             </div>
-            <div className="pt-6 md:pt-0">
+            <div className="flex items-center justify-center pt-6 md:pt-0">
               <img
                 className="md:w-full lg:pr-10 md:order-0"
                 src={hero}
@@ -197,7 +193,7 @@ const Home = () => {
 </div>
           {/* Footer Image - spans all 3 rows, col 8-12 */}
           <div className="flex items-center justify-center col-span-5 row-start-1 row-end-4 ">
-            <img className="hidden md:flex" src={footer} alt="pragati vishkwakarma illustration" />
+            <img className="hidden lg:flex" src={footer} alt="pragati vishkwakarma illustration" />
           </div>
           {/* "7" - Row 3, col 1-7 */}
           <div className="flex items-center justify-center h-24 col-span-7 row-start-3 row-end-4 text-sm ">

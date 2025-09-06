@@ -3,12 +3,16 @@ import  mandala1  from "../assets/images/mandala1.png";
 import  mandala2  from "../assets/images/mandala1.png";
 import mandala3 from "../assets/images/mandala1.png";
 import chair from "../assets/images/sitting-on-chair.png";
+import chairMobile from "../assets/images/chairMobile.png";
 import chairText from "../assets/images/Chair-text.svg"; // Import the SVG
 
 export default function Chair() {
   return (
-    <section className="items-center justify-center px-4 text-white bg-black md:min-h-fit md:px-14 lg:px-24">
-      <div className="relative w-full overflow-hidden h-[45rem]">
+    <section className="items-center justify-center mt-6 text-white bg-black md:min-h-fit lg:px-24">
+      <div className="lg:hidden">
+        <img src={chairMobile} alt=""/>
+      </div>
+      <div className="hidden lg:block relative lg:mt-14 w-full overflow-hidden h-[45rem]">
         {/* Center Girl's Image */}
         <img
           src={chair}

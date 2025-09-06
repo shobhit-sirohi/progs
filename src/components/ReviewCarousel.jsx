@@ -48,19 +48,19 @@ const ReviewCarousel = () => {
   }, [emblaApi]);
 
   const reviews = [
-    {
+  {
       id: 1,
-      text: "Pragati’s a design wizard, an even better human, and a natural leader who lifts everyone around her — absolute vibe to work with.",
-      author: "Shobhit Sirohi",
-      image: shobhit,
-      designation: "Front-End Dev",
-    },
-    {
-      id: 2,
       text: "Working with Pragati is easily the most fun and productive experience I’ve had! She’s always on top of things, isn’t afraid to express her ideas on how to improve designs, and has a keen eye for details at every step of the way. She’s chirpy, professional, and a go-getter. Can’t wait for the next collab!",
       author: "Abhishek K Patil",
        image: patil,
       designation: "Product Marketing Lead",
+    },
+    {
+      id: 2,
+      text: "Pragati’s a design wizard, an even better human, and a natural leader who lifts everyone around her — absolute vibe to work with.",
+      author: "Shobhit Sirohi",
+      image: shobhit,
+      designation: "Front-End Dev",
     },
     {
       id: 3,
@@ -87,7 +87,7 @@ const ReviewCarousel = () => {
 
   return (
     <div className="relative flex flex-col items-center gap-4 px-4 pb-10 overflow-hidden md:px-14 lg:px-24">
-      <h2 className="flex items-center pt-10 pb-4 md:pb-14">
+      {/* <h2 className="flex items-center pt-10 pb-4 md:pb-14">
               <span className="text-[#F6F5F3] text-2xl font-bold md:text-5xl">
                 Not Just My Words
               </span>
@@ -95,7 +95,12 @@ const ReviewCarousel = () => {
               <span className="text-[#F6F5F3] text-2xl font-bold md:text-5xl">
                 Proof I'm Not Making This Up
               </span>
-            </h2>
+            </h2> */}
+      <h2 class="pt-10 pb-4 md:pb-14 text-[#F6F5F3] text-2xl font-bold lg:text-3xl xl:text-4xl block flex-wrap items-center">
+  <span>Not Just My Words</span>
+  <img class="w-8 lg:w-16 mx-[4px] lg:mx-[15px] inline" src={star} alt="star icon"/>
+  <span>Proof I'm Not Making This Up</span>
+</h2>
       <div
         className="relative w-full overflow-hidden"
         ref={emblaRef}
@@ -107,7 +112,7 @@ const ReviewCarousel = () => {
               whileHover={{ scale: 1.01 }}
               className="flex-[0_0_calc(100%-16px)] md:flex-[0_0_calc(50%-32px)] lg:flex-[0_0_calc(33.33%-40px)] flex"
             >
-              <div className="flex flex-col h-full mx-2 w-[550px] frosted-card">
+              <div className="flex flex-col h-full mx-2 lg:w-[550px] frosted-card">
                 <p className="relative z-10 mb-2 text-base text-gray-300">
                   {review.text}
                 </p>
@@ -161,7 +166,7 @@ const ReviewCarousel = () => {
       <img
         src={blueGradient}
         alt=""
-        className="absolute lg:bottom-[-750px] left-0 w-full pointer-events-none select-none"
+        className="absolute hidden lg:flex lg:bottom-[-440px] xl:bottom-[-550px] 2xl:bottom-[-700px] left-0 w-full pointer-events-none select-none"
         style={{ zIndex: 0 }}
       />
     </div>

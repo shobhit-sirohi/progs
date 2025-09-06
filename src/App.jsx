@@ -6,6 +6,10 @@ import {
 import Home from "./pages/Home";
 // eslint-disable-next-line
 import Project1 from "./pages/projects/Project1";
+// eslint-disable-next-line
+import Project2 from "./pages/projects/Project2";
+// eslint-disable-next-line
+import Project3 from "./pages/projects/Project3";
 
 const NotFound = () => (
   <div className="flex flex-col items-center justify-center min-h-screen">
@@ -24,6 +28,14 @@ function App() {
             <Route
               path="/projects/project1"
               element={<Project1 />}
+            />
+            <Route
+              path="/projects/project2"
+              element={<Project2 />}
+            />
+            <Route
+              path="/projects/project3"
+              element={<Project3 />}
             />
           </Routes>
         </main>

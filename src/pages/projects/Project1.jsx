@@ -1,6 +1,13 @@
 import header from "../../assets/images/Portfolio Header Mockup.png";
 import section2 from "../../assets/images/Laptop-iphone mockup-section-1.png";
 import chatgpt from "../../assets/images/chatgpt-logo.png";
+import figma from "../../assets/images/figma.png";
+import procreate from "../../assets/images/procreate.png";
+import photoshop from "../../assets/images/photoshop.png";
+import vue from "../../assets/images/vue.png";
+import react from "../../assets/images/react.png";
+import tailwind from "../../assets/images/tailwind.png";
+import netlify from "../../assets/images/netlify.png";
 import moodboard from "../../assets/images/Moodboard.png";
 import uielements from "../../assets/images/UI Elements.png";
 import long1 from "../../assets/images/Laptop Wireframe.png";
@@ -10,7 +17,7 @@ import footerimage from "../../assets/images/macbook-footer.png";
 
 const Project1 = () => {
   return (
-    <div className="bg-white">
+    <div className="bg-white font-inter">
       <nav className="sticky top-0 z-50 p-4 md:p-6 font-inter text-[#040404]
      md:px-32 bg-[#F0F0F0] shadow-lg">
       <div className="flex items-center space-x-[2rem] md:space-x-[5rem]">
@@ -37,22 +44,22 @@ const Project1 = () => {
       <section className="items-center justify-center pt-12 px-4 text-060709 bg-[#F8F8F8] xl:min-h-fit md:px-14 lg:px-24">
         <div className="grid grid-cols-1 h-fit md:grid-cols-6">
           <div className="flex flex-col col-span-3 gap-6">
-            <h1 className="mt-20 text-xl font-bold lg:text-5xl font-hiragino">
+            <h1 className="mt-20 text-4xl font-bold lg:leading-[5rem] lg:text-6xl font-hiragino">
               From Idea to Interface:<br/> My&nbsp; 
-              <span className="text-[#F95FE7] inline-block">
+              <span className="text-[#F95FE7] inline-block text-4xl lg:text-6xl">
                 Portfolio&nbsp;
               </span>
-              <span className="inline-block ">Project</span>
+              <span className="inline-block text-4xl lg:text-6xl">Project</span>
             </h1>
             <h2 className="text-2xl font-semibold font-inter">Translating who I am into pixels and pages.</h2>
-            <p className="text-lg font-inter xl:mr-28">This project was my chance to treat myself like a client, and I’m happy with the results. I set out to design a portfolio that boldly presents my work and reflects who I am: colorful, organized, and a little playful. This was a collaborative project with a front-end developer (shobhit.dev), who brought my designs to life with his clean, responsive code that helped the site adapt from large desktop screens to mobile devices seamlessly.From curating the palette and layouts to adding my quirky touches, this project turned my personality into a fully functional digital space.</p>
+            <p className="text-xl font-inter xl:mr-28">This project was my chance to treat myself like a client, and I'm happy with the results. I set out to design a portfolio that boldly presents my work and reflects who I am: colorful, organized, and a little playful. This was a collaborative project with a front-end developer <a className=" italic text-[#004CE4]" href="https://shobhit.dev/" target="_blank">(shobhit.dev),</a> who brought my designs to life with his clean, responsive code that helped the site adapt from large desktop screens to mobile devices seamlessly. From curating the palette and layouts to adding my quirky touches, this project turned my personality into a fully functional digital space.</p>
           </div>
           <div className="col-span-3">
             <img className="w-[686px]" src={header} alt=""/>
           </div>
         </div> 
       </section>
-      <div className="flex items-center space-x-[2rem] md:space-x-[5rem] p-4 md:p-6 font-inter
+      <div className="mt-[-9rem] flex items-center space-x-[2rem] md:space-x-[5rem] p-4 md:p-6 font-inter
      md:px-32 bg-[linear-gradient(to_right,rgba(231,64,235,0.15)_0%,rgba(59,25,156,0.15)_100%)] shadow-2xs">
         <a
           href="#overview"
@@ -82,30 +89,32 @@ const Project1 = () => {
       <section className="items-center justify-center pt-12 px-4 text-060709 bg-[#F0F0F0] xl:min-h-fit md:px-14 lg:px-24">
         <div className="grid grid-cols-1 h-fit md:grid-cols-6">
           <div className="md:col-span-5">
-            <p className="pb-10">I designed and built this personal portfolio website to reflect my colorful personality, showcase my UI/UX capabilities, and make it easy for recruiters and collaborators to get in touch.</p>
+            <p className="py-10 text-2xl font-bold">I designed and built this personal portfolio website to reflect my colorful personality, showcase my UI/UX capabilities, and make it easy for recruiters and collaborators to get in touch.</p>
           </div>
           <div className="flex flex-col col-span-3 gap-6 lg:flex-row ">
             <div className="col-span-3">
               <img src={section2} alt=""/>
             </div>
           </div>
-          <div className="col-span-3 pl-8 ml-4 border-l-2 border-pink-300 border-solid">
+          <div className="">
+            <div className="col-span-3 pl-8 ml-10 border-l-2 border-[#F95FE7] border-opacity-20 border-solid ">
               <span>Tools used:</span>
-              <h3 className="font-bold">Design</h3>
-              <div className="flex gap-4">
-                <img src={chatgpt} alt=""/>
-                <img src={chatgpt} alt=""/>
-                <img src={chatgpt} alt=""/>
-                <img src={chatgpt} alt=""/>
+              <h3 className="pt-4 italic font-bold">Design</h3>
+              <div className="flex gap-8 pt-4">
+                <img className="object-contain" src={figma} alt=""/>
+                <img className="object-contain" src={chatgpt} alt=""/>
+                <img  className="object-contain" src={procreate} alt=""/>
+                <img  className="object-contain"src={photoshop} alt=""/>
             </div>
-            <h3 className="pt-10 font-bold">Development</h3>
-              <div className="flex gap-4">
-                <img src={chatgpt} alt=""/>
-                <img src={chatgpt} alt=""/>
-                <img src={chatgpt} alt=""/>
-                <img src={chatgpt} alt=""/>
-            </div>
-            <div>
+            <h3 className="pt-10 italic font-bold">Development</h3>
+              <div className="flex gap-8 pt-4">
+                <img className="object-contain" src={vue} alt=""/>
+                <img  className="object-contain" src={netlify} alt=""/>
+                <img  className="object-contain" src={tailwind} alt=""/>
+                <img  className="object-contain" src={react} alt=""/>
+              </div>
+              </div>
+            <div className="col-span-3 pl-8 mt-10 ml-10 border-l-2 border-[#F95FE7] border-opacity-20 border-solid ">
             <span>Duration: <span className="font-bold">XX weeks</span></span>
           </div>
           </div>
@@ -116,11 +125,11 @@ const Project1 = () => {
         <div className="grid grid-cols-1 h-fit md:grid-cols-6">
           <div className="md:col-span-3">
             <div>
-          <h3>Problem Statement:</h3>
+          <h3 className="font-bold">Problem Statement:</h3>
             <p>Many modern portfolios overwhelm viewers with endless scrolling, flashy animations, and hidden clicks that confuse rather than guide. I set out to create a portfolio that’s clear, intuitive, engaging, and mindful without any complexities.</p>
             </div>
             <div className="mt-8">
-          <h3>Goals:</h3>
+          <h3 className="font-bold">Goals:</h3>
               <ol>
                 <li>
 Showcase work & case studies clearly</li>
@@ -129,6 +138,7 @@ Showcase work & case studies clearly</li>
             </div>
             </div>
           <div className="pl-10 text-white md:col-span-3">
+            <h3 className="pb-4 text-xl font-bold text-black">Thus, Plan of Action (POA):</h3>
             <div className="flex gap-4">
                <span className="col-span-1 px-6 py-2 bg-[#F1A2FF] rounded-full">Avoid Clutter</span>
                <span className="col-span-2 px-6 py-2 bg-[#F1A2FF] rounded-full">Adaptable to various screen sizes</span>
@@ -153,19 +163,19 @@ Showcase work & case studies clearly</li>
         </div>
       </section>
       <section className="items-center justify-center pt-12 px-4 text-[#060709] bg-[#F0F0F0] xl:min-h-fit md:px-14 lg:px-24">
-        <div className="col-span-2 pb-10">
-          <h3>Moodboard</h3>
-          <p>A curated visual direction that sets the tone for my portfolio, all the way from my color choices to the overall vibe.</p>
+        <div className="col-span-2 pb-16">
+          <h3 className="text-2xl font-bold">Moodboard</h3>
+          <p className="py-2 text-lg">A curated visual direction that sets the tone for my portfolio, all the way from my color choices to the overall vibe.</p>
           <img src={moodboard} alt=""/>
         </div>
         <div className="col-span-2 pb-10">
-          <h3>UI elements</h3>
-          <p>Here are the building blocks of the interface, which include all the buttons, stickers, cards, and micro-interactions, that helped me bring the design language to life.</p>
+          <h3 className="text-2xl font-bold">UI elements</h3>
+          <p className="pt-2 pb-4 text-lg">Here are the building blocks of the interface, which include all the buttons, stickers, cards, and micro-interactions, that helped me bring the design language to life.</p>
           <img src={uielements} alt=""/>
         </div>
         <div className="grid grid-cols-7">
-          <h3 className="col-span-6 font-bold">Wireframe</h3>
-          <p className="col-span-6 mb-10">A structural outline of the portfolio that defines the layout, hierarchy, and navigation flow before developing the website. These wireframes mark the foundation of the final design.</p>
+          <h3 className="col-span-6 text-2xl font-bold">Wireframe</h3>
+          <p className="col-span-6 pt-2 mb-10 text-lg">A structural outline of the portfolio that defines the layout, hierarchy, and navigation flow before developing the website. These wireframes mark the foundation of the final design.</p>
        <div className="col-span-5 pb-10">
             <img src={long1} alt="" />
           </div>
@@ -183,7 +193,7 @@ Showcase work & case studies clearly</li>
             <img className="w-6 md:w-8" src={arrow} alt="arrow vector for button" /></a>
         </div>
         <div className="col-span-4">
-          <img src={footerimage} alt="footer laotop image"/>
+          <img src={footerimage} alt="footer laptop image"/>
         </div>
       </section>
       </div>
