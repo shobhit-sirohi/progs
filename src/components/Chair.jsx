@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import  mandala1  from "../assets/images/mandala1.png";
-import  mandala2  from "../assets/images/mandala1.png";
-import mandala3 from "../assets/images/mandala1.png";
+import  mandala2  from "../assets/images/mandala2.png";
+import mandala3 from "../assets/images/mandala3.png";
 import chair from "../assets/images/sitting-on-chair.png";
 import chairMobile from "../assets/images/chairMobile.png";
 import chairText from "../assets/images/Chair-text.svg"; // Import the SVG
@@ -21,25 +21,25 @@ export default function Chair() {
         />
 
         {/* Floating Mandalas */}
-        <div className="absolute z-20 top-[20rem] left-[3rem] md:w-[15rem] md:h-[15rem] frosted-mandala flex items-center justify-center overflow-hidden">
+        <div className="absolute z-20 top-[20rem] 2xl:left-[15rem] left-[3rem] md:w-[15rem] md:h-[15rem] frosted-mandala flex items-center justify-center overflow-hidden">
           <img
             src={mandala1}
             alt="Mandala"
-            className="w-[80%] h-[80%] object-contain"
+            className="w-[100%] h-[100%] object-contain"
           />
         </div>
-        <div className="absolute z-20 top-4 right-[12rem] md:w-[17rem] md:h-[17rem] frosted-mandala flex items-center justify-center overflow-hidden">
+        <div className="absolute z-20 top-4 lg:right-[8rem] 2xl:right-[20rem] xl:right-[15rem] lg:w-[17rem] lg:h-[17rem] frosted-mandala flex items-center justify-center overflow-hidden">
           <img
             src={mandala2}
             alt="Mandala"
-            className="w-[80%] h-[80%] object-contain"
+            className="w-[150%] h-[150%] object-contain"
           />
         </div>
-        <div className="absolute z-20 bottom-[8rem] right-[8rem] md:w-[10rem] md:h-[10rem] frosted-mandala flex items-center justify-center overflow-hidden">
+        <div className="absolute z-20 bottom-[8rem] 2xl:right-[20rem] right-[8rem] md:w-[10rem] md:h-[10rem] frosted-mandala flex items-center justify-center overflow-hidden">
           <img
             src={mandala3}
             alt="Mandala"
-            className="w-[80%] h-[80%] object-contain"
+            className="w-[100%] h-[100%] object-contain"
           />
         </div>
 
@@ -60,7 +60,7 @@ export default function Chair() {
         <img
           src={chairText}
           alt="I don't do this all the time, but when I do, it's a quiet space just for me."
-          className="absolute z-20 max-w-md w-[250px] md:w-[350px] top-10 left-[15rem] transform -translate-x-1/2"
+          className="absolute z-20 max-w-md w-[250px] md:w-[350px] top-10 2xl:left-[20rem] lg:left-[12rem] xl:left-[15rem] transform -translate-x-1/2"
         />
       </div>
     </section>

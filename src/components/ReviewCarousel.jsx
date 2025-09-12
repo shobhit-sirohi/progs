@@ -113,16 +113,16 @@ const ReviewCarousel = () => {
               className="flex-[0_0_calc(100%-16px)] md:flex-[0_0_calc(50%-32px)] lg:flex-[0_0_calc(33.33%-40px)] flex"
             >
               <div className="flex flex-col h-full mx-2 lg:w-[550px] frosted-card">
-                <p className="relative z-10 mb-2 text-base text-gray-300">
+                <p className="relative z-10 mb-2 text-sm text-gray-300 md:text-base">
                   {review.text}
                 </p>
                 <div className="flex items-center justify-start gap-4 pt-4 mt-auto"> 
                   <img className="w-[65px]" src={review.image} alt="review person image"/>
                   <div>
-                    <p className="relative z-10 text-base font-bold text-white">
+                    <p className="relative z-10 text-sm font-bold text-white md:text-base">
                       {review.author}
                     </p>
-                    <span className="text-[#F95FE7]">
+                    <span className="text-[#F95FE7] text-sm md:text-base">
                       {review.designation}
                     </span>
                   </div>

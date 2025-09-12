@@ -31,7 +31,7 @@ const Project1 = () => {
           href="#work"
           className="text-[#040404] text-md md:text-lg transition-colors hover:text-[#6d6d6d]"
         >
-          Work
+          Resume
         </a>
         <a
           href="#talk"
@@ -44,22 +44,22 @@ const Project1 = () => {
       <section className="items-center justify-center pt-12 px-4 text-060709 bg-[#F8F8F8] xl:min-h-fit md:px-14 lg:px-24">
         <div className="grid grid-cols-1 h-fit md:grid-cols-6">
           <div className="flex flex-col col-span-3 gap-6">
-            <h1 className="mt-20 text-4xl font-bold lg:leading-[5rem] lg:text-6xl font-hiragino">
+            <h1 className="lg:mt-20 text-3xl font-bold lg:leading-[5rem] lg:text-6xl font-hiragino">
               From Idea to Interface:<br/> My&nbsp; 
-              <span className="text-[#F95FE7] inline-block text-4xl lg:text-6xl">
+              <span className="text-[#F95FE7] inline-block text-3xl lg:text-6xl">
                 Portfolio&nbsp;
               </span>
-              <span className="inline-block text-4xl lg:text-6xl">Project</span>
+              <span className="inline-block text-3xl lg:text-6xl">Project</span>
             </h1>
-            <h2 className="text-2xl font-semibold font-inter">Translating who I am into pixels and pages.</h2>
-            <p className="text-xl font-inter xl:mr-28">This project was my chance to treat myself like a client, and I'm happy with the results. I set out to design a portfolio that boldly presents my work and reflects who I am: colorful, organized, and a little playful. This was a collaborative project with a front-end developer <a className=" italic text-[#004CE4]" href="https://shobhit.dev/" target="_blank">(shobhit.dev),</a> who brought my designs to life with his clean, responsive code that helped the site adapt from large desktop screens to mobile devices seamlessly. From curating the palette and layouts to adding my quirky touches, this project turned my personality into a fully functional digital space.</p>
+            <h2 className="text-xl font-semibold ld:text-2xl font-inter">Translating who I am into pixels and pages.</h2>
+            <p className="text-md lg:text-xl font-inter xl:mr-28">This project was my chance to treat myself like a client, and I'm happy with the results. I set out to design a portfolio that boldly presents my work and reflects who I am: colorful, organized, and a little playful. This was a collaborative project with a front-end developer <a className=" italic text-[#004CE4]" href="https://shobhit.dev/" target="_blank">(shobhit.dev),</a> who brought my designs to life with his clean, responsive code that helped the site adapt from large desktop screens to mobile devices seamlessly. From curating the palette and layouts to adding my quirky touches, this project turned my personality into a fully functional digital space.</p>
           </div>
           <div className="col-span-3">
             <img className="w-[686px]" src={header} alt=""/>
           </div>
         </div> 
       </section>
-      <div className="mt-[-9rem] flex items-center space-x-[2rem] md:space-x-[5rem] p-4 md:p-6 font-inter
+      <div className=" lg:mt-[-9rem] flex items-center space-x-[2rem] lg:space-x-[5rem] p-4 lg:p-6 font-inter
      md:px-32 bg-[linear-gradient(to_right,rgba(231,64,235,0.15)_0%,rgba(59,25,156,0.15)_100%)] shadow-2xs">
         <a
           href="#overview"
