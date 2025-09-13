@@ -52,7 +52,7 @@ const Project3 = () => {
       </div>
     </nav>
       <section className="px-4 pt-12 text-060709 xl:min-h-fit md:px-14 lg:px-24">
-        <div className="grid grid-cols-12 gap-4 grid-flow-dense md:grid-cols-10">
+        <div className="grid grid-cols-12 gap-6 md:gap-10 grid-flow-dense md:grid-cols-10">
           <img className="w-full h-full col-span-12 md:col-span-4 md:row-span-3" src={image1} alt="image 1"/>
           <img className="w-full h-full col-span-12 md:col-span-3 md:row-span-4" src={image2} alt="image 1"/>
           <img className="w-full h-full col-span-12 md:row-span-3 md:col-span-3" src={image3} alt="image 1"/>
