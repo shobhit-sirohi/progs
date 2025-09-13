@@ -202,14 +202,14 @@ Showcase work & case studies clearly</li>
         <div className="col-span-12 md:col-span-4">
           <a href="/Pragati-CreativeDesigner-Resume.pdf" target="_blank" rel="noopener noreferrer" title="View Pragati's Resume">
               <motion.img
-                  className="absolute cursor-pointer w-24 lg:w-[130px] xl:w-[150px] "
+              className="absolute cursor-pointer  w-24 lg:w-[130px] xl:w-[150px] "
                  src={disk}
                 alt="pragati vishkwakarma resume"
                 animate={{ rotate: 360 }}
                 transition={{repeat: Infinity, duration: 20, ease: "linear"}}
             /></a>
-          <img className="hidden" src={footerimage} alt="footer laptop image"/>
-          <img className=" md:hidden" src={footerdiskimagemobile} alt="footer laptop image mobile"/>
+          <img className="hidden md:flex" src={footerimage} alt="footer laptop image"/>
+          <img className="md:hidden" src={footerdiskimagemobile} alt="footer laptop image mobile"/>
         </div>
       </section>
       </div>

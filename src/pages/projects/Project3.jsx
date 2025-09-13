@@ -41,7 +41,7 @@ const Project3 = () => {
           href="#work"
           className="text-[#F6F5F3] text-md md:text-lg transition-colors hover:text-[#d1d0cd]"
         >
-          Work
+          Resume
         </a>
         <a
           href="#talk"
@@ -52,34 +52,34 @@ const Project3 = () => {
       </div>
     </nav>
       <section className="px-4 pt-12 text-060709 xl:min-h-fit md:px-14 lg:px-24">
-        <div className="grid grid-cols-7 gap-4 grid-flow-dense xl:grid-cols-10">
-          <img className="w-full h-full col-span-4 row-span-3" src={image1} alt="image 1"/>
-          <img className="w-full h-full col-span-3 row-span-4" src={image2} alt="image 1"/>
-          <img className="w-full h-full col-span-3 row-span-3" src={image3} alt="image 1"/>
-          <img className="w-full h-full col-span-4 row-span-5" src={image4} alt="image 1"/>
-          <img className="w-full h-full col-span-3 row-span-3" src={image5} alt="image 1"/>
-          <img className="w-full h-full col-span-3 row-span-4" src={image6} alt="image 1"/>
-          <img className="w-full h-full col-span-4 row-span-3" src={image7} alt="image 1" />
-          <img className="w-full h-full col-span-3 row-span-4" src={image8} alt="image 1" />
-          <img className="w-full h-full col-span-3 row-span-3" src={image9} alt="image 1" />
-          <img className="w-full h-full col-span-7 row-span-3" src={image10} alt="image 1"/>
-          <img className="w-full h-full col-span-3 row-span-4" src={image11} alt="image 1"/>
-          <img className="w-full h-full col-span-4 row-span-3" src={image12} alt="image 1"/>
-          <img className="w-full h-full col-span-6 row-span-4" src={image13} alt="image 1"/>
-          <img className="w-full h-full col-span-4 row-span-6" src={image14} alt="image 1"/>
-          <img className="w-full h-full col-span-3 row-span-3" src={image15} alt="image 1"/>
-          <img className="w-full h-full col-span-3 row-span-3" src={image16} alt="image 1"/>
-          <img className="w-full h-full col-span-4 row-span-5" src={image17} alt="image 1"/>
-          <img className="w-full h-full col-span-3 row-span-4" src={image18} alt="image 1"/>
-          <img className="w-full h-full col-span-3 row-span-3" src={image19} alt="image 1"/>
-          <img className="w-full h-full col-span-4 row-span-5" src={image20} alt="image 1"/>
-          <img className="w-full h-full col-span-3 row-span-4" src={image21} alt="image 1"/>
-          <img className="w-full h-full col-span-3 row-span-4" src={image22} alt="image 1"/>
-          <img className="w-full h-full col-span-3 row-span-3" src={image23} alt="image 1"/>
-          <img className="w-full h-full col-span-3 row-span-3" src={image24} alt="image 1"/>
+        <div className="grid grid-cols-12 gap-4 grid-flow-dense md:grid-cols-10">
+          <img className="w-full h-full col-span-12 md:col-span-4 md:row-span-3" src={image1} alt="image 1"/>
+          <img className="w-full h-full col-span-12 md:col-span-3 md:row-span-4" src={image2} alt="image 1"/>
+          <img className="w-full h-full col-span-12 md:row-span-3 md:col-span-3" src={image3} alt="image 1"/>
+          <img className="w-full h-full col-span-12 md:row-span-5 md:col-span-4" src={image4} alt="image 1"/>
+          <img className="w-full h-full col-span-12 md:col-span-3 md:col-start-5 md:row-span-3" src={image5} alt="image 1"/>
+          <img className="w-full h-full col-span-12 md:col-span-3 md:row-span-4" src={image6} alt="image 1"/>
+          <img className="w-full h-full col-span-12 md:col-span-4 md:col-start-1 md:row-span-3" src={image7} alt="image 1" />
+          <img className="w-full h-full col-span-12 md:col-span-3 md:row-span-4" src={image8} alt="image 1" />
+          <img className="w-full h-full col-span-12 md:col-span-3 md:row-span-3" src={image9} alt="image 1" />
+          <img className="w-full h-full col-span-12 md:col-span-7 md:row-span-3" src={image10} alt="image 1"/>
+          <img className="w-full h-full col-span-12 md:col-span-3 md:row-span-4" src={image11} alt="image 1"/>
+          <img className="w-full h-full col-span-12 md:col-span-4 md:row-span-3" src={image12} alt="image 1"/>
+          <img className="w-full h-full col-span-12 md:col-span-6 md:row-span-4" src={image13} alt="image 1"/>
+          <img className="w-full h-full col-span-12 md:col-span-4 md:row-span-6" src={image14} alt="image 1"/>
+          <img className="w-full h-full col-span-12 md:col-span-3 md:row-span-3" src={image15} alt="image 1"/>
+          <img className="w-full h-full col-span-12 md:col-span-3 md:row-span-3" src={image16} alt="image 1"/>
+          <img className="w-full h-full col-span-12 md:col-span-4 md:col-start-1 md:row-span-5" src={image17} alt="image 1"/>
+          <img className="w-full h-full col-span-12 md:col-span-3 md:row-span-4" src={image18} alt="image 1"/>
+          <img className="w-full h-full col-span-12 md:col-span-3 md:row-span-3" src={image19} alt="image 1"/>
+          <img className="w-full h-full col-span-12 md:col-span-4 md:col-start-1 md:row-span-5" src={image20} alt="image 1"/>
+          <img className="w-full h-full col-span-12 md:col-span-3 md:col-start-5 md:row-span-4" src={image21} alt="image 1"/>
+          <img className="w-full h-full col-span-12 md:col-span-3 md:row-span-4" src={image22} alt="image 1"/>
+          <img className="w-full h-full col-span-12 md:col-span-3 md:col-start-5 md:row-span-3" src={image23} alt="image 1"/>
+          <img className="w-full h-full col-span-12 md:col-span-3 md:row-span-3" src={image24} alt="image 1"/>
         </div>
       </section>
-      <h2 className="py-10 text-2xl font-bold text-center text-white">And many <span className="text-[#F95FE7]">more</span>...</h2>
+      <h2 className="py-10 text-xl font-bold text-center text-white md:text-2xl">And many <span className="text-[#F95FE7]">more</span>...</h2>
     </div>
   );
 };
