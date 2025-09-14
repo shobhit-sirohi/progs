@@ -190,26 +190,22 @@ const Project2 = () => {
           <div className="grid grid-cols-10">
             <div className="flex flex-col items-center col-span-2">
             <img className="" src={screenbefore1} alt="" />
-            <p>Unnecessary ads</p>
             </div>
             <div className="flex flex-col items-center col-span-2">
-            <img src={screenbefore2} alt="" />
-            <p>Unnecessary Actions needed by the user</p>
+            <img src={screenbefore1} alt="" />
             </div>
             <div className="flex flex-col items-center col-span-2">
-            <img src={screenbefore3} alt="" />
-            <p>Common action items burried under menus</p>
+            <img src={screenbefore1} alt="" />
             </div>
             <div className="flex flex-col items-center col-span-2">
-              <img src={screenbefore4} alt=""/>
+              <img src={screenbefore1} alt=""/>
             </div>
             <div className="flex flex-col items-center col-span-2">
-            <img src={screenbefore5} alt="" />
-            <p>Unclear Hierarchy</p>
+            <img src={screenbefore1} alt="" />
             </div>
           </div>
           <h2 className="pb-6 text-lg font-semibold pt-14 lg:text-2xl ">What we currently have</h2>
-          <div className="grid grid-cols-10">
+          <div className="grid grid-cols-10 gap-6">
             <div className="flex flex-col items-center col-span-2">
               <img className="" src={screenafter1} alt=""/>
             </div>
