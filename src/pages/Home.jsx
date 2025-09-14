@@ -14,6 +14,7 @@ import linkedin from "../assets/images/Linkedin 1.png";
 import chatSticker from "../assets/images/testimonial-sticker.svg";
 import { motion, AnimatePresence } from "framer-motion";
 import { useState, useEffect } from "react";
+import { useLocation } from "react-router-dom";
 
 const changingWords = ["products.", "pixels.", "people."];
 
@@ -21,6 +22,21 @@ const Home = () => {
   const [index, setIndex] = useState(0);
   const [isDeleting, setIsDeleting] = useState(false);
   const [text, setText] = useState('');
+  const location = useLocation();
+
+  useEffect(() => {
+    if (location.hash === "#talk") {
+      // Wait for render, then scroll to bottom
+      setTimeout(() => {
+        window.scrollTo({ top: document.body.scrollHeight, behavior: "smooth" });
+      }, 100); // 100ms delay to ensure DOM is ready
+    } else if (location.hash) {
+      const el = document.querySelector(location.hash);
+      if (el) {
+        el.scrollIntoView({ behavior: "smooth" });
+      }
+    }
+  }, [location]);
   
   useEffect(() => {
     const word = changingWords[index];

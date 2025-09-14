@@ -39,7 +39,7 @@ const Project1 = () => {
           Resume
         </a>
         <a
-          href="#talk"
+          href="/#talk"
           className="text-[#040404] text-md md:text-lg transition-colors hover:text-[#6d6d6d]"
         >
           Let's Talk
@@ -91,7 +91,7 @@ const Project1 = () => {
           Outcome
         </a>
       </div>
-      <section className="items-center justify-center lg:pt-12 px-4 text-060709 bg-[#F0F0F0] xl:min-h-fit md:px-14 lg:px-32 pb-6 xl:pb-16">
+      <section id="overview" className="items-center justify-center lg:pt-12 px-4 text-060709 bg-[#F0F0F0] xl:min-h-fit md:px-14 lg:px-32 pb-6 xl:pb-16">
         <div className="grid grid-cols-1 h-fit md:grid-cols-6">
           <div className="md:col-span-5">
             <p className="py-10 text-xl font-semibold xl:text-2xl font-inter">I designed and built this personal portfolio website to reflect my colorful personality, showcase my UI/UX capabilities, and make it easy for recruiters and collaborators to get in touch.</p>
@@ -126,7 +126,7 @@ const Project1 = () => {
           
         </div>
       </section>
-      <section className="items-center justify-center pt-12 px-4 text-060709 bg-[#F8F8F8] xl:min-h-fit md:px-14 lg:px-32 pb-10">
+      <section id="problem" className="items-center justify-center pt-12 px-4 text-060709 bg-[#F8F8F8] xl:min-h-fit md:px-14 lg:px-32 pb-10">
         <div className="grid grid-cols-1 h-fit md:grid-cols-6">
           <div className="md:col-span-3">
             <div>
@@ -167,7 +167,7 @@ Showcase work & case studies clearly</li>
           </div>
         </div>
       </section>
-      <section className="items-center justify-center pt-12 px-4 text-[#060709] bg-[#F0F0F0] xl:min-h-fit md:px-14 lg:px-32">
+      <section id="approach" className="items-center justify-center pt-12 px-4 text-[#060709] bg-[#F0F0F0] xl:min-h-fit md:px-14 lg:px-32">
         <div className="col-span-2 pb-16">
           <h3 className="text-xl font-semibold xl:text-2xl font-inter">Moodboard</h3>
           <p className="py-2 text-md lg:text-xl font-inter">A curated visual direction that sets the tone for my portfolio, all the way from my color choices to the overall vibe.</p>
@@ -191,7 +191,7 @@ Showcase work & case studies clearly</li>
           </div>
           </div>
       </section>
-      <section className="relative grid grid-cols-8 bg-[#F0F0F0]">
+      <section id="outcome" className="relative grid grid-cols-8 bg-[#F0F0F0]">
         <div className="col-span-12 md:col-span-4 pt-12 pl-4 text-[#060709] xl:min-h-fit md:pl-14 lg:pl-32">
           <h2 className="mb-4 lg:mb-10 text-[#060709] text-opacity-[13%] text-5xl md:text-6xl font-semibold font-hiragino">Outcome?</h2>
           <span className="text-lg font-semibold lg:text-xl">I’d love for you to see for yourself!</span>

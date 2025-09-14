@@ -102,7 +102,7 @@ const ReviewCarousel = () => {
   <span>Proof I'm Not Making This Up</span>
 </h2>
       <div
-        className="relative w-full overflow-hidden"
+        className="relative z-10 w-full overflow-hidden"
         ref={emblaRef}
       >
         <div className="flex items-stretch gap-8 mt-2 mb-2">

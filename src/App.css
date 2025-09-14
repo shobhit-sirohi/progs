@@ -16,6 +16,12 @@
 #work{
   scroll-margin-top: 30px;
 }
+#talk{
+  scroll-margin-top: 1000px;
+}
+#overview, #problem, #approach, #outcome{
+  scroll-margin-top: 50px;
+}
 
 html{
   scroll-behavior: smooth;

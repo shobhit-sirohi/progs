@@ -38,13 +38,13 @@ const Project2 = () => {
           Home
         </a>
         <a
-          href="#work"
+          href="/Pragati-CreativeDesigner-Resume.pdf" target="_blank"
           className="text-[#040404] text-md md:text-lg transition-colors hover:text-[#6d6d6d]"
         >
           Resume
         </a>
         <a
-          href="#talk"
+          href="/#talk"
           className="text-[#040404] text-md md:text-lg transition-colors hover:text-[#6d6d6d]"
         >
           Let's Talk
@@ -120,7 +120,7 @@ const Project2 = () => {
             </ul>
           </div>
         </div>
-        <div className="grid grid-cols-12 gap-10 pt-10 lg:gap-0">
+        <div className="grid grid-cols-12 gap-10 pt-20 lg:gap-0">
           <div className="flex items-center justify-center col-span-12 md:col-span-3">
             <img className="" src={mockup1} alt="" />
           </div>
@@ -147,9 +147,9 @@ const Project2 = () => {
             <img src={review3} alt="" />
           </div>
           </div>
-        <div className="grid grid-cols-12 pt-6">
+        <div className="grid grid-cols-12 pt-10">
           <div className="col-span-12 px-10 md:col-span-6">
-            <h3 className="pt-10 font-bold">Problem Statement:</h3>
+            <h3 className="font-bold ">Problem Statement:</h3>
             <p className="pt-4">The HDFC Bank app feels outdated and hard to navigate, making it frustrating for users to complete basic banking tasks quickly and confidently.</p>
             <h3 className="pt-10 font-bold">Goals:</h3>
             <ul className="pl-10 list-disc">
@@ -158,8 +158,8 @@ const Project2 = () => {
               <li className="pt-2">Prioritize frequently-used actions on the home screen for <b>quicker access.</b></li>
             </ul>
           </div>
-          <div className="col-span-12 px-10 md:col-span-6 md:border-solid md:border-l-[3px] border-[#003397] border-opacity-[26%]">
-            <h3 className="pt-10 font-bold">What I've Found:</h3>
+          <div className="col-span-12 px-10 md:col-span-6 md:border-solid md:border-l-[3px] flex flex-col justify-center border-[#003397] border-opacity-[26%]">
+            <h3 className="pt-10 font-bold lg:pt-0">What I've Found:</h3>
             <ul className="pl-10 list-disc">
               <li className="pt-2">Users often struggle with the visual and navigational clutter, leading to confusion and unnecessary effort while using the app.</li>
               <li className="pt-2">Core actions are not easily discoverable. Locating features like credit card payments suggest poor information architecture and low task visibility.</li>
@@ -170,18 +170,20 @@ const Project2 = () => {
       </section>
       <section className="items-center justify-center pt-12 px-4 text-[#060709] bg-[#FFFFFF] xl:min-h-fit md:px-14 lg:px-24">
         <h3 className="text-2xl font-bold ">User Personas</h3>
-        <div className="grid grid-cols-12 gap-10 pt-10 lg:gap-0">
+        <div className="grid grid-cols-12 gap-10 pt-10 lg:gap-10">
           <div className="flex items-center justify-center col-span-12 md:col-span-6">
-            <img className="" src={card1} alt=""/>
+            <img className="w-full" src={card1} alt=""/>
           </div>
           <div className="flex items-center justify-center col-span-12 md:col-span-6">
-           <img className="" src={card2} alt=""/>
+           <img className="w-full" src={card2} alt=""/>
           </div>
           </div>
         <div className="flex flex-col items-center justify-center pb-16 ">
-          <h3 className="text-2xl font-bold ">User Flow</h3>
-          <img className="hidden md:flex" src={userflow} alt=""/>
-          <img className="md:hidden" src={userflowmobile} alt=""/>
+<div className="w-full">
+            <h3 className="pt-10 text-2xl font-bold text-center">User Flow</h3>
+            </div>
+          <img className="hidden pt-10 md:flex w-[80%]" src={userflow} alt=""/>
+          <img className="pt-4 md:hidden" src={userflowmobile} alt=""/>
         </div>
       </section>
       <section className="items-center justify-center pt-12 px-4 text-[#060709] bg-[#EDF6FF] xl:min-h-fit md:px-14 lg:px-24">
@@ -192,19 +194,19 @@ const Project2 = () => {
             <img className="" src={screenbefore1} alt="" />
             </div>
             <div className="flex flex-col items-center col-span-2">
-            <img src={screenbefore1} alt="" />
+            <img src={screenbefore2} alt="" />
             </div>
             <div className="flex flex-col items-center col-span-2">
-            <img src={screenbefore1} alt="" />
+            <img src={screenbefore3} alt="" />
             </div>
             <div className="flex flex-col items-center col-span-2">
-              <img src={screenbefore1} alt=""/>
+              <img src={screenbefore4} alt=""/>
             </div>
             <div className="flex flex-col items-center col-span-2">
-            <img src={screenbefore1} alt="" />
+            <img src={screenbefore5} alt="" />
             </div>
           </div>
-          <h2 className="pb-6 text-lg font-semibold pt-14 lg:text-2xl ">What we currently have</h2>
+          <h2 className="pb-6 text-lg font-semibold pt-14 lg:text-2xl ">What we think it should be</h2>
           <div className="grid grid-cols-10">
             <div className="flex flex-col items-center col-span-2">
               <img className="" src={screenafter1} alt=""/>
