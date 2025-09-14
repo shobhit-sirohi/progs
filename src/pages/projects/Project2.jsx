@@ -94,6 +94,12 @@ const Project2 = () => {
         >
           Outcome
         </a>
+        <a
+          href="#outcome"
+          className="text-[#040404] text-md md:text-lg transition-colors hover:text-[#6d6d6d]"
+        >
+          Aftermath
+        </a>
       </div>
       <section className="items-center justify-center lg:pt-12 px-4 text-060709 bg-[#FFFFFF] xl:min-h-fit md:px-14 lg:px-24">
         <div className="grid grid-cols-12 h-fit">

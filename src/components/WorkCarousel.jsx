@@ -130,6 +130,16 @@ const WorkCarousel = () => {
         className="relative w-full overflow-hidden"
         ref={emblaRef}
       >
+          {/* Left arrow for lg+ */}
+          <button
+          className="absolute left-0 right-0 z-20 hidden transition -translate-y-1/2 lg:flex top-1/2"
+          onClick={() => emblaApi && emblaApi.scrollPrev()}
+          aria-label="Previous work"
+          type="button"
+        >
+          <img src={polygon} alt="Previous" className="w-6 h-6 rotate-180" />
+        </button>
+        {/* Carousel content */}
         <div className="flex items-stretch gap-2 mt-2 mb-2 md:gap-6 lg:gap-10 font-inter">
           {work.map((project) => (
             <motion.div
@@ -212,7 +222,7 @@ const WorkCarousel = () => {
             </motion.div>
           ))}
         </div>
-        {/* Arrow button at right */}
+        {/* Right arrow for lg+ */}
         <button
           className="absolute right-0 z-20 -translate-y-1/2 top-1/2"
           onClick={() => emblaApi && emblaApi.scrollNext()}
@@ -222,7 +232,45 @@ const WorkCarousel = () => {
           <img src={polygon} alt="Next" className="w-6 h-6" />
         </button>
       </div>
-      <div className="flex gap-2 mt-4">
+      {/* Bottom controls: left arrow, dots, right arrow */}
+        <div className="flex items-center justify-between w-full gap-4 mt-4 lg:hidden">
+          <div>
+        {/* Left arrow button */}
+        <button
+          onClick={() => emblaApi && emblaApi.scrollPrev()}
+          aria-label="Previous work"
+          type="button"
+          className="p-2 rounded-full hover:bg-[#F95FE733] transition"
+        >
+          <img src={polygon} alt="Previous" className="w-6 h-6 rotate-180" />
+        </button>
+        
+        {/* Right arrow button */}
+        <button
+          onClick={() => emblaApi && emblaApi.scrollNext()}
+          aria-label="Next work"
+          type="button"
+          className="p-2 rounded-full hover:bg-[#F95FE733] transition"
+        >
+          <img src={polygon} alt="Next" className="w-6 h-6" />
+            </button>
+            </div>
+          {/* Dots */}
+        <div className="flex gap-2 p-4">
+          {work.map((_, index) => (
+            <button
+              key={index}
+              onClick={() => scrollTo(index)}
+              className={`w-2 h-2 rounded-full transition-all ${
+                index === selectedIndex
+                  ? "bg-[#F95FE7] w-4"
+                  : "bg-gray-300"
+              }`}
+            />
+          ))}
+        </div>
+      </div>
+      <div className="hidden gap-2 mt-4 lg:flex">
         {work.map((_, index) => (
           <button
             key={index}

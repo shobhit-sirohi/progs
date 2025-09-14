@@ -133,7 +133,7 @@ const Home = () => {
           <div className="flex items-start col-span-5 row-start-2 row-end-3 gap-4 xl:gap-8">
               <a href="mailto:pragativishwakarma.work@gmail.com"><img className=" w-[50px] xl:w-[70px]" src={gmail} alt="gmail icon" /></a>
               <a href="https://www.linkedin.com/in/pragati-vishwakarma-886372194/" target="_blank"><img className="w-[50px] xl:w-[70px]" src={linkedin} alt="linkedin icon" /></a>
-              <a href="#"><img className="w-[50px] xl:w-[70px]" src={behance} alt="behance icon" /></a>
+              <a href="https://www.behance.net/pragativishwak5" target="_blank"><img className="w-[50px] xl:w-[70px]" src={behance} alt="behance icon" /></a>
               <a href="https://www.instagram.com/pragati.irl/" target="_blank"><img  className="w-[50px] xl:w-[70px]" src={instagram} alt="instagram icon" /></a>
           </div>
           {/* Disk - Row 1, col 6-7 */}
@@ -203,7 +203,7 @@ const Home = () => {
             <div className="flex items-start gap-2 pt-4 sm:gap-4 md:gap-6">
               <a href="mailto:pragativishwakarma.work@gmail.com"><img className="w-[38px] sm:w-[45px] md:w-[60px]" src={gmail} alt="gmail icon" /></a>
               <a href="https://www.linkedin.com/in/pragati-vishwakarma-886372194/" target="_blank"><img className="w-[38px] sm:w-[45px] md:w-[60px]" src={linkedin} alt="linkedin icon" /></a>
-              <a href="#"><img className="w-[38px] sm:w-[45px] md:w-[60px]" src={behance} alt="behance icon" /></a>
+              <a href="https://www.behance.net/pragativishwak5" target="_blank"><img className="w-[38px] sm:w-[45px] md:w-[60px]" src={behance} alt="behance icon" /></a>
               <a href="https://www.instagram.com/pragati.irl/" target="_blank"><img  className="w-[38px] sm:w-[45px] md:w-[60px]" src={instagram} alt="instagram icon" /></a>
             </div>
             <div className="flex items-center justify-center sm:pt-6 pt-4 text-[10px] sm:text-sm">
