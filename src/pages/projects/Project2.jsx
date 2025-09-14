@@ -22,6 +22,7 @@ import screenafter2 from "../../assets/images/sa2.png";
 import screenafter3 from "../../assets/images/sa3.png";
 import screenafter4 from "../../assets/images/sa4.png";
 import screenafter5 from "../../assets/images/sa5.png";
+import hdfc from "../../assets/images/hdfc-logo.png";
 
 const Project2 = () => {
   return (
@@ -215,9 +216,30 @@ const Project2 = () => {
               <img src={screenafter5} alt=""/>
             </div>
         </div>
-
+        <div className="grid grid-cols-12 pt-6">
+          <div className="col-span-4">
+            <img src={hdfc} alt=""/>
+          </div>
+          <div className="col-span-8">
+            <div className="pt-10 text-white md:pt-0 md:pl-10 md:col-span-3">
+            <h3 className="pb-4 text-xl font-bold text-black pt-14">Features</h3>
+            <div className="flex flex-col w-full gap-4 md:flex-row">
+               <span className="flex items-center justify-center col-span-1 px-6 py-2 bg-[#003397] rounded-full">Hierarchy Fix</span>
+               <span className="flex items-center justify-center col-span-2 px-6 py-2 bg-[#003397] rounded-full">Simplified Navigation Bar</span>
+               <span className="flex items-center justify-center col-span-1 px-6 py-2 bg-[#003397] rounded-full">Decluttered Layout</span>
+               <span className="flex items-center justify-center col-span-2 px-6 py-2 bg-[#003397] rounded-full">Shortcuts</span>
+              </div>
+              <div className="flex flex-col w-full gap-4 pt-4 md:flex-row">
+               <span className="flex items-center justify-center col-span-1 px-6 py-2 bg-[#003397] rounded-full">Streamlined Task Flows</span>
+               <span className="flex items-center justify-center col-span-2 px-6 py-2 bg-[#003397] rounded-full">Clean, Intuitive UI</span>
+               <span className="flex items-center justify-center col-span-1 px-6 py-2 bg-[#003397] rounded-full">Quick Actions</span>
+               <span className="flex items-center justify-center col-span-2 px-6 py-2 bg-[#003397] rounded-full">Guided User Feedback</span>
+            </div>
+          </div>
+          </div>
+        </div>
       </section>
-      <section className="relative grid grid-cols-8 bg-[#F0F0F0]">
+      <section className="relative grid grid-cols-8 bg-[#FFFFFF]">
         <div className="col-span-12 md:col-span-4 pt-12 pl-4 text-[#060709] xl:min-h-fit md:pl-14 lg:pl-24">
           <h3 className="text-lg text-[#003397] font-bold lg:text-2xl pb-4 ">Reflections:</h3>
           <p className="text-lg lg:text-xl">This project showed me the <b>power of user feedback</b> in shaping meaningful design. I learned that <b>clarity and accessibility</b> matter more than feature overload, and even small changes in hierarchy or navigation can dramatically improve <b>user confidence.</b> Designing with empathy, especially for edge cases, helped me shift from just creating screens to <b>solving real user problems with purpose.</b></p>
