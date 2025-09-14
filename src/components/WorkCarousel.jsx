@@ -16,7 +16,7 @@ import polygon from "../assets/images/polygon.svg";
 
 const WorkCarousel = () => {
   const [emblaRef, emblaApi] = useEmblaCarousel({
-    align: "start",
+    align: "center",
     loop: true,
     dragFree: false,
     skipSnaps: false,
@@ -126,105 +126,108 @@ const WorkCarousel = () => {
           Explore
         </span>
       </h2>
-      <div
-        className="relative w-full overflow-hidden"
-        ref={emblaRef}
-      >
-          {/* Left arrow for lg+ */}
-          <button
-          className="absolute left-0 right-0 z-20 hidden transition -translate-y-1/2 lg:flex top-1/2"
+      <div className="relative w-full overflow-visible">
+        {/* Left Arrow */}
+        <button
+          className="hidden lg:flex items-center justify-center absolute z-30 top-1/2 -translate-y-1/2 left-[-2.5rem] p-2 transition"
           onClick={() => emblaApi && emblaApi.scrollPrev()}
           aria-label="Previous work"
           type="button"
         >
           <img src={polygon} alt="Previous" className="w-6 h-6 rotate-180" />
         </button>
-        {/* Carousel content */}
-        <div className="flex items-stretch gap-2 mt-2 mb-2 md:gap-6 lg:gap-10 font-inter">
-          {work.map((project) => (
-            <motion.div
-              key={project.id}
-              whileHover={{ scale: 1.01 }}
-              className="flex-[0_0_calc(100%-16px)] md:flex-[0_0_calc(50%-32px)] lg:flex-[0_0_calc(33.33%-40px)] flex"
-            >
-              {project.button === "Coming Soon" ? (
-                // No link wrapper for Coming Soon cards
-                <div className="block w-full h-full">
-                  <div className="flex flex-col h-full mx-2 pointer-events-none frosted-card">
-                    <img
-                      className="object-cover w-full rounded-xl md:rounded-2xl lg:rounded-3xl"
-                      src={project.image}
-                      alt={project.title}
-                    />
-                    <div className="flex flex-wrap gap-2 mt-2 md:mt-3 lg:mt-4">
-                      {project.tags.map((tag, idx) => (
-                        <p key={`${project.id}-tag-${idx}`} className="text-[#B794FF] flex gap-1 text-sm md:text-base">
-                          <img src={star} alt="" className="object-contain w-4 md:w-5" />
-                          {tag}
-                        </p>
-                      ))}
-                    </div>
-                    <h3 className="mt-2 text-xl font-bold text-white md:mt-3 lg:mt-4 md:text-2xl">
-                      {project.title}
-                    </h3>
-                    <p className="mt-2 text-sm text-white md:mt-3 ">
-                      {project.description}
-                    </p>
-                    <div className="pt-6 mt-auto">
-                      <div className="font-convergence max-w-fit py-1.5 md:py-2 px-5 md:px-6 text-sm md:text-base rounded-full border border-[#F95FE7] text-[#F95FE7] bg-[#F95FE733]">
-                        {project.button}
+        {/* Carousel */}
+        <div
+          className="relative w-full overflow-hidden"
+          ref={emblaRef}
+        >
+          {/* Carousel content */}
+          <div className="flex items-stretch gap-2 mt-2 mb-2 md:gap-6 lg:gap-10 font-inter">
+            {work.map((project) => (
+              <motion.div
+                key={project.id}
+                whileHover={{ scale: 1.01 }}
+                className="flex-[0_0_calc(100%-16px)] md:flex-[0_0_calc(50%-32px)] lg:flex-[0_0_calc(33.33%-40px)] flex"
+              >
+                {project.button === "Coming Soon" ? (
+                  // No link wrapper for Coming Soon cards
+                  <div className="block w-full h-full">
+                    <div className="flex flex-col h-full mx-2 pointer-events-none frosted-card">
+                      <img
+                        className="object-cover w-full rounded-xl md:rounded-2xl lg:rounded-3xl"
+                        src={project.image}
+                        alt={project.title}
+                      />
+                      <div className="flex flex-wrap gap-2 mt-2 md:mt-3 lg:mt-4">
+                        {project.tags.map((tag, idx) => (
+                          <p key={`${project.id}-tag-${idx}`} className="text-[#B794FF] flex gap-1 text-sm md:text-base">
+                            <img src={star} alt="" className="object-contain w-4 md:w-5" />
+                            {tag}
+                          </p>
+                        ))}
+                      </div>
+                      <h3 className="mt-2 text-xl font-bold text-white md:mt-3 lg:mt-4 md:text-2xl">
+                        {project.title}
+                      </h3>
+                      <p className="mt-2 text-sm text-white md:mt-3 ">
+                        {project.description}
+                      </p>
+                      <div className="pt-6 mt-auto">
+                        <div className="font-convergence max-w-fit py-1.5 md:py-2 px-5 md:px-6 text-sm md:text-base rounded-full border border-[#F95FE7] text-[#F95FE7] bg-[#F95FE733]">
+                          {project.button}
+                        </div>
                       </div>
                     </div>
                   </div>
-                </div>
-              ) : (
-                // Link wrapper for normal cards
-                <a
-                  href={project.link}
-                  className="block w-full h-full"
-                >
-                  <div className="flex flex-col h-full mx-2 frosted-card">
-                    <img
-                      className="object-cover w-full rounded-xl md:rounded-2xl lg:rounded-3xl"
-                      src={project.image}
-                      alt={project.title}
-                    />
-                    <div className="flex flex-wrap gap-2 mt-2 md:mt-3 lg:mt-4">
-                      {project.tags.map((tag, idx) => (
-                        <p key={`${project.id}-tag-${idx}`} className="text-[#B794FF] flex gap-1 text-sm md:text-base">
-                          <img src={star} alt="" className="object-contain w-4 md:w-5" />
-                          {tag}
-                        </p>
-                      ))}
+                ) : (
+                  // Link wrapper for normal cards
+                  <a
+                    href={project.link}
+                    className="block w-full h-full"
+                  >
+                    <div className="flex flex-col h-full mx-2 frosted-card">
+                      <img
+                        className="object-cover w-full rounded-xl md:rounded-2xl lg:rounded-3xl"
+                        src={project.image}
+                        alt={project.title}
+                      />
+                      <div className="flex flex-wrap gap-2 mt-2 md:mt-3 lg:mt-4">
+                        {project.tags.map((tag, idx) => (
+                          <p key={`${project.id}-tag-${idx}`} className="text-[#B794FF] flex gap-1 text-sm md:text-base">
+                            <img src={star} alt="" className="object-contain w-4 md:w-5" />
+                            {tag}
+                          </p>
+                        ))}
+                      </div>
+                      <h3 className="mt-2 text-xl font-bold text-white md:mt-3 lg:mt-4 md:text-2xl">
+                        {project.title}
+                      </h3>
+                      <p className="mt-2 text-sm text-white md:mt-3 ">
+                        {project.description}
+                      </p>
+                      <div className="pt-6 mt-auto">
+                        <a
+                          className="font-convergence flex max-w-fit items-center py-1.5 md:py-2 px-3 md:px-4 gap-2 text-sm md:text-base rounded-full bg-[#F95FE7]"
+                          href={project.link}
+                        >
+                          <span className="text-white">{project.button}</span>
+                          <img
+                            className="w-4 md:w-6 lg:w-8"
+                            src={arrow}
+                            alt="arrow vector for button"
+                          />
+                        </a>
+                      </div>
                     </div>
-                    <h3 className="mt-2 text-xl font-bold text-white md:mt-3 lg:mt-4 md:text-2xl">
-                      {project.title}
-                    </h3>
-                    <p className="mt-2 text-sm text-white md:mt-3 ">
-                      {project.description}
-                    </p>
-                    <div className="pt-6 mt-auto">
-                      <a
-                        className="font-convergence flex max-w-fit items-center py-1.5 md:py-2 px-3 md:px-4 gap-2 text-sm md:text-base rounded-full bg-[#F95FE7]"
-                        href={project.link}
-                      >
-                        <span className="text-white">{project.button}</span>
-                        <img
-                          className="w-4 md:w-6 lg:w-8"
-                          src={arrow}
-                          alt="arrow vector for button"
-                        />
-                      </a>
-                    </div>
-                  </div>
-                </a>
-              )}
-            </motion.div>
-          ))}
+                  </a>
+                )}
+              </motion.div>
+            ))}
+          </div>
         </div>
-        {/* Right arrow for lg+ */}
+        {/* Right Arrow */}
         <button
-          className="absolute right-0 z-20 -translate-y-1/2 top-1/2"
+          className="hidden lg:flex items-center justify-center absolute z-30 top-1/2 -translate-y-1/2 right-[-2.5rem] p-2 transition"
           onClick={() => emblaApi && emblaApi.scrollNext()}
           aria-label="Next work"
           type="button"
