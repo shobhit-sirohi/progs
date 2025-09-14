@@ -1,6 +1,9 @@
 .embla {
   overflow: hidden;
 }
+html, body {
+  overflow-x: hidden;
+}
 
 .embla__container {
   display: flex;
