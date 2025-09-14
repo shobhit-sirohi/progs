@@ -93,19 +93,22 @@ const Home = () => {
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2">
             <div className="flex flex-col items-center justify-center md:items-start md:order-1">
-              <h2 className="pt-14 pb-2 text-2xl font-bold font-hiragino lg:text-[35px] xl:text-[40px] lg:pb-10 flex flex-col 2xl:flex-row md:gap-2">
+              <h2 className="md:hidden pt-14 pb-2 text-xl font-bold font-hiragino lg:text-[35px] xl:text-[40px] lg:pb-10 flex flex-col 2xl:flex-row md:gap-2">
+                I see patterns: In {text}
+              </h2>
+              <h2 className="hidden md:flex pt-14 pb-2 text-2xl font-bold font-hiragino lg:text-[35px] xl:text-[40px] lg:pb-10 flex-col 2xl:flex-row md:gap-2">
                 I see patterns:
                 <span className="inline-block md:flex">
                   In {text}
                 </span>
               </h2>
-              <p className="text-center font-inter text-[1rem] xl:pr-20 md:text-start lg:text-[18px] xl:text-[20px]">
+              <p className="text-center font-inter text-sm xl:pr-20 md:text-start lg:text-[18px] xl:text-[20px]">
                 I do more than just design screens. I throw colors, textures, and a little chaos at them until they smile back. :)
               </p>
-              <p className="pb-4 text-center font-inter text-[1rem] xl:pr-20 lg:text-[18px] xl:text-[20px] md:text-start md:pb-7">
+              <p className="pb-4 text-center font-inter text-sm xl:pr-20 lg:text-[18px] xl:text-[20px] md:text-start md:pb-7">
                  UX is my playground, and organizing is my superpower. And when it comes to having fun? That's non-negotiable.
               </p>
-              <span className="font-inter text-base md:text-start text-[1rem] lg:text-[18px] xl:text-[21px] italic text-[#D9C7FF] font-semibold pb-4 md:pb-10 xl:pb-14">
+              <span className="font-inter text-base md:text-start text-sm lg:text-[18px] xl:text-[21px] italic text-[#D9C7FF] font-semibold pb-4 md:pb-10 xl:pb-14">
                 Let's create something that feels as fresh as a new box of crayons.
               </span>
               <a
