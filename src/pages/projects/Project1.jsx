@@ -47,8 +47,8 @@ const Project1 = () => {
       </div>
       </nav>
       <section className="pb-10 2xl:pb-0 items-center justify-center pt-12 px-4 text-060709 bg-[#F8F8F8] xl:min-h-fit md:px-14 lg:px-24">
-        <div className="grid grid-cols-1 h-fit md:grid-cols-12">
-          <div className="flex flex-col col-span-8 gap-6">
+        <div className="grid grid-cols-1 h-fit md:grid-cols-6">
+          <div className="flex flex-col col-span-4 gap-4">
             <h1 className="2xl:mt-20 text-3xl font-bold xl:leading-[5rem] xl:text-[52px] lg:leading-[4rem] lg:text-4xl font-hiragino">
               From Idea to Interface:<br/> My&nbsp; 
               <span className="text-[#F95FE7] inline-block xl:leading-[5rem] xl:text-[52px] lg:leading-[4rem] lg:text-4xl">
@@ -59,7 +59,7 @@ const Project1 = () => {
             <h2 className="text-xl font-semibold xl:text-2xl font-inter">Translating who I am into pixels and pages.</h2>
             <p className="text-md lg:text-xl font-inter xl:mr-28">This project was my chance to treat myself like a client, and I'm happy with the results. I set out to design a portfolio that boldly presents my work and reflects who I am: colorful, organized, and a little playful. This was a collaborative project with a front-end developer <a className=" italic text-[#004CE4]" href="https://shobhit.dev/" target="_blank">(shobhit.dev),</a> who brought my designs to life with his clean, responsive code that helped the site adapt from large desktop screens to mobile devices seamlessly. From curating the palette and layouts to adding my quirky touches, this project turned my personality into a fully functional digital space.</p>
           </div>
-          <div className="col-span-4">
+          <div className="col-span-2">
             <img className="w-[686px] pt-10 md:py-0" src={header} alt=""/>
           </div>
         </div> 
