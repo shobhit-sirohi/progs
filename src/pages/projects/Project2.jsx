@@ -136,13 +136,24 @@ const Project2 = () => {
             <img src={review3} alt="" />
           </div>
           </div>
-        
-        <div className="flex flex-col justify-between lg:flex-row">
-          <div>
-            problem statement
+        <div className="grid grid-cols-12 pt-6">
+          <div className="col-span-12 px-10 md:col-span-6">
+            <h3 className="pt-10 font-bold">Problem Statement:</h3>
+            <p className="pt-4">The HDFC Bank app feels outdated and hard to navigate, making it frustrating for users to complete basic banking tasks quickly and confidently.</p>
+            <h3 className="pt-10 font-bold">Goals:</h3>
+            <ul className="pl-10 list-disc">
+              <li className="pt-2"><b>Simplify navigation</b> for core tasks like checking balance, sending money, and paying bills.</li>
+              <li className="pt-2">Improve <b>visual clarity</b> through better hierarchy, spacing, and consistent UI elements.</li>
+              <li className="pt-2">Prioritize frequently-used actions on the home screen for <b>quicker access.</b></li>
+            </ul>
           </div>
-          <div>
-           what i found
+          <div className="col-span-12 px-10 md:col-span-6 md:border-solid md:border-l-[3px] border-[#003397] border-opacity-[26%]">
+            <h3 className="pt-10 font-bold">What I've Found:</h3>
+            <ul className="pl-10 list-disc">
+              <li className="pt-2">Users often struggle with the visual and navigational clutter, leading to confusion and unnecessary effort while using the app.</li>
+              <li className="pt-2">Core actions are not easily discoverable. Locating features like credit card payments suggest poor information architecture and low task visibility.</li>
+              <li className="pt-2">The app's current flow feels inefficient and unintuitive, requiring users to tap around or rely on memory rather than clear guidance.</li>
+            </ul>
           </div>
         </div>
       </section>
