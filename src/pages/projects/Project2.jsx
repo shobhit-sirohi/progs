@@ -205,7 +205,7 @@ const Project2 = () => {
             </div>
           </div>
           <h2 className="pb-6 text-lg font-semibold pt-14 lg:text-2xl ">What we currently have</h2>
-          <div className="grid grid-cols-10 gap-6">
+          <div className="grid grid-cols-10">
             <div className="flex flex-col items-center col-span-2">
               <img className="" src={screenafter1} alt=""/>
             </div>
@@ -251,7 +251,7 @@ const Project2 = () => {
           <p className="text-lg lg:text-xl">This project showed me the <b>power of user feedback</b> in shaping meaningful design. I learned that <b>clarity and accessibility</b> matter more than feature overload, and even small changes in hierarchy or navigation can dramatically improve <b>user confidence.</b> Designing with empathy, especially for edge cases, helped me shift from just creating screens to <b>solving real user problems with purpose.</b></p>
           <h3 className="text-lg text-[#003397] font-bold lg:text-2xl pt-10 pb-4 ">Takeaway:</h3>
           <p className="text-lg lg:text-xl"><b>This project reinforced my ability to turn raw feedback into structured design solutions that improve both user satisfaction and business impact.</b></p>
-          <a className="mt-10 font-convergence flex max-w-fit py-2 px-4 gap-2 md:text-xl rounded-full bg-[#ED232A] hover:bg-[#ce1f25] md:mb-8" href="/">
+          <a className="mt-10 font-convergence flex max-w-fit py-2 px-4 gap-2 md:text-xl rounded-full bg-[#ED232A] hover:bg-[#ce1f25] md:mb-8" href="https://www.figma.com/proto/Rn9GAAELJSCmar4yHmrQpQ/Case-Studies?page-id=0%3A1&node-id=244-2777&viewport=-3263%2C-1903%2C0.72&t=VWCb0cEEprzagFlH-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=244%3A2777" target="_blank">
            <span className="text-white">Prototype</span>
             <img className="w-6 md:w-8" src={arrow} alt="arrow vector for button" /></a>
         </div>

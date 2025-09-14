@@ -119,7 +119,7 @@ const Home = () => {
         <Chair />
         <ReviewCarousel />
       </section>
-      <section id="talk" className="items-center justify-center px-4 pt-4 bg-black md:min-h-fit md:px-14 lg:px-24">
+      <section id="talk" className="items-center justify-center px-4 pt-4 bg-[black] md:min-h-fit md:px-14 lg:px-24">
         {/* footer starts here */}
         <div className="hidden grid-cols-12 grid-rows-3 gap-4 p-4 pb-0 lg:grid ">
           {/* Let's Chat - Row 1, col 1-5 */}
