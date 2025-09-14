@@ -144,23 +144,23 @@ Showcase work & case studies clearly</li>
             </div>
           <div className="pt-10 text-white md:pt-0 md:pl-10 md:col-span-3">
             <h3 className="pb-4 text-xl font-bold text-black xl:text-2xl font-inter">Thus, Plan of Action (POA):</h3>
-            <div className="flex flex-col w-full gap-4 md:flex-row">
+            <div className="flex flex-col w-full gap-4 md:flex-row text-md mt-3 lg:text-[18px] font-inter">
                <span className="flex items-center justify-center col-span-1 px-6 py-2 bg-[#F1A2FF] rounded-full">Avoid Clutter</span>
                <span className="flex items-center justify-center col-span-2 px-6 py-2 bg-[#F1A2FF] rounded-full">Adaptable to various screen sizes</span>
                {/* <span className="col-span-1 p-2 bg-pink-300 rounded-lg">Avoid Clutter</span> */}
             </div>
-            <div className="flex flex-col w-full gap-4 pt-4 md:flex-row">
+            <div className="flex flex-col w-full gap-4 pt-4 md:flex-row text-md lg:text-[18px] font-inter">
                <span className="flex items-center justify-center col-span-1 px-6 py-2 bg-[#F1A2FF] rounded-full">Quirky elements to grab attention</span>
                <span className="flex items-center justify-center col-span-2 px-6 py-2 bg-[#F1A2FF] rounded-full">Clean to read</span>
                {/* <span className="col-span-1 p-2 bg-pink-300 rounded-lg">Avoid Clutter</span> */}
             </div>
-            <div className="flex flex-col w-full gap-4 pt-4 md:flex-row">
+            <div className="flex flex-col w-full gap-4 pt-4 md:flex-row text-md lg:text-[18px] font-inter">
                <span className="flex items-center justify-center col-span-1 px-6 py-2 bg-[#F1A2FF] rounded-full">Easy to navigate</span>
                <span className="flex items-center justify-center col-span-2 px-6 py-2 bg-[#F1A2FF] rounded-full">Quick to load</span>
                <span className="flex items-center justify-center col-span-2 px-6 py-2 bg-[#F1A2FF] rounded-full">Organised</span>
                {/* <span className="col-span-1 p-2 bg-pink-300 rounded-lg">Avoid Clutter</span> */}
             </div>
-            <div className="flex flex-col w-full gap-4 pt-4 md:flex-row">
+            <div className="flex flex-col w-full gap-4 pt-4 md:flex-row text-md lg:text-[18px] font-inter">
                <span className="flex items-center justify-center col-span-1 px-6 py-2 bg-[#F1A2FF] rounded-full">Fewer clicks</span>
                {/* <span className="col-span-1 p-2 bg-pink-300 rounded-lg">Avoid Clutter</span> */}
             </div>
@@ -193,9 +193,9 @@ Showcase work & case studies clearly</li>
       </section>
       <section className="relative grid grid-cols-8 bg-[#F0F0F0]">
         <div className="col-span-12 md:col-span-4 pt-12 pl-4 text-[#060709] xl:min-h-fit md:pl-14 lg:pl-32">
-          <h2 className="mb-4 text-[#060709] text-opacity-[13%] text-5xl md:text-6xl font-semibold font-hiragino">Outcome?</h2>
+          <h2 className="mb-4 lg:mb-10 text-[#060709] text-opacity-[13%] text-5xl md:text-6xl font-semibold font-hiragino">Outcome?</h2>
           <span className="text-lg font-semibold lg:text-xl">I’d love for you to see for yourself!</span>
-          <a className="mt-4 font-convergence flex max-w-fit py-2 px-4 gap-2 md:text-xl rounded-full bg-[#F95FE7] hover:bg-[#b544a7] md:mb-8" href="/">
+          <a className="mt-6 font-convergence flex max-w-fit py-2 px-4 gap-2 md:text-xl rounded-full bg-[#F95FE7] hover:bg-[#b544a7] md:mb-8" href="/">
            <span className="text-white">Live Site</span>
             <img className="w-6 md:w-8" src={arrow} alt="arrow vector for button" /></a>
         </div>
