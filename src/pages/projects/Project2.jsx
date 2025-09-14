@@ -48,7 +48,10 @@ const Project2 = () => {
           className="text-[#040404] text-md md:text-lg transition-colors hover:text-[#6d6d6d]"
         >
           Let's Talk
-        </a>
+          </a>
+          {/* <a className="mt-10 font-convergence flex max-w-fit py-2 px-4 gap-2 md:text-xl rounded-full bg-[#ED232A] hover:bg-[#ce1f25] md:mb-8" href="https://www.figma.com/proto/Rn9GAAELJSCmar4yHmrQpQ/Case-Studies?page-id=0%3A1&node-id=244-2777&viewport=-3263%2C-1903%2C0.72&t=VWCb0cEEprzagFlH-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=244%3A2777" target="_blank">
+           <span className="text-white">Prototype</span>
+            <img className="w-6 md:w-8" src={arrow} alt="arrow vector for button" /></a> */}
       </div>
       </nav>
       <section className="pb-10 2xl:pb-0 items-center justify-center pt-12 px-4 text-060709 bg-[#F8F8F8] xl:min-h-fit md:px-14 lg:px-24">
@@ -62,7 +65,7 @@ const Project2 = () => {
               <span className="inline-block text-3xl xl:leading-[5rem] xl:text-6xl lg:leading-[4rem] lg:text-4xl">Bank</span>
             </h1>
             <h2 className="text-xl font-semibold xl:text-2xl font-inter">Reimagining the HDFC mobile app for better clarity, speed, and everyday usability.</h2>
-            <p className="text-md lg:text-xl font-inter xl:mr-28">The HDFC Bank app is packed with features, but that power comes at the cost of cluttered screens, long flows, and an experience that typically overwhelms users. Not everyone is technologically intuitive. <br/>This redesign simplifies key journeys like checking balances, paying credit card bills, and sending money without compromising on security or functionality.</p>
+            <p className="text-md lg:text-xl font-inter xl:mr-28">The HDFC Bank app is packed with features, but that power comes at the cost of cluttered screens, long flows, and an experience that typically overwhelms users. Not everyone is technologically intuitive. <br />This redesign simplifies key journeys like checking balances, paying credit card bills, and sending money without compromising on security or functionality.</p>
           </div>
           <div className="col-span-2">
             <img className="pt-10 md:py-0" src={header} alt=""/>
@@ -225,10 +228,10 @@ const Project2 = () => {
             </div>
         </div>
         <div className="grid grid-cols-12 pt-6">
-          <div className="col-span-4">
+          <div className="col-span-12 md:col-span-4">
             <img src={hdfc} alt=""/>
           </div>
-          <div className="col-span-8">
+          <div className="col-span-12 md:col-span-8">
             <div className="pt-10 text-white md:pt-0 md:pl-10 md:col-span-3">
             <h3 className="pb-4 text-xl font-bold text-black pt-14">Features</h3>
             <div className="flex flex-col w-full gap-4 md:flex-row">
@@ -248,7 +251,7 @@ const Project2 = () => {
         </div>
       </section>
       <section className="relative grid grid-cols-8 bg-[#FFFFFF]">
-        <div className="col-span-12 md:col-span-4 pt-12 pl-4 text-[#060709] xl:min-h-fit md:pl-14 lg:pl-24">
+        <div className="col-span-12 md:col-span-5 pt-12 lg:pt-0 lg:flex lg:flex-col lg:justify-center pl-4 text-[#060709] xl:min-h-fit md:pl-14 lg:pl-24">
           <h3 className="text-lg text-[#003397] font-bold lg:text-2xl pb-4 ">Reflections:</h3>
           <p className="text-lg lg:text-xl">This project showed me the <b>power of user feedback</b> in shaping meaningful design. I learned that <b>clarity and accessibility</b> matter more than feature overload, and even small changes in hierarchy or navigation can dramatically improve <b>user confidence.</b> Designing with empathy, especially for edge cases, helped me shift from just creating screens to <b>solving real user problems with purpose.</b></p>
           <h3 className="text-lg text-[#003397] font-bold lg:text-2xl pt-10 pb-4 ">Takeaway:</h3>
@@ -257,7 +260,7 @@ const Project2 = () => {
            <span className="text-white">Prototype</span>
             <img className="w-6 md:w-8" src={arrow} alt="arrow vector for button" /></a>
         </div>
-        <div className="col-span-12 md:col-span-4">
+        <div className="col-span-12 md:col-span-3">
           <img className="items-end hidden justify-self-end md:flex" src={footerimage} alt="footer laptop image"/>
         </div>
       </section>
