@@ -17,7 +17,7 @@ import polygon from "../assets/images/polygon.svg";
 const WorkCarousel = () => {
   const [emblaRef, emblaApi] = useEmblaCarousel({
     align: "center",
-    loop: true,
+    loop: false,
     dragFree: false,
     skipSnaps: false,
     slidesToScroll: 1,
