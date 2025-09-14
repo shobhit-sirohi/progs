@@ -94,7 +94,7 @@ const Project1 = () => {
       <section className="items-center justify-center lg:pt-12 px-4 text-060709 bg-[#F0F0F0] xl:min-h-fit md:px-14 lg:px-24">
         <div className="grid grid-cols-1 h-fit md:grid-cols-6">
           <div className="md:col-span-5">
-            <p className="py-10 text-xl font-bold xl:text-2xl font-inter">I designed and built this personal portfolio website to reflect my colorful personality, showcase my UI/UX capabilities, and make it easy for recruiters and collaborators to get in touch.</p>
+            <p className="py-10 text-xl font-semibold xl:text-2xl font-inter">I designed and built this personal portfolio website to reflect my colorful personality, showcase my UI/UX capabilities, and make it easy for recruiters and collaborators to get in touch.</p>
           </div>
           <div className="flex flex-col col-span-3 gap-6 lg:flex-row ">
             <div className="col-span-3">
