@@ -12,8 +12,16 @@ import card1 from "../../assets/images/card1.png";
 import card2 from "../../assets/images/card2.png";
 import arrow from "../../assets/images/arrow.svg";
 import footerimage from "../../assets/images/footer-p2.png";
-import footerdiskimagemobile from "../../assets/images/footerdiskimagemobile.png";
-import disk from "../../assets/images/rotating-circle.png";
+import screenbefore1 from "../../assets/images/sb1.png";
+import screenbefore2 from "../../assets/images/sb2.png";
+import screenbefore3 from "../../assets/images/sb3.png";
+import screenbefore4 from "../../assets/images/sb4.png";
+import screenbefore5 from "../../assets/images/sb5.png";
+import screenafter1 from "../../assets/images/sa1.png";
+import screenafter2 from "../../assets/images/sa2.png";
+import screenafter3 from "../../assets/images/sa3.png";
+import screenafter4 from "../../assets/images/sa4.png";
+import screenafter5 from "../../assets/images/sa5.png";
 
 const Project2 = () => {
   return (
@@ -148,34 +156,68 @@ const Project2 = () => {
            <img className="" src={card2} alt=""/>
           </div>
           </div>
-        <div className="flex flex-col items-center justify-center gap-20 pb-16 lg:flex-row ">
-          
-          
-        </div>
         <div className="flex flex-col items-center justify-center pb-16 ">
           <h3 className="text-2xl font-bold ">User Flow</h3>
           <img className="hidden md:flex" src={userflow} alt=""/>
           <img className="md:hidden" src={userflowmobile} alt=""/>
         </div>
       </section>
+      <section className="items-center justify-center pt-12 px-4 text-[#060709] bg-[#EDF6FF] xl:min-h-fit md:px-14 lg:px-24">
+        <h2 className="pb-6 text-lg font-semibold lg:text-2xl ">What we currently have</h2>
+
+          <div className="grid grid-cols-10">
+            <div className="flex flex-col items-center col-span-2">
+            <img className="" src={screenbefore1} alt="" />
+            <p>Unnecessary ads</p>
+            </div>
+            <div className="flex flex-col items-center col-span-2">
+            <img src={screenbefore2} alt="" />
+            <p>Unnecessary Actions needed by the user</p>
+            </div>
+            <div className="flex flex-col items-center col-span-2">
+            <img src={screenbefore3} alt="" />
+            <p>Common action items burried under menus</p>
+            </div>
+            <div className="flex flex-col items-center col-span-2">
+              <img src={screenbefore4} alt=""/>
+            </div>
+            <div className="flex flex-col items-center col-span-2">
+            <img src={screenbefore5} alt="" />
+            <p>Unclear Hierarchy</p>
+            </div>
+          </div>
+          <h2 className="pb-6 text-lg font-semibold pt-14 lg:text-2xl ">What we currently have</h2>
+          <div className="grid grid-cols-10">
+            <div className="flex flex-col items-center col-span-2">
+              <img className="" src={screenafter1} alt=""/>
+            </div>
+            <div className="flex flex-col items-center col-span-2">
+              <img src={screenafter2} alt=""/>
+            </div>
+            <div className="flex flex-col items-center col-span-2">
+              <img src={screenafter3} alt=""/>
+            </div>
+            <div className="flex flex-col items-center col-span-2">
+              <img src={screenafter4} alt=""/>
+            </div>
+            <div className="flex flex-col items-center col-span-2">
+              <img src={screenafter5} alt=""/>
+            </div>
+        </div>
+
+      </section>
       <section className="relative grid grid-cols-8 bg-[#F0F0F0]">
         <div className="col-span-12 md:col-span-4 pt-12 pl-4 text-[#060709] xl:min-h-fit md:pl-14 lg:pl-24">
-          <span className="text-lg font-semibold lg:text-xl">I’d love for you to see for yourself!</span>
-          <a className="mt-4 font-convergence flex max-w-fit py-2 px-4 gap-2 md:text-xl rounded-full bg-[#F95FE7] hover:bg-[#b544a7] md:mb-8" href="/">
-           <span className="text-white">Live Site</span>
+          <h3 className="text-lg text-[#003397] font-bold lg:text-2xl pb-4 ">Reflections:</h3>
+          <p className="text-lg lg:text-xl">This project showed me the <b>power of user feedback</b> in shaping meaningful design. I learned that <b>clarity and accessibility</b> matter more than feature overload, and even small changes in hierarchy or navigation can dramatically improve <b>user confidence.</b> Designing with empathy, especially for edge cases, helped me shift from just creating screens to <b>solving real user problems with purpose.</b></p>
+          <h3 className="text-lg text-[#003397] font-bold lg:text-2xl pt-10 pb-4 ">Takeaway:</h3>
+          <p className="text-lg lg:text-xl"><b>This project reinforced my ability to turn raw feedback into structured design solutions that improve both user satisfaction and business impact.</b></p>
+          <a className="mt-10 font-convergence flex max-w-fit py-2 px-4 gap-2 md:text-xl rounded-full bg-[#ED232A] hover:bg-[#ce1f25] md:mb-8" href="/">
+           <span className="text-white">Prototype</span>
             <img className="w-6 md:w-8" src={arrow} alt="arrow vector for button" /></a>
         </div>
         <div className="col-span-12 md:col-span-4">
-          <a href="/Pragati-CreativeDesigner-Resume.pdf" target="_blank" rel="noopener noreferrer" title="View Pragati's Resume">
-              <motion.img
-              className="absolute cursor-pointer  w-24 lg:w-[130px] xl:w-[150px] "
-                 src={disk}
-                alt="pragati vishkwakarma resume"
-                animate={{ rotate: 360 }}
-                transition={{repeat: Infinity, duration: 20, ease: "linear"}}
-            /></a>
-          <img className="hidden md:flex" src={footerimage} alt="footer laptop image"/>
-          <img className="md:hidden" src={footerdiskimagemobile} alt="footer laptop image mobile"/>
+          <img className="items-end hidden justify-self-end md:flex" src={footerimage} alt="footer laptop image"/>
         </div>
       </section>
       </div>
