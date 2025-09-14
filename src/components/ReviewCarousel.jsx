@@ -15,7 +15,7 @@ import blueGradient from "../assets/images/bottom-blue-gradient.png";
 const ReviewCarousel = () => {
   const [emblaRef, emblaApi] = useEmblaCarousel({
     align: "start",
-    loop: true,
+    loop: false,
     dragFree: false,
     skipSnaps: false,
     slidesToScroll: 1,

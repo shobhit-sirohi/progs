@@ -1,8 +1,9 @@
 import { motion } from "framer-motion";
 import header from "../../assets/images/header-mockup.png";
-import mockup1 from "../../assets/images/mockup1.png";
+import mockup1 from "../../assets/images/mockup1png.png";
 import mockup2 from "../../assets/images/mockup2.png";
 import mockup3 from "../../assets/images/mockup3.png";
+import mockup4 from "../../assets/images/mockup4.png";
 import review1 from "../../assets/images/review1.png";
 import review2 from "../../assets/images/review2.png";
 import review3 from "../../assets/images/review3.png";
@@ -120,14 +121,17 @@ const Project2 = () => {
           </div>
         </div>
         <div className="grid grid-cols-12 gap-10 pt-10 lg:gap-0">
-          <div className="flex items-center justify-center col-span-12 md:col-span-4">
+          <div className="flex items-center justify-center col-span-12 md:col-span-3">
             <img className="" src={mockup1} alt="" />
           </div>
-          <div className="flex items-center justify-center col-span-12 md:col-span-4">
+          <div className="flex items-center justify-center col-span-12 md:col-span-3">
             <img src={mockup2} alt=""/>
           </div>
-          <div className="flex items-center justify-center col-span-12 md:col-span-4">
+          <div className="flex items-center justify-center col-span-12 md:col-span-3">
             <img src={mockup3} alt="" />
+          </div>
+          <div className="flex items-center justify-center col-span-12 md:col-span-3">
+            <img src={mockup4} alt="" />
           </div>
           </div>
       </section>
