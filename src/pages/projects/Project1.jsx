@@ -46,7 +46,7 @@ const Project1 = () => {
         </a>
       </div>
       </nav>
-      <section className="pb-10 2xl:pb-0 items-center justify-center pt-12 px-4 text-060709 bg-[#F8F8F8] xl:min-h-fit md:px-14 lg:px-24">
+      <section className="pb-10 2xl:pb-0 items-center justify-center pt-12 px-4 text-060709 bg-[#F8F8F8] xl:min-h-fit md:px-14 lg:px-32">
         <div className="grid grid-cols-1 h-fit md:grid-cols-6">
           <div className="flex flex-col col-span-4 gap-4">
             <h1 className="2xl:mt-10 text-3xl font-bold xl:leading-[5rem] xl:text-[52px] lg:leading-[4rem] lg:text-4xl font-hiragino">
@@ -64,7 +64,7 @@ const Project1 = () => {
           </div>
         </div> 
       </section>
-      <div className="2xl:mt-[-9rem] flex flex-col md:flex-row gap-2 md:gap-0 items-center space-x-[0] md:space-x-[3rem] lg:space-x-[5rem] p-4 md:px-14 lg:px-24 font-inter
+      <div className="2xl:mt-[-9rem] flex flex-col md:flex-row gap-2 md:gap-0 items-center space-x-[0] md:space-x-[3rem] lg:space-x-[5rem] p-4 md:px-14 lg:px-32 font-inter
       bg-[linear-gradient(to_right,rgba(231,64,235,0.15)_0%,rgba(59,25,156,0.15)_100%)] shadow-2xs">
         <a
           href="#overview"
@@ -91,7 +91,7 @@ const Project1 = () => {
           Outcome
         </a>
       </div>
-      <section className="items-center justify-center lg:pt-12 px-4 text-060709 bg-[#F0F0F0] xl:min-h-fit md:px-14 lg:px-24">
+      <section className="items-center justify-center lg:pt-12 px-4 text-060709 bg-[#F0F0F0] xl:min-h-fit md:px-14 lg:px-32 pb-6 xl:pb-16">
         <div className="grid grid-cols-1 h-fit md:grid-cols-6">
           <div className="md:col-span-5">
             <p className="py-10 text-xl font-semibold xl:text-2xl font-inter">I designed and built this personal portfolio website to reflect my colorful personality, showcase my UI/UX capabilities, and make it easy for recruiters and collaborators to get in touch.</p>
@@ -120,30 +120,30 @@ const Project1 = () => {
               </div>
               </div>
             <div className="col-span-3 md:pl-8 mt-10 md:ml-10 md:border-l-2 border-[#F95FE7] border-opacity-20 border-solid ">
-            <span>Duration: <span className="font-bold">XX weeks</span></span>
+            <span>Duration: <span className="font-bold">04 weeks</span></span>
           </div>
           </div>
           
         </div>
       </section>
-      <section className="items-center justify-center pt-12 px-4 text-060709 bg-[#F8F8F8] xl:min-h-fit md:px-14 lg:px-24 pb-10">
+      <section className="items-center justify-center pt-12 px-4 text-060709 bg-[#F8F8F8] xl:min-h-fit md:px-14 lg:px-32 pb-10">
         <div className="grid grid-cols-1 h-fit md:grid-cols-6">
           <div className="md:col-span-3">
             <div>
-          <h3 className="font-bold">Problem Statement:</h3>
-            <p>Many modern portfolios overwhelm viewers with endless scrolling, flashy animations, and hidden clicks that confuse rather than guide. I set out to create a portfolio that’s clear, intuitive, engaging, and mindful without any complexities.</p>
+          <h3 className="text-xl font-semibold xl:text-2xl font-inter">Problem Statement:</h3>
+            <p className="mt-4 text-md lg:text-xl font-inter">Many modern portfolios overwhelm viewers with endless scrolling, flashy animations, and hidden clicks that confuse rather than guide. I set out to create a portfolio that’s clear, intuitive, engaging, and mindful without any complexities.</p>
             </div>
             <div className="mt-8">
-          <h3 className="font-bold">Goals:</h3>
-              <ol>
+          <h3 className="text-xl font-semibold xl:text-2xl font-inter">Goals:</h3>
+              <ul className="pl-8 mt-4 list-disc text-md lg:text-xl font-inter">
                 <li>
 Showcase work & case studies clearly</li>
 <li>Keep navigation simple</li>
-<li>Add quirky, personal touches (stickers, animations, etc.)</li></ol>
+<li>Add quirky, personal touches (stickers, animations, etc.)</li></ul>
             </div>
             </div>
           <div className="pt-10 text-white md:pt-0 md:pl-10 md:col-span-3">
-            <h3 className="pb-4 text-xl font-bold text-black">Thus, Plan of Action (POA):</h3>
+            <h3 className="pb-4 text-xl font-bold text-black xl:text-2xl font-inter">Thus, Plan of Action (POA):</h3>
             <div className="flex flex-col w-full gap-4 md:flex-row">
                <span className="flex items-center justify-center col-span-1 px-6 py-2 bg-[#F1A2FF] rounded-full">Avoid Clutter</span>
                <span className="flex items-center justify-center col-span-2 px-6 py-2 bg-[#F1A2FF] rounded-full">Adaptable to various screen sizes</span>
@@ -167,21 +167,21 @@ Showcase work & case studies clearly</li>
           </div>
         </div>
       </section>
-      <section className="items-center justify-center pt-12 px-4 text-[#060709] bg-[#F0F0F0] xl:min-h-fit md:px-14 lg:px-24">
+      <section className="items-center justify-center pt-12 px-4 text-[#060709] bg-[#F0F0F0] xl:min-h-fit md:px-14 lg:px-32">
         <div className="col-span-2 pb-16">
-          <h3 className="text-2xl font-bold">Moodboard</h3>
+          <h3 className="text-xl font-semibold xl:text-2xl font-inter">Moodboard</h3>
           <p className="py-2 text-md lg:text-xl font-inter">A curated visual direction that sets the tone for my portfolio, all the way from my color choices to the overall vibe.</p>
           <img className="hidden md:flex" src={moodboard} alt=""/>
           <img className="md:hidden" src={moodboardmobile} alt=""/>
         </div>
         <div className="col-span-2 pb-10">
-          <h3 className="text-2xl font-bold">UI elements</h3>
+          <h3 className="text-xl font-semibold xl:text-2xl font-inter">UI elements</h3>
           <p className="pt-2 pb-4 text-md lg:text-xl font-inter">Here are the building blocks of the interface, which include all the buttons, stickers, cards, and micro-interactions, that helped me bring the design language to life.</p>
           <img className="hidden md:flex" src={uielements} alt=""/>
           <img className="md:hidden" src={uimobile} alt=""/>
         </div>
         <div className="grid grid-cols-7">
-          <h3 className="col-span-6 text-2xl font-bold">Wireframe</h3>
+          <h3 className="col-span-6 text-xl font-semibold xl:text-2xl font-inter">Wireframe</h3>
           <p className="col-span-6 pt-2 mb-10 text-md lg:text-xl font-inter">A structural outline of the portfolio that defines the layout, hierarchy, and navigation flow before developing the website. These wireframes mark the foundation of the final design.</p>
        <div className="col-span-5 pb-10">
             <img src={long1} alt="" />
@@ -192,7 +192,7 @@ Showcase work & case studies clearly</li>
           </div>
       </section>
       <section className="relative grid grid-cols-8 bg-[#F0F0F0]">
-        <div className="col-span-12 md:col-span-4 pt-12 pl-4 text-[#060709] xl:min-h-fit md:pl-14 lg:pl-24">
+        <div className="col-span-12 md:col-span-4 pt-12 pl-4 text-[#060709] xl:min-h-fit md:pl-14 lg:pl-32">
           <h2 className="mb-4 text-[#060709] text-opacity-[13%] text-5xl md:text-6xl font-semibold font-hiragino">Outcome?</h2>
           <span className="text-lg font-semibold lg:text-xl">I’d love for you to see for yourself!</span>
           <a className="mt-4 font-convergence flex max-w-fit py-2 px-4 gap-2 md:text-xl rounded-full bg-[#F95FE7] hover:bg-[#b544a7] md:mb-8" href="/">
