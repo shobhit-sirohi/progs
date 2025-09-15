@@ -29,7 +29,7 @@ const Project2 = () => {
   return (
     <div className="bg-white font-inter">
       <nav className="sticky top-0 z-50 p-4 md:p-6 font-inter text-[#040404]
-     md:px-32 bg-[#F0F0F0] shadow-lg">
+     md:px-14 lg:px-24 2xl:px-32 bg-[#F0F0F0] shadow-lg">
       <div className="flex items-center space-x-[2rem] md:space-x-[5rem]">
         <a
           href="/"
@@ -49,22 +49,19 @@ const Project2 = () => {
         >
           Let's Talk
           </a>
-          {/* <a className="mt-10 font-convergence flex max-w-fit py-2 px-4 gap-2 md:text-xl rounded-full bg-[#ED232A] hover:bg-[#ce1f25] md:mb-8" href="https://www.figma.com/proto/Rn9GAAELJSCmar4yHmrQpQ/Case-Studies?page-id=0%3A1&node-id=244-2777&viewport=-3263%2C-1903%2C0.72&t=VWCb0cEEprzagFlH-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=244%3A2777" target="_blank">
-           <span className="text-white">Prototype</span>
-            <img className="w-6 md:w-8" src={arrow} alt="arrow vector for button" /></a> */}
       </div>
       </nav>
-      <section className="pb-10 2xl:pb-0 items-center justify-center pt-12 px-4 text-060709 bg-[#F8F8F8] xl:min-h-fit md:px-14 lg:px-24">
+      <section className="pb-10 2xl:pb-0 items-center justify-center pt-12 px-4 text-060709 bg-[#F8F8F8] xl:min-h-fit md:px-14 lg:px-24 2xl:px-32">
         <div className="grid grid-cols-1 h-fit md:grid-cols-6">
           <div className="flex flex-col col-span-4 gap-6">
-            <h1 className="2xl:mt-20 text-3xl font-bold xl:leading-[5rem] xl:text-6xl lg:leading-[4rem] lg:text-4xl font-hiragino">
+            <h1 className="top-mar lg:mt-5 xl:mt-10 2xl:mt-20 text-3xl lg:text-4xl xl:text-[45px] 2xl:text-[52px] font-bold xl:leading-[5rem] lg:leading-[4rem] font-hiragino">
               UX Refresh for&nbsp; 
-              <span className="text-[#004C8F] inline-block xl:leading-[5rem] xl:text-6xl lg:leading-[4rem] lg:text-4xl">
+              <span className="text-[#004C8F] inline-block xl:leading-[5rem] lg:leading-[4rem] ">
                 HDFC&nbsp;
               </span>
-              <span className="inline-block text-3xl xl:leading-[5rem] xl:text-6xl lg:leading-[4rem] lg:text-4xl">Bank</span>
+              <span className="inline-block  xl:leading-[5rem] lg:leading-[4rem] l">Bank</span>
             </h1>
-            <h2 className="text-xl font-semibold xl:text-2xl font-inter">Reimagining the HDFC mobile app for better clarity, speed, and everyday usability.</h2>
+            <h2 className="text-lg font-semibold md:text-xl xl:text-2xl font-inter">Reimagining the HDFC mobile app for better clarity, speed, and everyday usability.</h2>
             <p className="text-md lg:text-xl font-inter 2xl:mr-28">The HDFC Bank app is packed with features, but that power comes at the cost of cluttered screens, long flows, and an experience that typically overwhelms users. Not everyone is technologically intuitive. <br />This redesign simplifies key journeys like checking balances, paying credit card bills, and sending money without compromising on security or functionality.</p>
           </div>
           <div className="col-span-2">
@@ -72,52 +69,52 @@ const Project2 = () => {
           </div>
         </div> 
       </section>
-      <div className="xl:mt-[-9rem] flex flex-col md:flex-row gap-2 md:gap-0 items-center space-x-[0] md:space-x-[3rem] lg:space-x-[3.9rem] 2xl:space-x-[5rem] p-4 md:px-14 lg:px-24 font-inter
+      <div className="xl:mt-[-9rem] flex flex-col md:flex-row gap-2 md:gap-0 items-center space-x-[0] md:space-x-[3rem] lg:space-x-[3.5rem] 2xl:space-x-[5rem] p-4 md:px-14 lg:px-24 2xl:px-32 font-inter
       bg-[linear-gradient(to_right,rgba(231,64,235,0.15)_0%,rgba(59,25,156,0.15)_100%)] shadow-2xs">
         <a
           href="#overviewp2"
-          className="text-[#040404] text-md md:text-lg transition-colors hover:text-[#6d6d6d]"
+          className="text-[#040404] text-md lg:text-lg transition-colors hover:text-[#6d6d6d]"
         >
           Overview (TL;DR)
         </a>
         <a
           href="#problemp2"
-          className="text-[#040404] text-md md:text-lg transition-colors hover:text-[#6d6d6d]"
+          className="text-[#040404] text-md lg:text-lg transition-colors hover:text-[#6d6d6d]"
         >
           Problem & Goal
         </a>
         <a
           href="#approachp2"
-          className="text-[#040404] text-md md:text-lg transition-colors hover:text-[#6d6d6d]"
+          className="text-[#040404] text-md lg:text-lg transition-colors hover:text-[#6d6d6d]"
         >
           My Approach
         </a>
         <a
           href="#outcomep2"
-          className="text-[#040404] text-md md:text-lg transition-colors hover:text-[#6d6d6d]"
+          className="text-[#040404] text-md lg:text-lg transition-colors hover:text-[#6d6d6d]"
         >
           Outcome
         </a>
         <a
           href="#outcomep2"
-          className="text-[#040404] text-md md:text-lg transition-colors hover:text-[#6d6d6d]"
+          className="text-[#040404] text-md lg:text-lg transition-colors hover:text-[#6d6d6d]"
         >
           Aftermath
         </a>
       </div>
-      <section id="overviewp2" className="items-center justify-center lg:pt-12 px-4 text-060709 bg-[#FFFFFF] xl:min-h-fit md:px-14 lg:px-24">
+      <section id="overviewp2" className="items-center justify-center lg:pt-12 px-4 text-060709 bg-[#FFFFFF] xl:min-h-fit md:px-14 lg:px-24 2xl:px-32">
         <div className="grid grid-cols-12 h-fit">
           <div className="col-span-12 md:col-span-8">
-            <p className="py-10 text-xl font-semibold xl:text-2xl font-inter">HDFC's mobile app is cluttered and hard to navigate for everyday users. This redesign focused on simplifying operations that are frequently carried out, like checking balances, sending money, and paying bills.<br /><br />The result is a cleaner, faster, and more intuitive experience for users of all tech levels.</p>
-            <span className="text-xl font-semibold xl:text-2xl font-inter text-[#003397]">Project Overview:</span>
+            <p className="py-10 text-lg font-semibold md:text-xl xl:text-2xl font-inter">HDFC's mobile app is cluttered and hard to navigate for everyday users. This redesign focused on simplifying operations that are frequently carried out, like checking balances, sending money, and paying bills.<br /><br />The result is a cleaner, faster, and more intuitive experience for users of all tech levels.</p>
+            <span className="text-lg md:text-xl xl:text-2xl font-semibold  font-inter text-[#003397]">Project Overview:</span>
             <ul className="pt-4 pl-8 list-disc">
-              <li className="text-xl">
+              <li className="text-lg md:text-xl xl:text-2xl">
                 <span className="font-bold">Problem:</span> Overwhelming UI and long user journeys
               </li>
-              <li className="text-xl">
+              <li className="text-lg md:text-xl xl:text-2xl">
                 <span className="font-bold ">Goal:</span> Make core tasks easier and faster
               </li>
-              <li className="text-xl">
+              <li className="text-lg md:text-xl xl:text-2xl">
                 <span className="font-bold">Outcome:</span> A streamlined, user-friendly app with smart shortcuts and improved accessibility
               </li>
             </ul>
@@ -138,7 +135,7 @@ const Project2 = () => {
           </div>
           </div>
       </section>
-      <section id="problemp2" className=" pt-12 px-4 text-060709 bg-[#EDF6FF] xl:min-h-fit md:px-14 lg:px-24 pb-10">
+      <section id="problemp2" className=" pt-12 px-4 text-060709 bg-[#EDF6FF] xl:min-h-fit md:px-14 lg:px-24 2xl:px-32 pb-10">
         <div className="grid grid-cols-12 gap-4 pt-10 md:gap-10 lg:gap-0">
           <div className="flex items-center justify-center col-span-12 md:col-span-4">
             <img className="" src={review1} alt="" />
@@ -171,7 +168,7 @@ const Project2 = () => {
           </div>
         </div>
       </section>
-      <section id="approachp2" className="items-center justify-center pt-12 px-4 text-[#060709] bg-[#FFFFFF] xl:min-h-fit md:px-14 lg:px-24">
+      <section id="approachp2" className="items-center justify-center pt-12 px-4 text-[#060709] bg-[#FFFFFF] xl:min-h-fit md:px-14 lg:px-24 2xl:px-32">
         <h3 className="text-2xl font-bold ">User Personas</h3>
         <div className="grid grid-cols-12 gap-4 pt-10 md:gap-10 lg:gap-10">
           <div className="flex items-center justify-center col-span-12 md:col-span-6">
@@ -189,7 +186,7 @@ const Project2 = () => {
           <img className="pt-4 md:hidden" src={userflowmobile} alt=""/>
         </div>
       </section>
-      <section id="outcomep2" className="items-center justify-center pt-12 px-4 text-[#060709] bg-[#EDF6FF] xl:min-h-fit md:px-14 lg:px-24">
+      <section id="outcomep2" className="items-center justify-center pt-12 px-4 text-[#060709] bg-[#EDF6FF] xl:min-h-fit md:px-14 lg:px-24 2xl:px-32">
         <h2 className="pb-6 text-lg font-semibold lg:text-2xl ">What we currently have</h2>
 
           <div className="grid grid-cols-10">
@@ -251,7 +248,7 @@ const Project2 = () => {
         </div>
       </section>
       <section id="aftermathp2" className="pb-10 md:pb-0 relative grid grid-cols-8 bg-[#FFFFFF]">
-        <div className="col-span-12 md:col-span-5 pt-12 lg:pt-0 lg:flex lg:flex-col lg:justify-center pl-4 text-[#060709] xl:min-h-fit md:pl-14 lg:pl-24">
+        <div className="col-span-12 md:col-span-5 pt-12 lg:pt-0 lg:flex lg:flex-col lg:justify-center pl-4 text-[#060709] xl:min-h-fit md:pl-14 lg:pl-24 xl:pl-32">
           <h3 className="text-lg text-[#003397] font-bold lg:text-xl pt-10 pb-4 ">Reflections:</h3>
           <p className="text-lg lg:text-xl">This project showed me the <b>power of user feedback</b> in shaping meaningful design. I learned that <b>clarity and accessibility</b> matter more than feature overload, and even small changes in hierarchy or navigation can dramatically improve <b>user confidence.</b> Designing with empathy, especially for edge cases, helped me shift from just creating screens to <b>solving real user problems with purpose.</b></p>
           <h3 className="text-lg text-[#003397] font-bold lg:text-xl pt-10 pb-4 ">Takeaway:</h3>

@@ -49,9 +49,9 @@ const Project1 = () => {
       </div>
       </nav>
       <section className="pb-10 2xl:pb-0 items-center justify-center pt-12 px-4 text-060709 bg-[#F8F8F8] xl:min-h-fit md:px-14 lg:px-24 2xl:px-32">
-        <div className="grid grid-cols-1 h-fit lg:grid-cols-8 max-w-[1600px] mx-auto ">
+        <div className="grid grid-cols-1 h-fit lg:grid-cols-8">
           <div className="flex flex-col gap-4 lg:col-span-5">
-            <h1 className="2xl:mt-10 text-3xl font-bold xl:leading-[5rem] lg:text-4xl xl:text-[45px] 2xl:text-[52px] lg:leading-[4rem] font-hiragino">
+            <h1 className="top-mar 2xl:mt-10 text-3xl font-bold xl:leading-[5rem] lg:text-4xl xl:text-[45px] 2xl:text-[52px] lg:leading-[4rem] font-hiragino">
               From Idea to Interface:<br/> My&nbsp; 
               <span className="text-[#F95FE7] inline-block xl:leading-[5rem]  lg:leading-[4rem] lg:text-4xl xl:text-[45px] 2xl:text-[52px]">
                 Portfolio&nbsp;
