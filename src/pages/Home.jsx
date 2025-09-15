@@ -102,13 +102,13 @@ const Home = () => {
                   In {text}
                 </span>
               </h2>
-              <p className="text-center font-inter text-sm xl:pr-20 md:text-start lg:text-[18px] xl:text-[20px]">
+              <p className="text-center pb-4 leading-5 md:leading-6 font-inter text-sm xl:pr-20 md:text-start lg:text-[18px] xl:text-[20px]">
                 I do more than just design screens. I throw colors, textures, and a little chaos at them until they smile back. :)
               </p>
-              <p className="pb-4 text-center font-inter text-sm xl:pr-20 lg:text-[18px] xl:text-[20px] md:text-start md:pb-7">
+              <p className="pb-4 text-center leading-5 md:leading-6  font-inter text-sm xl:pr-20 lg:text-[18px] xl:text-[20px] md:text-start md:pb-7">
                  UX is my playground, and organizing is my superpower. And when it comes to having fun? That's non-negotiable.
               </p>
-              <span className="font-inter text-base md:text-start text-sm lg:text-[18px] xl:text-[21px] italic text-[#D9C7FF] font-semibold pb-4 md:pb-10 xl:pb-14">
+              <span className="font-inter md:text-start text-sm lg:text-[18px] xl:text-[21px] italic text-[#D9C7FF] font-semibold pb-4 md:pb-10 xl:pb-14">
                 Let's create something that feels as fresh as a new box of crayons.
               </span>
               <a
