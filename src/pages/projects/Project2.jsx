@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import header from "../../assets/images/header-mockup.png";
-import mockup1 from "../../assets/images/mockup1png.png";
+import mockup1 from "../../assets/images/mockup1.png";
 import mockup2 from "../../assets/images/mockup2.png";
 import mockup3 from "../../assets/images/mockup3.png";
 import mockup4 from "../../assets/images/mockup4.png";
@@ -65,14 +65,14 @@ const Project2 = () => {
               <span className="inline-block text-3xl xl:leading-[5rem] xl:text-6xl lg:leading-[4rem] lg:text-4xl">Bank</span>
             </h1>
             <h2 className="text-xl font-semibold xl:text-2xl font-inter">Reimagining the HDFC mobile app for better clarity, speed, and everyday usability.</h2>
-            <p className="text-md lg:text-xl font-inter xl:mr-28">The HDFC Bank app is packed with features, but that power comes at the cost of cluttered screens, long flows, and an experience that typically overwhelms users. Not everyone is technologically intuitive. <br />This redesign simplifies key journeys like checking balances, paying credit card bills, and sending money without compromising on security or functionality.</p>
+            <p className="text-md lg:text-xl font-inter 2xl:mr-28">The HDFC Bank app is packed with features, but that power comes at the cost of cluttered screens, long flows, and an experience that typically overwhelms users. Not everyone is technologically intuitive. <br />This redesign simplifies key journeys like checking balances, paying credit card bills, and sending money without compromising on security or functionality.</p>
           </div>
           <div className="col-span-2">
             <img className="pt-10 md:py-0" src={header} alt=""/>
           </div>
         </div> 
       </section>
-      <div className="xl:mt-[-9rem] flex flex-col md:flex-row gap-2 md:gap-0 items-center space-x-[0] md:space-x-[3rem] lg:space-x-[5rem] p-4 md:px-14 lg:px-24 font-inter
+      <div className="xl:mt-[-9rem] flex flex-col md:flex-row gap-2 md:gap-0 items-center space-x-[0] md:space-x-[3rem] lg:space-x-[3.9rem] 2xl:space-x-[5rem] p-4 md:px-14 lg:px-24 font-inter
       bg-[linear-gradient(to_right,rgba(231,64,235,0.15)_0%,rgba(59,25,156,0.15)_100%)] shadow-2xs">
         <a
           href="#overviewp2"
@@ -123,7 +123,7 @@ const Project2 = () => {
             </ul>
           </div>
         </div>
-        <div className="grid grid-cols-12 gap-4 pt-20 md:gap-10 lg:gap-0">
+        <div className="grid grid-cols-12 gap-4 pt-20 md:gap-10 lg:gap-5 2xl:gap-0">
           <div className="flex items-center justify-center col-span-12 md:col-span-3">
             <img className="" src={mockup1} alt="" />
           </div>
