@@ -100,7 +100,18 @@ const ReviewCarousel = () => {
   <span>Not Just My Words</span>
   <img class="w-8 lg:w-16 mx-[4px] lg:mx-[15px] inline" src={star} alt="star icon"/>
   <span>Proof I'm Not Making This Up</span>
-</h2>
+      </h2>
+      <div className="relative w-full overflow-visible">
+        {/* Left Arrow */}
+                <button
+                  className="hidden lg:flex items-center justify-center absolute z-30 top-1/2 -translate-y-1/2 left-[-2.5rem] p-2 transition"
+                  onClick={() => emblaApi && emblaApi.scrollPrev()}
+                  aria-label="Previous work"
+                  type="button"
+                >
+                  <img src={polygon} alt="Previous" className="w-6 h-6 rotate-180" />
+        </button>
+        {/* Carousel */}
       <div
         className="relative z-10 w-full overflow-hidden"
         ref={emblaRef}
@@ -138,9 +149,11 @@ const ReviewCarousel = () => {
           className="absolute top-0 right-[-5rem] hidden w-auto h-full pointer-events-none select-none md:flex"
           style={{ zIndex: 10 }}
         />
+        
+        </div>
         {/* Arrow button at right */}
         <button
-          className="absolute z-20 p-2 -translate-y-1/2 rounded-full shadow-lg top-1/2 right-2"
+          className="hidden lg:flex items-center justify-center absolute z-30 top-1/2 -translate-y-1/2 right-[-2.5rem] p-2 transition"
           onClick={scrollNext}
           aria-label="Next review"
           type="button"
@@ -148,8 +161,44 @@ const ReviewCarousel = () => {
           <img src={polygon} alt="Next" className="w-6 h-6" />
         </button>
       </div>
-
-      <div className="flex gap-2 mt-4">
+      <div className="flex items-center justify-between w-full gap-4 mt-4 lg:hidden">
+                <div>
+              {/* Left arrow button */}
+              <button
+                onClick={() => emblaApi && emblaApi.scrollPrev()}
+                aria-label="Previous work"
+                type="button"
+                className="p-2 transition"
+              >
+                <img src={polygon} alt="Previous" className="w-6 h-6 rotate-180" />
+              </button>
+              
+              {/* Right arrow button */}
+              <button
+                onClick={() => emblaApi && emblaApi.scrollNext()}
+                aria-label="Next work"
+                type="button"
+                className="p-2 transition"
+              >
+                <img src={polygon} alt="Next" className="w-6 h-6" />
+                  </button>
+                  </div>
+                {/* Dots */}
+              <div className="flex gap-2 p-4 lg:hidden">
+        {reviews.map((_, index) => (
+          <button
+            key={index}
+            onClick={() => scrollTo(index)}
+            className={`w-2 h-2 rounded-full transition-all ${
+              index === selectedIndex
+                ? "bg-[#F95FE7] w-4"
+                : "bg-gray-300"
+            }`}
+          />
+        ))}
+      </div>
+            </div>
+      <div className="hidden gap-2 mt-4 lg:flex">
         {reviews.map((_, index) => (
           <button
             key={index}
@@ -166,7 +215,7 @@ const ReviewCarousel = () => {
       <img
         src={blueGradient}
         alt=""
-        className="absolute hidden lg:flex lg:bottom-[-440px] xl:bottom-[-550px] 2xl:bottom-[-700px] left-0 w-full pointer-events-none select-none"
+        className="absolute flex bottom-[-135px] sm:bottom-[-235px] md:bottom-[-300px] lg:bottom-[-440px] xl:bottom-[-550px] 2xl:bottom-[-700px] left-0 w-full pointer-events-none select-none"
         style={{ zIndex: 0 }}
       />
     </div>

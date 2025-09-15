@@ -243,7 +243,7 @@ const WorkCarousel = () => {
           onClick={() => emblaApi && emblaApi.scrollPrev()}
           aria-label="Previous work"
           type="button"
-          className="p-2 rounded-full hover:bg-[#F95FE733] transition"
+          className="p-2 transition"
         >
           <img src={polygon} alt="Previous" className="w-6 h-6 rotate-180" />
         </button>
@@ -253,7 +253,7 @@ const WorkCarousel = () => {
           onClick={() => emblaApi && emblaApi.scrollNext()}
           aria-label="Next work"
           type="button"
-          className="p-2 rounded-full hover:bg-[#F95FE733] transition"
+          className="p-2 transition"
         >
           <img src={polygon} alt="Next" className="w-6 h-6" />
             </button>

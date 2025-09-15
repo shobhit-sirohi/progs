@@ -75,37 +75,37 @@ const Project2 = () => {
       <div className="xl:mt-[-9rem] flex flex-col md:flex-row gap-2 md:gap-0 items-center space-x-[0] md:space-x-[3rem] lg:space-x-[5rem] p-4 md:px-14 lg:px-24 font-inter
       bg-[linear-gradient(to_right,rgba(231,64,235,0.15)_0%,rgba(59,25,156,0.15)_100%)] shadow-2xs">
         <a
-          href="#overview"
+          href="#overviewp2"
           className="text-[#040404] text-md md:text-lg transition-colors hover:text-[#6d6d6d]"
         >
           Overview (TL;DR)
         </a>
         <a
-          href="#problem"
+          href="#problemp2"
           className="text-[#040404] text-md md:text-lg transition-colors hover:text-[#6d6d6d]"
         >
           Problem & Goal
         </a>
         <a
-          href="#approach"
+          href="#approachp2"
           className="text-[#040404] text-md md:text-lg transition-colors hover:text-[#6d6d6d]"
         >
           My Approach
         </a>
         <a
-          href="#outcome"
+          href="#outcomep2"
           className="text-[#040404] text-md md:text-lg transition-colors hover:text-[#6d6d6d]"
         >
           Outcome
         </a>
         <a
-          href="#outcome"
+          href="#outcomep2"
           className="text-[#040404] text-md md:text-lg transition-colors hover:text-[#6d6d6d]"
         >
           Aftermath
         </a>
       </div>
-      <section className="items-center justify-center lg:pt-12 px-4 text-060709 bg-[#FFFFFF] xl:min-h-fit md:px-14 lg:px-24">
+      <section id="overviewp2" className="items-center justify-center lg:pt-12 px-4 text-060709 bg-[#FFFFFF] xl:min-h-fit md:px-14 lg:px-24">
         <div className="grid grid-cols-12 h-fit">
           <div className="col-span-12 md:col-span-8">
             <p className="py-10 text-xl font-semibold xl:text-2xl font-inter">HDFC's mobile app is cluttered and hard to navigate for everyday users. This redesign focused on simplifying operations that are frequently carried out, like checking balances, sending money, and paying bills.<br /><br />The result is a cleaner, faster, and more intuitive experience for users of all tech levels.</p>
@@ -123,7 +123,7 @@ const Project2 = () => {
             </ul>
           </div>
         </div>
-        <div className="grid grid-cols-12 gap-10 pt-20 lg:gap-0">
+        <div className="grid grid-cols-12 gap-4 pt-20 md:gap-10 lg:gap-0">
           <div className="flex items-center justify-center col-span-12 md:col-span-3">
             <img className="" src={mockup1} alt="" />
           </div>
@@ -139,7 +139,7 @@ const Project2 = () => {
           </div>
       </section>
       <section className=" pt-12 px-4 text-060709 bg-[#EDF6FF] xl:min-h-fit md:px-14 lg:px-24 pb-10">
-        <div className="grid grid-cols-12 gap-10 pt-10 lg:gap-0">
+        <div className="grid grid-cols-12 gap-4 pt-10 md:gap-10 lg:gap-0">
           <div className="flex items-center justify-center col-span-12 md:col-span-4">
             <img className="" src={review1} alt="" />
           </div>
@@ -151,7 +151,7 @@ const Project2 = () => {
           </div>
           </div>
         <div className="grid grid-cols-12 pt-10">
-          <div className="col-span-12 px-10 md:col-span-6">
+          <div className="col-span-12 md:px-10 md:col-span-6">
             <h3 className="font-bold ">Problem Statement:</h3>
             <p className="pt-4">The HDFC Bank app feels outdated and hard to navigate, making it frustrating for users to complete basic banking tasks quickly and confidently.</p>
             <h3 className="pt-10 font-bold">Goals:</h3>
@@ -161,7 +161,7 @@ const Project2 = () => {
               <li className="pt-2">Prioritize frequently-used actions on the home screen for <b>quicker access.</b></li>
             </ul>
           </div>
-          <div className="col-span-12 px-10 md:col-span-6 md:border-solid md:border-l-[3px] flex flex-col justify-center border-[#003397] border-opacity-[26%]">
+          <div className="col-span-12 md:px-10 md:col-span-6 md:border-solid md:border-l-[3px] flex flex-col justify-center border-[#003397] border-opacity-[26%]">
             <h3 className="pt-10 font-bold lg:pt-0">What I've Found:</h3>
             <ul className="pl-10 list-disc">
               <li className="pt-2">Users often struggle with the visual and navigational clutter, leading to confusion and unnecessary effort while using the app.</li>
@@ -173,7 +173,7 @@ const Project2 = () => {
       </section>
       <section className="items-center justify-center pt-12 px-4 text-[#060709] bg-[#FFFFFF] xl:min-h-fit md:px-14 lg:px-24">
         <h3 className="text-2xl font-bold ">User Personas</h3>
-        <div className="grid grid-cols-12 gap-10 pt-10 lg:gap-10">
+        <div className="grid grid-cols-12 gap-4 pt-10 md:gap-10 lg:gap-10">
           <div className="flex items-center justify-center col-span-12 md:col-span-6">
             <img className="w-full" src={card1} alt=""/>
           </div>
@@ -228,40 +228,40 @@ const Project2 = () => {
             </div>
         </div>
         <div className="grid grid-cols-12 pt-6">
-          <div className="col-span-12 md:col-span-4">
+          <div className="flex items-end justify-center order-2 col-span-12 md:col-span-4 md:order-1">
             <img src={hdfc} alt=""/>
           </div>
           <div className="col-span-12 md:col-span-8">
-            <div className="pt-10 text-white md:pt-0 md:pl-10 md:col-span-3">
+            <div className="py-10 text-white md:pt-0 md:col-span-3">
             <h3 className="pb-4 text-xl font-bold text-black pt-14">Features</h3>
             <div className="flex flex-col w-full gap-4 md:flex-row">
-               <span className="flex items-center justify-center col-span-1 px-6 py-2 bg-[#003397] rounded-full">Hierarchy Fix</span>
-               <span className="flex items-center justify-center col-span-2 px-6 py-2 bg-[#003397] rounded-full">Simplified Navigation Bar</span>
-               <span className="flex items-center justify-center col-span-1 px-6 py-2 bg-[#003397] rounded-full">Decluttered Layout</span>
-               <span className="flex items-center justify-center col-span-2 px-6 py-2 bg-[#003397] rounded-full">Shortcuts</span>
+               <span className="flex md:text-sm xl:text-base items-center justify-center col-span-1 px-6 py-2 bg-[#003397] rounded-full">Hierarchy Fix</span>
+               <span className="md:text-sm xl:text-base flex items-center justify-center col-span-2 px-6 py-2 bg-[#003397] rounded-full">Simplified Navigation Bar</span>
+               <span className=" md:text-sm xl:text-base flex items-center justify-center col-span-1 px-6 py-2 bg-[#003397] rounded-full">Decluttered Layout</span>
+               <span className="md:text-sm xl:text-base flex items-center justify-center col-span-2 px-6 py-2 bg-[#003397] rounded-full">Shortcuts</span>
               </div>
               <div className="flex flex-col w-full gap-4 pt-4 md:flex-row">
-               <span className="flex items-center justify-center col-span-1 px-6 py-2 bg-[#003397] rounded-full">Streamlined Task Flows</span>
-               <span className="flex items-center justify-center col-span-2 px-6 py-2 bg-[#003397] rounded-full">Clean, Intuitive UI</span>
-               <span className="flex items-center justify-center col-span-1 px-6 py-2 bg-[#003397] rounded-full">Quick Actions</span>
-               <span className="flex items-center justify-center col-span-2 px-6 py-2 bg-[#003397] rounded-full">Guided User Feedback</span>
+               <span className="md:text-sm xl:text-base flex items-center justify-center col-span-1 px-6 py-2 bg-[#003397] rounded-full">Streamlined Task Flows</span>
+               <span className="md:text-sm xl:text-base flex items-center justify-center col-span-2 px-6 py-2 bg-[#003397] rounded-full">Clean, Intuitive UI</span>
+               <span className="md:text-sm xl:text-base flex items-center justify-center col-span-1 px-6 py-2 bg-[#003397] rounded-full">Quick Actions</span>
+               <span className="md:text-sm xl:text-base flex items-center justify-center col-span-2 px-6 py-2 bg-[#003397] rounded-full">Guided User Feedback</span>
             </div>
           </div>
           </div>
         </div>
       </section>
-      <section className="relative grid grid-cols-8 bg-[#FFFFFF]">
+      <section className="pb-10 md:pb-0 relative grid grid-cols-8 bg-[#FFFFFF]">
         <div className="col-span-12 md:col-span-5 pt-12 lg:pt-0 lg:flex lg:flex-col lg:justify-center pl-4 text-[#060709] xl:min-h-fit md:pl-14 lg:pl-24">
-          <h3 className="text-lg text-[#003397] font-bold lg:text-2xl pb-4 ">Reflections:</h3>
+          <h3 className="text-lg text-[#003397] font-bold lg:text-xl pt-10 pb-4 ">Reflections:</h3>
           <p className="text-lg lg:text-xl">This project showed me the <b>power of user feedback</b> in shaping meaningful design. I learned that <b>clarity and accessibility</b> matter more than feature overload, and even small changes in hierarchy or navigation can dramatically improve <b>user confidence.</b> Designing with empathy, especially for edge cases, helped me shift from just creating screens to <b>solving real user problems with purpose.</b></p>
-          <h3 className="text-lg text-[#003397] font-bold lg:text-2xl pt-10 pb-4 ">Takeaway:</h3>
+          <h3 className="text-lg text-[#003397] font-bold lg:text-xl pt-10 pb-4 ">Takeaway:</h3>
           <p className="text-lg lg:text-xl"><b>This project reinforced my ability to turn raw feedback into structured design solutions that improve both user satisfaction and business impact.</b></p>
           <a className="mt-10 font-convergence flex max-w-fit py-2 px-4 gap-2 md:text-xl rounded-full bg-[#ED232A] hover:bg-[#ce1f25] md:mb-8" href="https://www.figma.com/proto/Rn9GAAELJSCmar4yHmrQpQ/Case-Studies?page-id=0%3A1&node-id=244-2777&viewport=-3263%2C-1903%2C0.72&t=VWCb0cEEprzagFlH-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=244%3A2777" target="_blank">
            <span className="text-white">Prototype</span>
             <img className="w-6 md:w-8" src={arrow} alt="arrow vector for button" /></a>
         </div>
-        <div className="col-span-12 md:col-span-3">
-          <img className="items-end hidden justify-self-end md:flex" src={footerimage} alt="footer laptop image"/>
+        <div className="flex h-full col-span-12 md:col-span-3">
+          <img className="items-end hidden object-cover justify-self-end md:flex" src={footerimage} alt="footer laptop image"/>
         </div>
       </section>
       </div>

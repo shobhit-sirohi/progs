@@ -25,6 +25,9 @@ html, body {
 #overview, #problem, #approach, #outcome{
   scroll-margin-top: 50px;
 }
+#overviewp2, #problemp2, #approachp2, #outcomep2, #aftermathp2{
+  scroll-margin-top: 50px;
+}
 
 html{
   scroll-behavior: smooth;

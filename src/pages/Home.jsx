@@ -171,23 +171,10 @@ const Home = () => {
     transition={{ repeat: Infinity, duration: 20, ease: "linear" }}
     style={{ zIndex: 10 }}
               /></a>
-            <a 
-  href={`https://mail.google.com/mail/?view=cm&fs=1&to=pragativishwakarma.work@gmail.com&su=Let's%20Chat%20with%20Pragati&body=${encodeURIComponent(`
-    <div style="font-family: Arial, sans-serif; max-width: 600px;">
-      <div style="background-color: #2D2D2D; padding: 20px; border-radius: 15px 15px 0 0;">
-        <h2 style="color: #F95FE7; margin: 0; font-size: 24px;">Hey Pragati!</h2>
-      </div>
-      <div style="background-color: #3D3D3D; padding: 20px; border-radius: 0 0 15px 15px;">
-        <p style="color: #ffffff; font-size: 16px;">Here are my two cents:</p>
-        <p style="color: #D9C7FF; font-style: italic; padding: 15px; background-color: #2D2D2D; border-radius: 10px; border-left: 4px solid #F95FE7;">
-          [Your message here]
-        </p>
-        <p style="color: #ffffff; font-size: 14px; margin-top: 20px;">Looking forward to connecting!</p>
-        <hr style="border: 1px solid #4D4D4D; margin: 20px 0;">
-        <p style="color: #AAAAAA; font-size: 12px;">Sent from your portfolio chat sticker ✨</p>
-      </div>
-    </div>
-  `)}`}
+            <a
+  href={`https://mail.google.com/mail/?view=cm&fs=1&to=pragativishwakarma.work@gmail.com&su=Let's%20Chat%20with%20Pragati&body=${encodeURIComponent(
+    `Hey Pragati!\n\nHere are my two cents:\n\n[Your message here]\n\nLooking forward to connecting!\n\nSent from your portfolio ✨`
+  )}`}
   title="Start a chat with Pragati"
   target="_blank"
   rel="noopener noreferrer"

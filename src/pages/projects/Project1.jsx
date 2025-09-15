@@ -19,6 +19,8 @@ import arrow from "../../assets/images/arrow.svg";
 import footerimage from "../../assets/images/macbook-footer.png";
 import footerdiskimagemobile from "../../assets/images/footerdiskimagemobile.png";
 import disk from "../../assets/images/rotating-circle.png";
+import gradientfooterblue from "../../assets/images/gradient-footer-blue.png";
+import gradientfooterpink from "../../assets/images/gradient-footer-pink.png";
 
 const Project1 = () => {
   return (
@@ -191,25 +193,27 @@ Showcase work & case studies clearly</li>
           </div>
           </div>
       </section>
-      <section id="outcome" className="relative grid grid-cols-8 bg-[#F0F0F0]">
+      <section id="outcome" className="relative overflow-hidden grid grid-cols-8 bg-[#F0F0F0]">
+        <img className="absolute top-0 right-0 z-0 w-[50%] hidden md:block" src={gradientfooterblue} alt="footer laptop image"/>
+          <img className="absolute bottom-0 left-0 w-[80%] z-0 hidden md:block" src={gradientfooterpink} alt="footer laptop image"/>
         <div className="col-span-12 md:col-span-4 pt-12 pl-4 text-[#060709] xl:min-h-fit md:pl-14 lg:pl-32">
-          <h2 className="mb-4 lg:mb-10 text-[#060709] text-opacity-[13%] text-5xl md:text-6xl font-semibold font-hiragino">Outcome?</h2>
+          <h2 className="mb-4 lg:mb-10 text-[#060709] text-opacity-[13%] text-5xl lg:text-6xl font-semibold font-hiragino">Outcome?</h2>
           <span className="text-lg font-semibold lg:text-xl">I’d love for you to see for yourself!</span>
           <a className="mt-6 font-convergence flex max-w-fit py-2 px-4 gap-2 md:text-xl rounded-full bg-[#F95FE7] hover:bg-[#b544a7] md:mb-8" href="/">
            <span className="text-white">Live Site</span>
             <img className="w-6 md:w-8" src={arrow} alt="arrow vector for button" /></a>
         </div>
-        <div className="col-span-12 md:col-span-4">
+        <div className="relative col-span-12 md:col-span-4">
           <a href="/Pragati-CreativeDesigner-Resume.pdf" target="_blank" rel="noopener noreferrer" title="View Pragati's Resume">
               <motion.img
-              className="absolute cursor-pointer  w-24 lg:w-[130px] xl:w-[150px] "
+              className="absolute cursor-pointer  w-24 lg:w-[130px] xl:w-[150px] xl:top-[180px] xl:left-[-30px] top-[30px] left-[20px] "
                  src={disk}
                 alt="pragati vishkwakarma resume"
                 animate={{ rotate: 360 }}
                 transition={{repeat: Infinity, duration: 20, ease: "linear"}}
             /></a>
           <img className="hidden md:flex" src={footerimage} alt="footer laptop image"/>
-          <img className="md:hidden" src={footerdiskimagemobile} alt="footer laptop image mobile"/>
+          <img className="md:hidden" src={footerdiskimagemobile} alt="footer laptop image mobile" />
         </div>
       </section>
       </div>
