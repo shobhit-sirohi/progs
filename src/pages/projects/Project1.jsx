@@ -26,7 +26,7 @@ const Project1 = () => {
   return (
     <div className="bg-white font-inter">
       <nav className="sticky top-0 z-50 p-4 md:p-6 font-inter text-[#040404]
-     md:px-32 bg-[#F0F0F0] shadow-lg">
+     md:px-14 lg:px-24 2xl:px-32 bg-[#F0F0F0] shadow-lg">
       <div className="flex items-center space-x-[2rem] md:space-x-[5rem]">
         <a
           href="/"
@@ -48,52 +48,52 @@ const Project1 = () => {
         </a>
       </div>
       </nav>
-      <section className="pb-10 2xl:pb-0 items-center justify-center pt-12 px-4 text-060709 bg-[#F8F8F8] xl:min-h-fit md:px-14 lg:px-32">
-        <div className="grid grid-cols-1 h-fit md:grid-cols-6 ">
-          <div className="flex flex-col gap-4 md:col-span-4">
-            <h1 className="2xl:mt-10 text-3xl font-bold xl:leading-[5rem] xl:text-[52px] lg:leading-[4rem] lg:text-4xl font-hiragino">
+      <section className="pb-10 2xl:pb-0 items-center justify-center pt-12 px-4 text-060709 bg-[#F8F8F8] xl:min-h-fit md:px-14 lg:px-24 2xl:px-32">
+        <div className="grid grid-cols-1 h-fit lg:grid-cols-8 max-w-[1600px] mx-auto ">
+          <div className="flex flex-col gap-4 lg:col-span-5">
+            <h1 className="2xl:mt-10 text-3xl font-bold xl:leading-[5rem] lg:text-4xl xl:text-[45px] 2xl:text-[52px] lg:leading-[4rem] font-hiragino">
               From Idea to Interface:<br/> My&nbsp; 
-              <span className="text-[#F95FE7] inline-block xl:leading-[5rem] xl:text-[52px] lg:leading-[4rem] lg:text-4xl">
+              <span className="text-[#F95FE7] inline-block xl:leading-[5rem]  lg:leading-[4rem] lg:text-4xl xl:text-[45px] 2xl:text-[52px]">
                 Portfolio&nbsp;
               </span>
-              <span className="inline-block text-3xl xl:leading-[5rem] xl:text-[52px] lg:leading-[4rem] lg:text-4xl">Project</span>
+              <span className="inline-block text-3xl xl:leading-[5rem]  lg:leading-[4rem] lg:text-4xl xl:text-[45px] 2xl:text-[52px]">Project</span>
             </h1>
             <h2 className="text-xl font-semibold xl:text-2xl font-inter">Translating who I am into pixels and pages.</h2>
-            <p className="text-md lg:text-xl font-inter 2xl:mb-10 xl:mr-28">This project was my chance to treat myself like a client, and I'm happy with the results. I set out to design a portfolio that boldly presents my work and reflects who I am: colorful, organized, and a little playful. This was a collaborative project with a front-end developer <a className=" italic text-[#004CE4]" href="https://shobhit.dev/" target="_blank">(shobhit.dev),</a> who brought my designs to life with his clean, responsive code that helped the site adapt from large desktop screens to mobile devices seamlessly. From curating the palette and layouts to adding my quirky touches, this project turned my personality into a fully functional digital space.</p>
+            <p className="text-md lg:text-lg xl:text-xl font-inter 2xl:mb-10 lg:mr-8 xl:mr-14 2xl:mr-28">I set out to design a portfolio that boldly presents my work and reflects who I am: colorful, organized, and a little playful. Collaborating with a front-end developer  <a className=" italic text-[#004CE4]" href="https://shobhit.dev/" target="_blank">(shobhit.dev),</a> my designs came to life through clean, responsive code that helped the site adapt from large desktop screens to mobile devices seamlessly. From curating the palette and layouts to adding my quirky touches, this project turned my personality into a fully functional digital space.</p>
           </div>
-          <div className="md:col-span-2">
+          <div className="lg:col-span-3">
             <img className="w-[686px] pt-10 md:py-0" src={header} alt=""/>
           </div>
         </div> 
       </section>
-      <div className="2xl:mt-[-5rem] flex flex-col md:flex-row gap-2 md:gap-0 items-center space-x-[0] md:space-x-[3rem] lg:space-x-[5rem] p-4 md:px-14 lg:px-32 font-inter
+      <div className="lg:mt-[-2rem] xl:mt-[-7rem] 2xl:mt-[-8rem] flex flex-col md:flex-row gap-2 md:gap-0 items-center space-x-[0] md:space-x-[3rem] lg:space-x-[5rem] p-4 md:px-14 lg:px-24 2xl:px-32 font-inter
       bg-[linear-gradient(to_right,rgba(231,64,235,0.15)_0%,rgba(59,25,156,0.15)_100%)] shadow-2xs">
         <a
           href="#overview"
-          className="text-[#040404] text-md md:text-lg transition-colors hover:text-[#6d6d6d]"
+          className="text-[#040404] text-md xl:text-lg transition-colors hover:text-[#6d6d6d]"
         >
           Overview (TL;DR)
         </a>
         <a
           href="#problem"
-          className="text-[#040404] text-md md:text-lg transition-colors hover:text-[#6d6d6d]"
+          className="text-[#040404] text-md xl:text-lg transition-colors hover:text-[#6d6d6d]"
         >
           Problem & Goal
         </a>
         <a
           href="#approach"
-          className="text-[#040404] text-md md:text-lg transition-colors hover:text-[#6d6d6d]"
+          className="text-[#040404] text-md xl:text-lg transition-colors hover:text-[#6d6d6d]"
         >
           My Approach
         </a>
         <a
           href="#outcome"
-          className="text-[#040404] text-md md:text-lg transition-colors hover:text-[#6d6d6d]"
+          className="text-[#040404] text-md xl:text-lg transition-colors hover:text-[#6d6d6d]"
         >
           Outcome
         </a>
       </div>
-      <section id="overview" className="items-center justify-center lg:pt-12 px-4 text-060709 bg-[#F0F0F0] xl:min-h-fit md:px-14 lg:px-32 pb-6 xl:pb-16">
+      <section id="overview" className="items-center justify-center lg:pt-12 px-4 text-060709 bg-[#F0F0F0] xl:min-h-fit md:px-14 lg:px-24 2xl:px-32 pb-6 xl:pb-16">
         <div className="grid grid-cols-1 h-fit md:grid-cols-6">
           <div className="md:col-span-5">
             <p className="py-10 text-xl font-semibold xl:text-2xl font-inter">I designed and built this personal portfolio website to reflect my colorful personality, showcase my UI/UX capabilities, and make it easy for recruiters and collaborators to get in touch.</p>
@@ -128,7 +128,7 @@ const Project1 = () => {
           
         </div>
       </section>
-      <section id="problem" className="items-center justify-center pt-12 px-4 text-060709 bg-[#F8F8F8] xl:min-h-fit md:px-14 lg:px-32 pb-10">
+      <section id="problem" className="items-center justify-center pt-12 px-4 text-060709 bg-[#F8F8F8] xl:min-h-fit md:px-14 lg:px-24 2xl:px-32 pb-10">
         <div className="grid grid-cols-1 h-fit md:grid-cols-6">
           <div className="md:col-span-3">
             <div>
@@ -169,7 +169,7 @@ Showcase work & case studies clearly</li>
           </div>
         </div>
       </section>
-      <section id="approach" className="items-center justify-center pt-12 px-4 text-[#060709] bg-[#F0F0F0] xl:min-h-fit md:px-14 lg:px-32">
+      <section id="approach" className="items-center justify-center pt-12 px-4 text-[#060709] bg-[#F0F0F0] xl:min-h-fit md:px-14 lg:px-24 2xl:px-32">
         <div className="col-span-2 pb-16">
           <h3 className="text-xl font-semibold xl:text-2xl font-inter">Moodboard</h3>
           <p className="py-2 text-md lg:text-xl font-inter">A curated visual direction that sets the tone for my portfolio, all the way from my color choices to the overall vibe.</p>
@@ -196,7 +196,7 @@ Showcase work & case studies clearly</li>
       <section id="outcome" className="relative overflow-hidden grid grid-cols-8 bg-[#F0F0F0]">
         <img className="absolute top-0 right-0 z-0 w-[50%] hidden md:block" src={gradientfooterblue} alt="footer laptop image"/>
           <img className="absolute bottom-0 left-0 w-[80%] z-0 hidden md:block" src={gradientfooterpink} alt="footer laptop image"/>
-        <div className="z-30 col-span-12 md:col-span-4 pt-12 pl-4 text-[#060709] xl:min-h-fit md:pl-14 lg:pl-32">
+        <div className="z-30 col-span-12 md:col-span-4 pt-12 pl-4 text-[#060709] xl:min-h-fit  md:pl-14 lg:pl-24 2xl:pl-32 ">
           <h2 className="mb-4 lg:mb-10 text-[#060709] text-opacity-[13%] text-5xl lg:text-6xl font-semibold font-hiragino">Outcome?</h2>
           <span className="text-lg font-semibold lg:text-xl">I’d love for you to see for yourself!</span>
           <a className="mt-6 font-convergence flex max-w-fit py-2 px-4 gap-2 md:text-xl rounded-full bg-[#F95FE7] hover:bg-[#b544a7] md:mb-8" href="/">
