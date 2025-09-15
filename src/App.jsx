@@ -26,15 +26,15 @@ function App() {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route
-              path="/projects/project1"
+              path="/projects/portfolio"
               element={<Project1 />}
             />
             <Route
-              path="/projects/project2"
+              path="/projects/hdfc-app"
               element={<Project2 />}
             />
             <Route
-              path="/projects/project3"
+              path="/projects/gallery"
               element={<Project3 />}
             />
           </Routes>

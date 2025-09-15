@@ -56,7 +56,7 @@ const WorkCarousel = () => {
       image: project1,
       tags: ["Case Study","Redesign Project"],
       button: "Read Case Study",
-      link: "/projects/project2",
+      link: "/projects/hdfc-app",
     },
     {
       id: 2,
@@ -66,7 +66,7 @@ const WorkCarousel = () => {
       image: project2,
       tags: ["Fun Project"],
       button: "View Project",
-      link: "/projects/project1",
+      link: "/projects/portfolio",
     },
     {
       id: 3,
@@ -86,7 +86,7 @@ const WorkCarousel = () => {
       image: project4,
       tags: ["App Experiments"],
       button: "View Gallery",
-      link: "/projects/project3",
+      link: "/projects/gallery",
     }
   ];
 
