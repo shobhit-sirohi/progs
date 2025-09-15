@@ -196,7 +196,7 @@ Showcase work & case studies clearly</li>
       <section id="outcome" className="relative overflow-hidden grid grid-cols-8 bg-[#F0F0F0]">
         <img className="absolute top-0 right-0 z-0 w-[50%] hidden md:block" src={gradientfooterblue} alt="footer laptop image"/>
           <img className="absolute bottom-0 left-0 w-[80%] z-0 hidden md:block" src={gradientfooterpink} alt="footer laptop image"/>
-        <div className="col-span-12 md:col-span-4 pt-12 pl-4 text-[#060709] xl:min-h-fit md:pl-14 lg:pl-32">
+        <div className="z-30 col-span-12 md:col-span-4 pt-12 pl-4 text-[#060709] xl:min-h-fit md:pl-14 lg:pl-32">
           <h2 className="mb-4 lg:mb-10 text-[#060709] text-opacity-[13%] text-5xl lg:text-6xl font-semibold font-hiragino">Outcome?</h2>
           <span className="text-lg font-semibold lg:text-xl">I’d love for you to see for yourself!</span>
           <a className="mt-6 font-convergence flex max-w-fit py-2 px-4 gap-2 md:text-xl rounded-full bg-[#F95FE7] hover:bg-[#b544a7] md:mb-8" href="/">
