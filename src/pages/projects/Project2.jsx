@@ -138,7 +138,7 @@ const Project2 = () => {
           </div>
           </div>
       </section>
-      <section className=" pt-12 px-4 text-060709 bg-[#EDF6FF] xl:min-h-fit md:px-14 lg:px-24 pb-10">
+      <section id="problemp2" className=" pt-12 px-4 text-060709 bg-[#EDF6FF] xl:min-h-fit md:px-14 lg:px-24 pb-10">
         <div className="grid grid-cols-12 gap-4 pt-10 md:gap-10 lg:gap-0">
           <div className="flex items-center justify-center col-span-12 md:col-span-4">
             <img className="" src={review1} alt="" />
@@ -171,7 +171,7 @@ const Project2 = () => {
           </div>
         </div>
       </section>
-      <section className="items-center justify-center pt-12 px-4 text-[#060709] bg-[#FFFFFF] xl:min-h-fit md:px-14 lg:px-24">
+      <section id="approachp2" className="items-center justify-center pt-12 px-4 text-[#060709] bg-[#FFFFFF] xl:min-h-fit md:px-14 lg:px-24">
         <h3 className="text-2xl font-bold ">User Personas</h3>
         <div className="grid grid-cols-12 gap-4 pt-10 md:gap-10 lg:gap-10">
           <div className="flex items-center justify-center col-span-12 md:col-span-6">
@@ -189,7 +189,7 @@ const Project2 = () => {
           <img className="pt-4 md:hidden" src={userflowmobile} alt=""/>
         </div>
       </section>
-      <section className="items-center justify-center pt-12 px-4 text-[#060709] bg-[#EDF6FF] xl:min-h-fit md:px-14 lg:px-24">
+      <section id="outcomep2" className="items-center justify-center pt-12 px-4 text-[#060709] bg-[#EDF6FF] xl:min-h-fit md:px-14 lg:px-24">
         <h2 className="pb-6 text-lg font-semibold lg:text-2xl ">What we currently have</h2>
 
           <div className="grid grid-cols-10">
@@ -250,7 +250,7 @@ const Project2 = () => {
           </div>
         </div>
       </section>
-      <section className="pb-10 md:pb-0 relative grid grid-cols-8 bg-[#FFFFFF]">
+      <section id="aftermathp2" className="pb-10 md:pb-0 relative grid grid-cols-8 bg-[#FFFFFF]">
         <div className="col-span-12 md:col-span-5 pt-12 lg:pt-0 lg:flex lg:flex-col lg:justify-center pl-4 text-[#060709] xl:min-h-fit md:pl-14 lg:pl-24">
           <h3 className="text-lg text-[#003397] font-bold lg:text-xl pt-10 pb-4 ">Reflections:</h3>
           <p className="text-lg lg:text-xl">This project showed me the <b>power of user feedback</b> in shaping meaningful design. I learned that <b>clarity and accessibility</b> matter more than feature overload, and even small changes in hierarchy or navigation can dramatically improve <b>user confidence.</b> Designing with empathy, especially for edge cases, helped me shift from just creating screens to <b>solving real user problems with purpose.</b></p>
