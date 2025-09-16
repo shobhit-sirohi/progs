@@ -82,7 +82,7 @@ const Home = () => {
               <span className="relative inline-block">!</span>
               <a href="/Pragati-CreativeDesigner-Resume.pdf" target="_blank" rel="noopener noreferrer" title="View Pragati's Resume">
               <motion.img
-                  className="absolute cursor-pointer w-24 lg:w-[130px] 2xl:w-[135px] "
+                  className="absolute cursor-pointer w-24 lg:w-[130px] 2xl:w-[140px] "
                 style={{left:"98%", top: "6%", transform:"translate(-50%, -50%)", zIndex: 10}}
               src={disk}
                 alt="pragati vishkwakarma resume"
@@ -102,13 +102,13 @@ const Home = () => {
                   In {text}
                 </span>
               </h2>
-              <p className="text-center pb-4 leading-5 md:leading-6 font-inter text-sm xl:pr-20 md:text-start lg:text-[17px] xl:text-[18px] 2xl:text-[20px]">
+              <p className="text-center pb-4 leading-5 md:leading-6 font-inter text-sm xl:pr-10 2xl:pr-20 md:text-start lg:text-[17px] xl:text-[18px] 2xl:text-[19px]">
                 I do more than just design screens. I throw colors, textures, and a little chaos at them until they smile back. :)
               </p>
-              <p className="pb-4 text-center leading-5 md:leading-6 font-inter text-sm xl:pr-20 lg:text-[17px] xl:text-[18px] 2xl:text-[20px] md:text-start md:pb-7">
+              <p className="pb-4 text-center leading-5 md:leading-6 font-inter text-sm xl:pr-10 2xl:pr-20 lg:text-[17px] xl:text-[18px] 2xl:text-[19px] md:text-start md:pb-7">
                  UX is my playground, and organizing is my superpower. And when it comes to having fun? That's non-negotiable.
               </p>
-              <span className="font-inter md:text-start md:leading-6 text-sm lg:text-[17px] xl:text-[18px] 2xl:text-[20px] italic text-[#D9C7FF] font-semibold pb-4 md:pb-5 lg:pb-8 2xl:pb-14">
+              <span className="font-inter md:text-start md:leading-6 text-sm lg:text-[17px] xl:text-[18px] 2xl:text-[19px] italic text-[#D9C7FF] font-bold pb-4 md:pb-5 lg:pb-8 2xl:pb-14">
                 Let's create something that feels as fresh as a new box of crayons.
               </span>
               <a
