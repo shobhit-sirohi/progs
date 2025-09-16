@@ -82,7 +82,7 @@ const Home = () => {
               <span className="relative inline-block">!</span>
               <a href="/Pragati-CreativeDesigner-Resume.pdf" target="_blank" rel="noopener noreferrer" title="View Pragati's Resume">
               <motion.img
-                  className="absolute cursor-pointer w-24 lg:w-[130px] 2xl:w-[140px] "
+                  className="absolute cursor-pointer w-24 lg:w-[130px] 2xl:w-[135px] "
                 style={{left:"98%", top: "6%", transform:"translate(-50%, -50%)", zIndex: 10}}
               src={disk}
                 alt="pragati vishkwakarma resume"
@@ -125,7 +125,7 @@ const Home = () => {
             </div>
             <div className="flex items-center justify-center pt-6 md:pt-0">
               <img
-                className="md:w-full lg:pr-10 md:order-0"
+                className="md:w-full lg:pr-10 2xl:pr-5 md:order-0"
                 src={hero}
                 alt="Pragati Vishwakarma Illustration Designer"
               />
