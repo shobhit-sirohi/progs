@@ -74,7 +74,7 @@ const Home = () => {
         <div className="w-full text-center ">
           <div className="relative flex items-center justify-center w-full pt-8 md:pt-16 xl:pt-20">
             <img className="hidden mr-4 md-flex lg:w-24 w-14" src={stars} alt="purple stars sticker" />
-            <h1 className="relative text-3xl md:text-5xl font-bold lg:text-[60px] xl:text-[80px] font-hiragino">
+            <h1 className="relative text-3xl md:text-5xl font-bold lg:text-[60px] xl:text-[70px] 2xl:text-[80px] font-hiragino">
               Hi, I'm&nbsp;
               <span className="text-[#F95FE7]">
                 Pragati&nbsp;
@@ -82,7 +82,7 @@ const Home = () => {
               <span className="relative inline-block">!</span>
               <a href="/Pragati-CreativeDesigner-Resume.pdf" target="_blank" rel="noopener noreferrer" title="View Pragati's Resume">
               <motion.img
-                  className="absolute cursor-pointer w-24 lg:w-[130px] xl:w-[150px] "
+                  className="absolute cursor-pointer w-24 lg:w-[130px] 2xl:w-[135px] "
                 style={{left:"98%", top: "6%", transform:"translate(-50%, -50%)", zIndex: 10}}
               src={disk}
                 alt="pragati vishkwakarma resume"
@@ -93,26 +93,26 @@ const Home = () => {
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2">
             <div className="flex flex-col items-center justify-center md:items-start md:order-1">
-              <h2 className="md:hidden pt-14 pb-2 text-xl font-bold font-hiragino lg:text-[35px] xl:text-[40px] lg:pb-10 flex flex-col 2xl:flex-row md:gap-2">
+              <h2 className="md:hidden pt-14 pb-2 text-xl font-bold font-hiragino lg:text-[25px] xl:text-[40px] lg:pb-10 flex flex-col lg:flex-row md:gap-2">
                 I see patterns: In {text}
               </h2>
-              <h2 className="hidden md:flex pt-14 pb-2 text-2xl font-bold font-hiragino lg:text-[35px] xl:text-[40px] lg:pb-10 flex-col 2xl:flex-row md:gap-2">
+              <h2 className="hidden md:flex pt-14 lg:pt-20 2xl:pt-[70px] pb-2 text-2xl font-bold font-hiragino lg:text-[25px] xl:text-[32px] 2xl:text-[40px] lg:pb-5 xl:pb-10 flex-col lg:flex-row md:gap-2">
                 I see patterns:
                 <span className="inline-block md:flex">
                   In {text}
                 </span>
               </h2>
-              <p className="text-center pb-4 leading-5 md:leading-6 font-inter text-sm xl:pr-20 md:text-start lg:text-[18px] xl:text-[20px]">
+              <p className="text-center pb-4 leading-5 md:leading-6 font-inter text-sm xl:pr-20 md:text-start lg:text-[17px] xl:text-[18px] 2xl:text-[20px]">
                 I do more than just design screens. I throw colors, textures, and a little chaos at them until they smile back. :)
               </p>
-              <p className="pb-4 text-center leading-5 md:leading-6  font-inter text-sm xl:pr-20 lg:text-[18px] xl:text-[20px] md:text-start md:pb-7">
+              <p className="pb-4 text-center leading-5 md:leading-6 font-inter text-sm xl:pr-20 lg:text-[17px] xl:text-[18px] 2xl:text-[20px] md:text-start md:pb-7">
                  UX is my playground, and organizing is my superpower. And when it comes to having fun? That's non-negotiable.
               </p>
-              <span className="font-inter md:text-start text-sm lg:text-[18px] xl:text-[21px] italic text-[#D9C7FF] font-semibold pb-4 md:pb-10 xl:pb-14">
+              <span className="font-inter md:text-start md:leading-6 text-sm lg:text-[17px] xl:text-[18px] 2xl:text-[20px] italic text-[#D9C7FF] font-semibold pb-4 md:pb-5 lg:pb-8 2xl:pb-14">
                 Let's create something that feels as fresh as a new box of crayons.
               </span>
               <a
-                className="font-convergence flex max-w-fit py-2 px-4 gap-2 lg:text-xl rounded-full bg-[#F95FE7] hover:bg-[#b544a7] md:mb-8"
+                className="font-convergence flex max-w-fit py-2 px-4 gap-2 text-base lg:text-[17px] xl:text-[18px] 2xl:text-[20px] rounded-full bg-[#F95FE7] hover:bg-[#b544a7] md:mb-8"
                 href="#work"
               >
                 <span>See Work</span>
