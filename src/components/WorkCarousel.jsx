@@ -5,8 +5,8 @@ import { useCallback, useEffect, useState } from "react";
 import "../App.css";
 import project1 from "../assets/images/project1.png";
 import project2 from "../assets/images/project2.png";
-import project3 from "../assets/images/project3.png";
 import project4 from "../assets/images/project4.png";
+import crave from "../assets/images/crave.png";
 import star from "../assets/images/Polygon10.png";
 import arrow from "../assets/images/arrow.svg";
 import gradient1 from "../assets/images/gradient1.png";
@@ -50,6 +50,16 @@ const WorkCarousel = () => {
   const work = [
     {
       id: 1,
+      title: "Crave (Food Concierge App)",
+      description:
+        "A food concierge app for personalized, mood-based dining experiences.",
+      image: crave,
+      tags: ["Case Study","App Idea"],
+      button: "Coming Soon",
+      link: "#",
+    },
+    {
+      id: 2,
       title: "HDFC Bank Mobile App",
       description:
         "Reimagining the HDFC mobile app for clarity, speed and everyday usability.",
@@ -59,7 +69,7 @@ const WorkCarousel = () => {
       link: "/projects/hdfc-app",
     },
     {
-      id: 2,
+      id: 3,
       title: "My Portfolio Project",
       description:
         "Translating who I am into pixels and pages.",
@@ -67,16 +77,6 @@ const WorkCarousel = () => {
       tags: ["Fun Project"],
       button: "View Project",
       link: "/projects/portfolio",
-    },
-    {
-      id: 3,
-      title: "Food Concierge App (TBD)",
-      description:
-        "A food concierge app for personalized, mood-based dining experiences.",
-      image: project3,
-      tags: ["Case Study","App Idea"],
-      button: "Coming Soon",
-      link: "#",
     },
     {
       id: 4,
