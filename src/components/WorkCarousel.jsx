@@ -166,7 +166,7 @@ const WorkCarousel = () => {
                           </p>
                         ))}
                       </div>
-                      <h3 className="mt-2 text-xl font-bold text-white md:mt-3 lg:mt-4 md:text-2xl">
+                      <h3 className="mt-2 text-xl font-bold text-white md:mt-3 lg:mt-4 xl:text-[20px]">
                         {project.title}
                       </h3>
                       <p className="mt-2 text-sm text-white md:mt-3 ">
@@ -199,7 +199,7 @@ const WorkCarousel = () => {
                           </p>
                         ))}
                       </div>
-                      <h3 className="mt-2 text-xl font-bold text-white md:mt-3 lg:mt-4 md:text-2xl">
+                      <h3 className="mt-2 text-xl font-bold text-white md:mt-3 lg:mt-4 xl:text-[20px]">
                         {project.title}
                       </h3>
                       <p className="mt-2 text-sm text-white md:mt-3 ">
