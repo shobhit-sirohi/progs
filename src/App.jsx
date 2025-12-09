@@ -10,6 +10,8 @@ import Project1 from "./pages/projects/Project1";
 import Project2 from "./pages/projects/Project2";
 // eslint-disable-next-line
 import Project3 from "./pages/projects/Project3";
+// eslint-disable-next-line
+import Project4 from "./pages/projects/Project4";
 
 const NotFound = () => (
   <div className="flex flex-col items-center justify-center min-h-screen">
@@ -36,6 +38,10 @@ function App() {
             <Route
               path="/projects/gallery"
               element={<Project3 />}
+            />
+            <Route
+              path="/projects/crave-app"
+              element={<Project4 />}
             />
           </Routes>
         </main>
