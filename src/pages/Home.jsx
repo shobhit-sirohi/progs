@@ -94,7 +94,7 @@ const Home = () => {
           <div className="grid grid-cols-1 md:grid-cols-2">
             <div className="flex flex-col items-center justify-center md:items-start md:order-1">
               <h2 className="md:hidden pt-14 pb-2 text-xl font-bold font-hiragino lg:text-[25px] xl:text-[40px] lg:pb-10 flex flex-col lg:flex-row md:gap-2">
-                I see patterns: In {text}
+                Iu see patterns: In {text}
               </h2>
               <h2 className="hidden md:flex pt-14 lg:pt-20 2xl:pt-[70px] pb-2 text-2xl font-bold font-hiragino lg:text-[25px] xl:text-[32px] 2xl:text-[40px] lg:pb-5 xl:pb-10 flex-col lg:flex-row md:gap-2">
                 I see patterns:
