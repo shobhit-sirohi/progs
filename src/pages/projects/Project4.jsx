@@ -24,13 +24,21 @@ import screenafter3 from "../../assets/images/sa3.png";
 import screenafter4 from "../../assets/images/sa4.png";
 import screenafter5 from "../../assets/images/sa5.png";
 import hdfc from "../../assets/images/hdfc-logo.png";
-import polaroidArjun from "../../assets/images/polaroid-arjun.png";
-import polaroidRhea from "../../assets/images/polaroid-rhea.png";
+import polaroidArjun from "../../assets/images/polaroid-Arjun.png";
+import polaroidRhea from "../../assets/images/polaroid-Rhea.png";
 import Group33844 from "../../assets/images/Group 33844.png";
 import Group33883 from "../../assets/images/Group 33883.png";
 import Group33887 from "../../assets/images/Group 33887.png";
 import Group34066 from "../../assets/images/Group 34066.png";
 import Group33888 from "../../assets/images/Group 33888.png";
+import BookingScreen from "../../assets/images/Booking Screen.png";
+import ChatFoodGuide from "../../assets/images/Chat Food Guide.png";
+import HomeScreenDefault from "../../assets/images/Home Screen Default.png";
+import LaVerona from "../../assets/images/La Verona.png";
+import ProfileScreen from "../../assets/images/Profile Screen.png";
+import RahulBhatt from "../../assets/images/Rahul Bhatt.png";
+import RatingScreen from "../../assets/images/Rating Screen.png";
+import WelcomeScreen from "../../assets/images/Welcome Screen.png";
 const Project4 = () => {
   return (
     <div className="bg-white font-inter">
@@ -573,7 +581,97 @@ const Project4 = () => {
             <img src={Group34066} alt="logo" className="w-full h-auto" />
           </div>
         </div>
+        <div className="flex flex-col justify-center items-center mt-12 ">
+          <div className="px-5 py-2 border-2 rounded-3xl border-[#FF6B35] text-[#FF6B35] font-semibold mb-12">
+            UI Screens
+          </div>
+          <div className="flex gap-12 flex-wrap justify-center items-center">
+            <img
+              className="shadow-md"
+              src={WelcomeScreen}
+              alt="Welcome Screen"
+            />
+            <img
+              className="shadow-md"
+              src={HomeScreenDefault}
+              alt="Home Screen Default"
+            />
+            <img className="shadow-md" src={RahulBhatt} alt="Rahul Bhatt" />
+            <img className="shadow-md" src={LaVerona} alt="La Verona" />
+            <img
+              className="shadow-md"
+              src={BookingScreen}
+              alt="Booking Screen"
+            />
+            <img
+              className="shadow-md"
+              src={ChatFoodGuide}
+              alt="Chat Food Guide"
+            />
+            <img
+              className="shadow-md"
+              src={ProfileScreen}
+              alt="Profile Screen"
+            />
+            <img className="shadow-md" src={RatingScreen} alt="Rating Screen" />
+          </div>
+        </div>
+        <div className="flex flex-col gap-6 mt-12">
+          <p className="text-[#FF6B35] text-2xl">User Testing</p>
+          <p>
+            To evaluate the usability and relevance of Crave, I conducted a
+            moderated user testing round with 5 participants. Participants were
+            asked to navigate the prototype and respond to a feedback form
+            focusing on usability, visual appeal, and feature clarity
+          </p>
+          <p className="text-2xl font-bold">View Resources:</p>
+          <div className="flex justify-start items-center gap-8">
+            <div className="font-[Convergence] px-5 py-2 bg-black rounded-3xl text-white flex items-center gap-2 cursor-pointer text-lg">
+              Prototype <span className="text-xl"> →</span>
+            </div>
+            <div className="font-[Convergence] px-5 py-2 bg-black rounded-3xl text-white flex items-center gap-2 cursor-pointer text-lg">
+              Feedback Form <span className="text-xl"> →</span>
+            </div>
+            <div className="font-[Convergence] px-5 py-2 bg-black rounded-3xl text-white flex items-center gap-2 cursor-pointer text-lg">
+              Form Responses <span className="text-xl"> →</span>
+            </div>
+          </div>
+        </div>
       </section>
+      <div className="flex flex-col gap-6 px-4 mt-2 py-8 bg-[#FFF9EF9E] xl:min-h-fit md:px-14 lg:px-24 2xl:px-32 sm:px-8">
+        <p className="text-[#FF6B35] text-2xl">Results and Impact</p>
+        <ul class="list-disc space-y-3 pl-5 text-gray-800">
+          <li>
+            <span class="font-semibold">91.7%</span> of users said the app felt
+            intuitive and easy to use.
+          </li>
+
+          <li>
+            The <span class="font-semibold">mood-based food discovery</span>{" "}
+            feature was most appreciated — multiple users said it “felt
+            personal” and “relevant.”
+          </li>
+
+          <li>
+            Minor feedback on{" "}
+            <span class="font-semibold">simplifying navigation</span> and
+            <span class="font-semibold">improving tag clarity</span> was noted
+            for future updates.
+          </li>
+
+          <li>
+            Based on testing, we validated the core concept: people are
+            <span class="font-semibold">excited</span> to connect with foodies
+            for
+            <span class="font-semibold">tailored recommendations</span>.
+          </li>
+
+          <li>
+            This round of testing helped prioritize a few UX improvements for
+            the next phase.
+          </li>
+        </ul>
+      </div>
     </div>
   );
 };
