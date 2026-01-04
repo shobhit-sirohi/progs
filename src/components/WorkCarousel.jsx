@@ -55,8 +55,8 @@ const WorkCarousel = () => {
         "A food concierge app for personalized, mood-based dining experiences.",
       image: crave,
       tags: ["Case Study","App Idea"],
-      button: "Coming Soon",
-      link: "#",
+      button: "View Project",
+      link: "/projects/crave-app",
     },
     {
       id: 2,
